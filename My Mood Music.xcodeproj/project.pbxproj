@@ -14,6 +14,8 @@
 		7C9D4FCD19FBB1A200D15D95 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C9D4FCC19FBB1A200D15D95 /* Images.xcassets */; };
 		7C9D4FD019FBB1A200D15D95 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C9D4FCE19FBB1A200D15D95 /* LaunchScreen.xib */; };
 		7C9D4FDC19FBB1A200D15D95 /* My_Mood_MusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D4FDB19FBB1A200D15D95 /* My_Mood_MusicTests.m */; };
+		7C9D4FE619FBB21400D15D95 /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C9D4FE519FBB21400D15D95 /* Background.jpg */; };
+		7C9D4FE819FBB26A00D15D95 /* Muse.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9D4FE719FBB26A00D15D95 /* Muse.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		7C9D4FD519FBB1A200D15D95 /* My Mood MusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My Mood MusicTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C9D4FDA19FBB1A200D15D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C9D4FDB19FBB1A200D15D95 /* My_Mood_MusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = My_Mood_MusicTests.m; sourceTree = "<group>"; };
+		7C9D4FE519FBB21400D15D95 /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Background.jpg; path = ../../../Downloads/Background.jpg; sourceTree = "<group>"; };
+		7C9D4FE719FBB26A00D15D95 /* Muse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Muse.png; path = ../../Muse/MuseiOSApp/MuseiOSApp/Muse.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 				7C9D4FC919FBB1A200D15D95 /* Main.storyboard */,
 				7C9D4FCC19FBB1A200D15D95 /* Images.xcassets */,
 				7C9D4FCE19FBB1A200D15D95 /* LaunchScreen.xib */,
+				7C9D4FE519FBB21400D15D95 /* Background.jpg */,
+				7C9D4FE719FBB26A00D15D95 /* Muse.png */,
 				7C9D4FBF19FBB1A200D15D95 /* Supporting Files */,
 			);
 			path = "My Mood Music";
@@ -200,6 +206,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C9D4FCB19FBB1A200D15D95 /* Main.storyboard in Resources */,
+				7C9D4FE619FBB21400D15D95 /* Background.jpg in Resources */,
+				7C9D4FE819FBB26A00D15D95 /* Muse.png in Resources */,
 				7C9D4FD019FBB1A200D15D95 /* LaunchScreen.xib in Resources */,
 				7C9D4FCD19FBB1A200D15D95 /* Images.xcassets in Resources */,
 			);
