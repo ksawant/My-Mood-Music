@@ -13,11 +13,33 @@
 @end
 
 @implementation newaccountbg
+@synthesize username, password, confirmpassword, year;
+@synthesize scrollview;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background.jpg"]];
+    
+    UITapGestureRecognizer * tap= [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
     // Do any additional setup after loading the view.
+}
+
+-(void) dismissKeyboard {
+    [username resignFirstResponder];
+    [password resignFirstResponder];
+    [confirmpassword resignFirstResponder];
+    [year resignFirstResponder];
+}
+
+-(void)textFieldDidBeginEditing:(UITextField *)textField {
+    CGPoint scrollPoint = CGPointMake(0, textField.frame.origin.y);
+    [scrollview setContentOffset:scrollPoint animated:YES];
+}
+
+-(void) textFieldDidEndEditing:(UITextField *)textField {
+    [scrollview setContentOffset:CGPointZero animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
