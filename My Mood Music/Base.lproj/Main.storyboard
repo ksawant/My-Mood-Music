@@ -64,7 +64,7 @@
                                         <rect key="frame" x="52" y="296" width="211" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
                                             <outlet property="delegate" destination="OSI-xf-k55" id="E9q-gz-SlN"/>
@@ -160,7 +160,7 @@
         <!--Music-->
         <scene sceneID="uHM-rU-32l">
             <objects>
-                <viewController id="egh-Ek-deU" sceneMemberID="viewController">
+                <viewController id="egh-Ek-deU" customClass="MusicViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vvw-RK-1HI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,10 +169,27 @@
                                 <rect key="frame" x="0.0" y="-37" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JDq-Ig-8jU">
+                                <rect key="frame" x="45" y="295" width="230" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vsS-Jp-k9y">
+                                <rect key="frame" x="233" y="295" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Music" image="Music.png" id="p6o-XA-bcC"/>
+                    <connections>
+                        <outlet property="speed" destination="vsS-Jp-k9y" id="JVo-9D-111"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dNm-FE-iUQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -302,7 +319,11 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <items>
                                             <navigationItem title="Registration" id="mJa-pX-sOd">
-                                                <barButtonItem key="leftBarButtonItem" image="Back" id="F67-s2-iOw"/>
+                                                <barButtonItem key="leftBarButtonItem" image="Back" id="F67-s2-iOw">
+                                                    <connections>
+                                                        <segue destination="OSI-xf-k55" kind="modal" id="h9x-9j-XlR"/>
+                                                    </connections>
+                                                </barButtonItem>
                                             </navigationItem>
                                         </items>
                                     </navigationBar>
@@ -312,11 +333,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Registration" id="9bo-cf-9p9">
-                        <barButtonItem key="leftBarButtonItem" image="Back" id="qij-Aa-1Qz">
-                            <connections>
-                                <segue destination="OSI-xf-k55" kind="modal" id="wrk-2g-Jbt"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" image="Back" id="qij-Aa-1Qz"/>
                     </navigationItem>
                     <connections>
                         <outlet property="confirmpassword" destination="FUt-Lt-rTj" id="LD2-5S-mYA"/>
@@ -419,7 +436,7 @@
                                 </items>
                             </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="zHt-S5-mw4">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year of birth" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IY6-O7-6QU">
@@ -473,7 +490,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Reset Password" id="c32-ME-SW1">
-                                        <barButtonItem key="leftBarButtonItem" image="Back" id="BAs-0o-FLh"/>
+                                        <barButtonItem key="leftBarButtonItem" image="Back" id="BAs-0o-FLh">
+                                            <connections>
+                                                <segue destination="OSI-xf-k55" kind="modal" id="mev-pu-fvx"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -520,7 +541,6 @@
                         <outlet property="confirmpw" destination="OWE-xk-hDP" id="Vqg-W0-rvc"/>
                         <outlet property="newpw" destination="KJ2-QN-OMG" id="fe0-Y7-A9s"/>
                         <outlet property="scrollview" destination="ulv-U1-0mg" id="23K-Jh-ILc"/>
-                        <segue destination="OSI-xf-k55" kind="modal" id="fmG-ax-pO5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Is2-0x-8q8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -856,7 +876,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="fmG-ax-pO5"/>
+        <segue reference="B7h-oU-lz9"/>
         <segue reference="e8E-c4-zC5"/>
     </inferredMetricsTieBreakers>
 </document>

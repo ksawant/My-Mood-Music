@@ -19,6 +19,8 @@
 		7C9D4FEB19FBC46600D15D95 /* newaccountbg.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D4FEA19FBC46600D15D95 /* newaccountbg.m */; };
 		7C9D4FED19FC1E8000D15D95 /* Music.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9D4FEC19FC1E8000D15D95 /* Music.png */; };
 		7C9D4FEF19FC1EE700D15D95 /* Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9D4FEE19FC1EE700D15D95 /* Settings.png */; };
+		7CA7F1E219FD4014007537A6 /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA7F1E119FD4014007537A6 /* MusicViewController.m */; };
+		7CA7F1E419FD40A7007537A6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA7F1E319FD40A7007537A6 /* CoreLocation.framework */; };
 		7CD40D1919FC758600735CB7 /* Wallpaper2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CD40D1819FC758600735CB7 /* Wallpaper2.png */; };
 		7CD40D2519FC984B00735CB7 /* ChangePWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD40D2419FC984B00735CB7 /* ChangePWViewController.m */; };
 		7CD40D2819FCA37500735CB7 /* VerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD40D2719FCA37500735CB7 /* VerifyViewController.m */; };
@@ -59,6 +61,9 @@
 		7C9D4FEA19FBC46600D15D95 /* newaccountbg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = newaccountbg.m; sourceTree = "<group>"; };
 		7C9D4FEC19FC1E8000D15D95 /* Music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Music.png; path = ../../Muse/MuseiOSApp/MuseiOSApp/Music.png; sourceTree = "<group>"; };
 		7C9D4FEE19FC1EE700D15D95 /* Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Settings.png; path = ../../Muse/MuseiOSApp/MuseiOSApp/Settings.png; sourceTree = "<group>"; };
+		7CA7F1E019FD4014007537A6 /* MusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
+		7CA7F1E119FD4014007537A6 /* MusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
+		7CA7F1E319FD40A7007537A6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7CD40D1819FC758600735CB7 /* Wallpaper2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Wallpaper2.png; path = ../../LiveTranslate/LiveTranslate/Images.xcassets/Wallpaper2.imageset/Wallpaper2.png; sourceTree = "<group>"; };
 		7CD40D2319FC984B00735CB7 /* ChangePWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePWViewController.h; sourceTree = "<group>"; };
 		7CD40D2419FC984B00735CB7 /* ChangePWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePWViewController.m; sourceTree = "<group>"; };
@@ -78,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CA7F1E419FD40A7007537A6 /* CoreLocation.framework in Frameworks */,
 				7CE585C219FC5BEF0097952B /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +101,7 @@
 		7C9D4FB319FBB1A200D15D95 = {
 			isa = PBXGroup;
 			children = (
+				7CA7F1E319FD40A7007537A6 /* CoreLocation.framework */,
 				7CE585C119FC5BEF0097952B /* libsqlite3.dylib */,
 				7C9D4FBE19FBB1A200D15D95 /* My Mood Music */,
 				7C9D4FD819FBB1A200D15D95 /* My Mood MusicTests */,
@@ -121,6 +128,8 @@
 				7C9D4FC619FBB1A200D15D95 /* ViewController.h */,
 				7C9D4FC719FBB1A200D15D95 /* ViewController.m */,
 				7C9D4FC919FBB1A200D15D95 /* Main.storyboard */,
+				7CA7F1E019FD4014007537A6 /* MusicViewController.h */,
+				7CA7F1E119FD4014007537A6 /* MusicViewController.m */,
 				7CD40D2919FCA5CA00735CB7 /* ResetViewController.h */,
 				7CD40D2A19FCA5CA00735CB7 /* ResetViewController.m */,
 				7CD40D2619FCA37500735CB7 /* VerifyViewController.h */,
@@ -279,6 +288,7 @@
 				7C9D4FC819FBB1A200D15D95 /* ViewController.m in Sources */,
 				7C9D4FEB19FBC46600D15D95 /* newaccountbg.m in Sources */,
 				7CD40D2B19FCA5CA00735CB7 /* ResetViewController.m in Sources */,
+				7CA7F1E219FD4014007537A6 /* MusicViewController.m in Sources */,
 				7C9D4FC519FBB1A200D15D95 /* AppDelegate.m in Sources */,
 				7CD40D2819FCA37500735CB7 /* VerifyViewController.m in Sources */,
 				7CD40D2519FC984B00735CB7 /* ChangePWViewController.m in Sources */,
