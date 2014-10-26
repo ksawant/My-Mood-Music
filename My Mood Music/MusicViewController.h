@@ -11,7 +11,6 @@
 #import <CoreLocation/CoreLocation.h>
 
 @interface MusicViewController : UIViewController <CLLocationManagerDelegate>
-- (IBAction)goToSettings:(id)sender;
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) CLLocation *location;
@@ -19,6 +18,5 @@
 @property(nonatomic)NSTimer *timer;
 @property (weak, nonatomic) IBOutlet UITextField *status;
 
-- (IBAction)changAuth:(id)sender;
 
 @end
