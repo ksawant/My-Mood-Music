@@ -23,6 +23,7 @@
 		7CD40D2519FC984B00735CB7 /* ChangePWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD40D2419FC984B00735CB7 /* ChangePWViewController.m */; };
 		7CD40D2819FCA37500735CB7 /* VerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD40D2719FCA37500735CB7 /* VerifyViewController.m */; };
 		7CD40D2B19FCA5CA00735CB7 /* ResetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD40D2A19FCA5CA00735CB7 /* ResetViewController.m */; };
+		7CD40D2F19FCB2FE00735CB7 /* MyMoodMusic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CD40D2E19FCB2FE00735CB7 /* MyMoodMusic.jpg */; };
 		7CE5846019FC30010097952B /* PreferenceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE5845F19FC30010097952B /* PreferenceTableViewController.m */; };
 		7CE585C219FC5BEF0097952B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE585C119FC5BEF0097952B /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		7CD40D2719FCA37500735CB7 /* VerifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyViewController.m; sourceTree = "<group>"; };
 		7CD40D2919FCA5CA00735CB7 /* ResetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetViewController.h; sourceTree = "<group>"; };
 		7CD40D2A19FCA5CA00735CB7 /* ResetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetViewController.m; sourceTree = "<group>"; };
+		7CD40D2E19FCB2FE00735CB7 /* MyMoodMusic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MyMoodMusic.jpg; sourceTree = "<group>"; };
 		7CE5845E19FC30010097952B /* PreferenceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceTableViewController.h; sourceTree = "<group>"; };
 		7CE5845F19FC30010097952B /* PreferenceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceTableViewController.m; sourceTree = "<group>"; };
 		7CE585C119FC5BEF0097952B /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -126,6 +128,7 @@
 				7C9D4FE919FBC46600D15D95 /* newaccountbg.h */,
 				7C9D4FEA19FBC46600D15D95 /* newaccountbg.m */,
 				7C9D4FCC19FBB1A200D15D95 /* Images.xcassets */,
+				7CD40D2E19FCB2FE00735CB7 /* MyMoodMusic.jpg */,
 				7C9D4FCE19FBB1A200D15D95 /* LaunchScreen.xib */,
 				7C9D4FE519FBB21400D15D95 /* Background.jpg */,
 				7C9D4FE719FBB26A00D15D95 /* Muse.png */,
@@ -246,6 +249,7 @@
 				7C9D4FEF19FC1EE700D15D95 /* Settings.png in Resources */,
 				7C9D4FCB19FBB1A200D15D95 /* Main.storyboard in Resources */,
 				7C9D4FE619FBB21400D15D95 /* Background.jpg in Resources */,
+				7CD40D2F19FCB2FE00735CB7 /* MyMoodMusic.jpg in Resources */,
 				7CD40D1919FC758600735CB7 /* Wallpaper2.png in Resources */,
 				7C9D4FE819FBB26A00D15D95 /* Muse.png in Resources */,
 				7C9D4FED19FC1E8000D15D95 /* Music.png in Resources */,
