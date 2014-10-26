@@ -89,7 +89,9 @@
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     self.location = locations.lastObject;
-    self.speed.text = [NSString stringWithFormat:@"%f", self.location.speed];
+    float x;
+    x = self.location.speed*2.23693629;
+    self.speed.text = [NSString stringWithFormat:@"%f", x];
 }
 /*
 #pragma mark - Navigation
