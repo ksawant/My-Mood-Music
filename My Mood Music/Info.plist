@@ -42,5 +42,9 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>When In Use Authorization Test</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Always Authorization Test</string>
 </dict>
 </plist>

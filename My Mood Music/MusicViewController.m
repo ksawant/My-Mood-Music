@@ -17,17 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.locationManager = [[CLLocationManager alloc]init];
-    self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
+    [self.locationManager requestAlwaysAuthorization];
     self.locationManager.delegate = self;
     [self.locationManager startUpdatingLocation];
-    
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
     self.location = [[CLLocation alloc] init];
+    /*self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0
+                                                  target:self
+                                                selector:@selector(checkStatus)
+                                                userInfo:nil repeats:YES];*/
     // Do any additional setup after loading the view.
-}
-
-- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
-    self.location = locations.lastObject;
-    self.speed.text = [NSString stringWithFormat:@"%f", self.location.speed];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,6 +34,63 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)requestAlwaysAuth{
+    CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
+    if (status==kCLAuthorizationStatusAuthorizedWhenInUse || status == kCLAuthorizationStatusDenied) {
+        NSString*title;
+        title=(status == kCLAuthorizationStatusDenied) ? @"Location Services Are Off" : @"Background use is not enabled";
+        NSString *message = @"Go to settings";
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:title message:message delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Settings", nil];
+        [alert show];
+    }else if (status==kCLAuthorizationStatusNotDetermined)
+    {[self.locationManager requestAlwaysAuthorization];}
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if (buttonIndex == 1) {
+        NSURL *settingsURL = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+        [[UIApplication sharedApplication]openURL:settingsURL];
+    }
+}
+
+/*-(void)checkStatus{
+    CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
+    if (status==kCLAuthorizationStatusNotDetermined) {
+        
+        _status.text = @"Not Determined";
+    }
+    if (status==kCLAuthorizationStatusDenied) {
+        
+        _status.text = @"Denied";
+    }
+    if (status==kCLAuthorizationStatusRestricted) {
+        _status.text = @"Restricted";
+    }
+    if (status==kCLAuthorizationStatusAuthorizedAlways) {
+        _status.text = @"Always Allowed";
+    }
+    if (status==kCLAuthorizationStatusAuthorizedWhenInUse) {
+        _status.text = @"When In Use Allowed";
+        
+    }
+    
+    
+}
+- (IBAction)goToSettings:(id)sender {
+    NSURL *settingsURL = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+    [[UIApplication sharedApplication]openURL:settingsURL];
+}
+- (IBAction)changAuth:(id)sender{
+    
+    NSLog(@"Trying to change to ALWAYS authorization");
+    [self requestAlwaysAuth];
+    
+}*/
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    self.location = locations.lastObject;
+    self.speed.text = [NSString stringWithFormat:@"%f", self.location.speed];
+}
 /*
 #pragma mark - Navigation
 

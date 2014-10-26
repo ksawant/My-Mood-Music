@@ -7,9 +7,9 @@
 //
 
 #import "ViewController.h"
+@import CoreLocation;
 
 @interface ViewController ()
-
 @end
 
 @implementation ViewController
@@ -19,10 +19,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
+    
+    
+    
     UITapGestureRecognizer * tap= [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
     
     [self.view addGestureRecognizer:tap];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if (buttonIndex == 1) {
+        NSURL *settingsURL = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+        [[UIApplication sharedApplication]openURL:settingsURL];
+    }
 }
 
 -(void) dismissKeyboard {

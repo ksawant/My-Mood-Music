@@ -7,12 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
 
 @interface MusicViewController : UIViewController <CLLocationManagerDelegate>
+- (IBAction)goToSettings:(id)sender;
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) CLLocation *location;
 @property (weak, nonatomic) IBOutlet UILabel *speed;
+@property(nonatomic)NSTimer *timer;
+@property (weak, nonatomic) IBOutlet UITextField *status;
+
+- (IBAction)changAuth:(id)sender;
 
 @end
