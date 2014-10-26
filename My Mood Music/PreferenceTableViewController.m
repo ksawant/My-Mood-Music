@@ -39,18 +39,48 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 2;
+    return 11;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     if (indexPath.row == 0) {
-        cell.textLabel.text = @"Kartik";
-    } else {
-        cell.textLabel.text = @"George";
+        cell.textLabel.text = @"Classical";
     }
-    
+    if (indexPath.row == 1) {
+        cell.textLabel.text = @"Country";
+    }
+    if (indexPath.row == 2) {
+        cell.textLabel.text = @"Dubstep";
+    }
+    if (indexPath.row == 3) {
+        cell.textLabel.text = @"Hip Hop";
+    }
+    if (indexPath.row == 4) {
+        cell.textLabel.text = @"Metal";
+    }
+    if (indexPath.row == 5) {
+        cell.textLabel.text = @"Pop";
+    }
+    if (indexPath.row == 6) {
+        cell.textLabel.text = @"Punk";
+    }
+    if (indexPath.row == 7) {
+        cell.textLabel.text = @"R&B";
+    }
+    if (indexPath.row == 8) {
+        cell.textLabel.text = @"Rap";
+    }
+    if (indexPath.row == 9) {
+        cell.textLabel.text = @"Reggae";
+    }
+    if (indexPath.row == 10) {
+        cell.textLabel.text = @"Rock";
+    }
+    if (indexPath.row == 10) {
+        cell.textLabel.text = @"Soul";
+    }
     return cell;
 }
 

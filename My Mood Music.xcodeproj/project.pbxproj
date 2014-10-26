@@ -19,7 +19,9 @@
 		7C9D4FEB19FBC46600D15D95 /* newaccountbg.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D4FEA19FBC46600D15D95 /* newaccountbg.m */; };
 		7C9D4FED19FC1E8000D15D95 /* Music.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9D4FEC19FC1E8000D15D95 /* Music.png */; };
 		7C9D4FEF19FC1EE700D15D95 /* Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9D4FEE19FC1EE700D15D95 /* Settings.png */; };
+		7CD40D1919FC758600735CB7 /* Wallpaper2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CD40D1819FC758600735CB7 /* Wallpaper2.png */; };
 		7CE5846019FC30010097952B /* PreferenceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE5845F19FC30010097952B /* PreferenceTableViewController.m */; };
+		7CE585C219FC5BEF0097952B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE585C119FC5BEF0097952B /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +54,10 @@
 		7C9D4FEA19FBC46600D15D95 /* newaccountbg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = newaccountbg.m; sourceTree = "<group>"; };
 		7C9D4FEC19FC1E8000D15D95 /* Music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Music.png; path = ../../Muse/MuseiOSApp/MuseiOSApp/Music.png; sourceTree = "<group>"; };
 		7C9D4FEE19FC1EE700D15D95 /* Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Settings.png; path = ../../Muse/MuseiOSApp/MuseiOSApp/Settings.png; sourceTree = "<group>"; };
+		7CD40D1819FC758600735CB7 /* Wallpaper2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Wallpaper2.png; path = ../../LiveTranslate/LiveTranslate/Images.xcassets/Wallpaper2.imageset/Wallpaper2.png; sourceTree = "<group>"; };
 		7CE5845E19FC30010097952B /* PreferenceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceTableViewController.h; sourceTree = "<group>"; };
 		7CE5845F19FC30010097952B /* PreferenceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceTableViewController.m; sourceTree = "<group>"; };
+		7CE585C119FC5BEF0097952B /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CE585C219FC5BEF0097952B /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 		7C9D4FB319FBB1A200D15D95 = {
 			isa = PBXGroup;
 			children = (
+				7CE585C119FC5BEF0097952B /* libsqlite3.dylib */,
 				7C9D4FBE19FBB1A200D15D95 /* My Mood Music */,
 				7C9D4FD819FBB1A200D15D95 /* My Mood MusicTests */,
 				7C9D4FBD19FBB1A200D15D95 /* Products */,
@@ -108,6 +114,7 @@
 				7C9D4FCE19FBB1A200D15D95 /* LaunchScreen.xib */,
 				7C9D4FE519FBB21400D15D95 /* Background.jpg */,
 				7C9D4FE719FBB26A00D15D95 /* Muse.png */,
+				7CD40D1819FC758600735CB7 /* Wallpaper2.png */,
 				7C9D4FEC19FC1E8000D15D95 /* Music.png */,
 				7C9D4FEE19FC1EE700D15D95 /* Settings.png */,
 				7C9D4FBF19FBB1A200D15D95 /* Supporting Files */,
@@ -224,6 +231,7 @@
 				7C9D4FEF19FC1EE700D15D95 /* Settings.png in Resources */,
 				7C9D4FCB19FBB1A200D15D95 /* Main.storyboard in Resources */,
 				7C9D4FE619FBB21400D15D95 /* Background.jpg in Resources */,
+				7CD40D1919FC758600735CB7 /* Wallpaper2.png in Resources */,
 				7C9D4FE819FBB26A00D15D95 /* Muse.png in Resources */,
 				7C9D4FED19FC1E8000D15D95 /* Music.png in Resources */,
 				7C9D4FD019FBB1A200D15D95 /* LaunchScreen.xib in Resources */,
