@@ -27,7 +27,6 @@
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     self.location = locations.lastObject;
-    NSLog(@"%@", self.location.description);
     self.speed.text = [NSString stringWithFormat:@"%f", self.location.speed];
 }
 
