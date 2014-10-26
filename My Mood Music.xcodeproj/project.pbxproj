@@ -20,6 +20,7 @@
 		7C9D4FED19FC1E8000D15D95 /* Music.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9D4FEC19FC1E8000D15D95 /* Music.png */; };
 		7C9D4FEF19FC1EE700D15D95 /* Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9D4FEE19FC1EE700D15D95 /* Settings.png */; };
 		7CD40D1919FC758600735CB7 /* Wallpaper2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CD40D1819FC758600735CB7 /* Wallpaper2.png */; };
+		7CD40D2519FC984B00735CB7 /* ChangePWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD40D2419FC984B00735CB7 /* ChangePWViewController.m */; };
 		7CE5846019FC30010097952B /* PreferenceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE5845F19FC30010097952B /* PreferenceTableViewController.m */; };
 		7CE585C219FC5BEF0097952B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE585C119FC5BEF0097952B /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,8 @@
 		7C9D4FEC19FC1E8000D15D95 /* Music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Music.png; path = ../../Muse/MuseiOSApp/MuseiOSApp/Music.png; sourceTree = "<group>"; };
 		7C9D4FEE19FC1EE700D15D95 /* Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Settings.png; path = ../../Muse/MuseiOSApp/MuseiOSApp/Settings.png; sourceTree = "<group>"; };
 		7CD40D1819FC758600735CB7 /* Wallpaper2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Wallpaper2.png; path = ../../LiveTranslate/LiveTranslate/Images.xcassets/Wallpaper2.imageset/Wallpaper2.png; sourceTree = "<group>"; };
+		7CD40D2319FC984B00735CB7 /* ChangePWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePWViewController.h; sourceTree = "<group>"; };
+		7CD40D2419FC984B00735CB7 /* ChangePWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePWViewController.m; sourceTree = "<group>"; };
 		7CE5845E19FC30010097952B /* PreferenceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceTableViewController.h; sourceTree = "<group>"; };
 		7CE5845F19FC30010097952B /* PreferenceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceTableViewController.m; sourceTree = "<group>"; };
 		7CE585C119FC5BEF0097952B /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -108,6 +111,8 @@
 				7C9D4FC619FBB1A200D15D95 /* ViewController.h */,
 				7C9D4FC719FBB1A200D15D95 /* ViewController.m */,
 				7C9D4FC919FBB1A200D15D95 /* Main.storyboard */,
+				7CD40D2319FC984B00735CB7 /* ChangePWViewController.h */,
+				7CD40D2419FC984B00735CB7 /* ChangePWViewController.m */,
 				7C9D4FE919FBC46600D15D95 /* newaccountbg.h */,
 				7C9D4FEA19FBC46600D15D95 /* newaccountbg.m */,
 				7C9D4FCC19FBB1A200D15D95 /* Images.xcassets */,
@@ -256,6 +261,7 @@
 				7C9D4FC819FBB1A200D15D95 /* ViewController.m in Sources */,
 				7C9D4FEB19FBC46600D15D95 /* newaccountbg.m in Sources */,
 				7C9D4FC519FBB1A200D15D95 /* AppDelegate.m in Sources */,
+				7CD40D2519FC984B00735CB7 /* ChangePWViewController.m in Sources */,
 				7C9D4FC219FBB1A200D15D95 /* main.m in Sources */,
 				7CE5846019FC30010097952B /* PreferenceTableViewController.m in Sources */,
 			);

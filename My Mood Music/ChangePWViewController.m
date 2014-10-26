@@ -1,21 +1,20 @@
 //
-//  newaccountbg.m
+//  ChangePWViewController.m
 //  My Mood Music
 //
 //  Created by Kartik Sawant on 10/25/14.
 //  Copyright (c) 2014 Kartik Sawant. All rights reserved.
 //
 
-#import "newaccountbg.h"
+#import "ChangePWViewController.h"
 
-@interface newaccountbg ()
+@interface ChangePWViewController ()
 
 @end
 
-@implementation newaccountbg
-@synthesize username, password, confirmpassword, year;
+@implementation ChangePWViewController
+@synthesize newpw, oldpw, confirmpw;
 @synthesize scrollview;
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Wallpaper2.png"]];
@@ -27,10 +26,9 @@
 }
 
 -(void) dismissKeyboard {
-    [username resignFirstResponder];
-    [password resignFirstResponder];
-    [confirmpassword resignFirstResponder];
-    [year resignFirstResponder];
+    [oldpw resignFirstResponder];
+    [newpw resignFirstResponder];
+    [confirmpw resignFirstResponder];
 }
 
 -(void)textFieldDidBeginEditing:(UITextField *)textField {
@@ -45,10 +43,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)signin:(id)sender {
-    [self dismissKeyboard];
 }
 
 /*
