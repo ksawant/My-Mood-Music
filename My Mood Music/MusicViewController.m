@@ -20,7 +20,7 @@
     [self.locationManager requestAlwaysAuthorization];
     self.locationManager.delegate = self;
     [self.locationManager startUpdatingLocation];
-    self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation;
     self.location = [[CLLocation alloc] init];
     /*self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0
                                                   target:self
