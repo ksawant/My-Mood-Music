@@ -9,12 +9,20 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import "JFWeatherData.h"
+#import "JFWeatherManager.h"
+#import "DataModels.h"
 
-@interface MusicViewController : UIViewController <CLLocationManagerDelegate>
-
+@interface MusicViewController : UIViewController <CLLocationManagerDelegate,MKMapViewDelegate, UITableViewDelegate>{
+    
+    JFWeatherManager *weatherManager;
+    
+}
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) CLLocation *location;
 @property (weak, nonatomic) IBOutlet UILabel *speed;
+@property (weak, nonatomic) IBOutlet UILabel *condition;
+@property (weak, nonatomic) IBOutlet UILabel *temp;
 @property(nonatomic)NSTimer *timer;
 @property (weak, nonatomic) IBOutlet UITextField *status;
 

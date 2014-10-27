@@ -7,13 +7,11 @@
 //
 
 #import "MusicViewController.h"
-
 @interface MusicViewController ()
 
 @end
 
 @implementation MusicViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.locationManager = [[CLLocationManager alloc]init];
@@ -22,11 +20,7 @@
     [self.locationManager startUpdatingLocation];
     self.locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation;
     self.location = [[CLLocation alloc] init];
-    /*self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0
-                                                  target:self
-                                                selector:@selector(checkStatus)
-                                                userInfo:nil repeats:YES];*/
-    // Do any additional setup after loading the view.
+    weatherManager = [[JFWeatherManager alloc]init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -91,7 +85,15 @@
     self.location = locations.lastObject;
     float x;
     x = self.location.speed*2.23693629;
+    if(x<0) {
+        x=0.000000;
+    }
     self.speed.text = [NSString stringWithFormat:@"Speed: %f MPH", x];
+    [weatherManager fetchWeatherDataForLatitude:self.location.coordinate.latitude andLongitude:self.location.coordinate.longitude withAPIKeyOrNil:@"a4c33519650013f187bcdc2a48df7ead" :^(JFWeatherData *returnedWeatherData) {
+        
+        self.temp.text = [NSString stringWithFormat:@"Temperature is %f",[returnedWeatherData temperatureInUnitFormat:kTemperatureFarenheit]];
+        self.condition.text = [NSString stringWithFormat:@"Conditions are %@",[returnedWeatherData currentConditionsTextualDescription]];
+    }];
 }
 /*
 #pragma mark - Navigation
