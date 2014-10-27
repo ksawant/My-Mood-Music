@@ -91,8 +91,8 @@
     self.speed.text = [NSString stringWithFormat:@"Speed: %f MPH", x];
     [weatherManager fetchWeatherDataForLatitude:self.location.coordinate.latitude andLongitude:self.location.coordinate.longitude withAPIKeyOrNil:@"a4c33519650013f187bcdc2a48df7ead" :^(JFWeatherData *returnedWeatherData) {
         
-        self.temp.text = [NSString stringWithFormat:@"Temperature is %f",[returnedWeatherData temperatureInUnitFormat:kTemperatureFarenheit]];
-        self.condition.text = [NSString stringWithFormat:@"Conditions are %@",[returnedWeatherData currentConditionsTextualDescription]];
+        self.temp.text = [NSString stringWithFormat:@"Temperature: %f F",[returnedWeatherData temperatureInUnitFormat:kTemperatureFarenheit]];
+        self.condition.text = [NSString stringWithFormat:@"Condition: %@",[returnedWeatherData currentConditionsTextualDescription]];
     }];
 }
 /*
