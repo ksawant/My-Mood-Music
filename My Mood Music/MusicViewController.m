@@ -91,7 +91,7 @@
     self.location = locations.lastObject;
     float x;
     x = self.location.speed*2.23693629;
-    self.speed.text = [NSString stringWithFormat:@"%f", x];
+    self.speed.text = [NSString stringWithFormat:@"Speed: %f MPH", x];
 }
 /*
 #pragma mark - Navigation
