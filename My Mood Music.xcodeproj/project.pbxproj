@@ -37,6 +37,10 @@
 		7C4E156419FE31EB00FFD5C8 /* Wind.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C4E154619FE31EB00FFD5C8 /* Wind.m */; };
 		7C4E160E1A0069B000FFD5C8 /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C4E160D1A0069B000FFD5C8 /* Background.jpg */; };
 		7C4E16101A0069BB00FFD5C8 /* personicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C4E160F1A0069BB00FFD5C8 /* personicon.png */; };
+		7C4E16121A006B9200FFD5C8 /* Muse.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C4E16111A006B9200FFD5C8 /* Muse.png */; };
+		7C4E16141A006BA500FFD5C8 /* Music.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C4E16131A006BA500FFD5C8 /* Music.png */; };
+		7C4E16161A006BB400FFD5C8 /* Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C4E16151A006BB400FFD5C8 /* Settings.png */; };
+		7C4E16181A006BDD00FFD5C8 /* Wallpaper2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C4E16171A006BDD00FFD5C8 /* Wallpaper2.png */; };
 		7C9D4FC219FBB1A200D15D95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D4FC119FBB1A200D15D95 /* main.m */; };
 		7C9D4FC519FBB1A200D15D95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D4FC419FBB1A200D15D95 /* AppDelegate.m */; };
 		7C9D4FC819FBB1A200D15D95 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D4FC719FBB1A200D15D95 /* ViewController.m */; };
@@ -44,15 +48,11 @@
 		7C9D4FCD19FBB1A200D15D95 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C9D4FCC19FBB1A200D15D95 /* Images.xcassets */; };
 		7C9D4FD019FBB1A200D15D95 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C9D4FCE19FBB1A200D15D95 /* LaunchScreen.xib */; };
 		7C9D4FDC19FBB1A200D15D95 /* My_Mood_MusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D4FDB19FBB1A200D15D95 /* My_Mood_MusicTests.m */; };
-		7C9D4FE819FBB26A00D15D95 /* Muse.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9D4FE719FBB26A00D15D95 /* Muse.png */; };
 		7C9D4FEB19FBC46600D15D95 /* newaccountbg.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D4FEA19FBC46600D15D95 /* newaccountbg.m */; };
-		7C9D4FED19FC1E8000D15D95 /* Music.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9D4FEC19FC1E8000D15D95 /* Music.png */; };
-		7C9D4FEF19FC1EE700D15D95 /* Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9D4FEE19FC1EE700D15D95 /* Settings.png */; };
 		7CA7F1E219FD4014007537A6 /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA7F1E119FD4014007537A6 /* MusicViewController.m */; };
 		7CA7F1E419FD40A7007537A6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA7F1E319FD40A7007537A6 /* CoreLocation.framework */; };
 		7CA7F1E919FD7D93007537A6 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CA7F1E819FD7D93007537A6 /* Background.png */; };
 		7CA7F22019FD95A6007537A6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA7F21F19FD95A6007537A6 /* MapKit.framework */; };
-		7CD40D1919FC758600735CB7 /* Wallpaper2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CD40D1819FC758600735CB7 /* Wallpaper2.png */; };
 		7CD40D2519FC984B00735CB7 /* ChangePWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD40D2419FC984B00735CB7 /* ChangePWViewController.m */; };
 		7CD40D2819FCA37500735CB7 /* VerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD40D2719FCA37500735CB7 /* VerifyViewController.m */; };
 		7CD40D2B19FCA5CA00735CB7 /* ResetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD40D2A19FCA5CA00735CB7 /* ResetViewController.m */; };
@@ -130,6 +130,10 @@
 		7C4E154619FE31EB00FFD5C8 /* Wind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wind.m; sourceTree = "<group>"; };
 		7C4E160D1A0069B000FFD5C8 /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background.jpg; sourceTree = "<group>"; };
 		7C4E160F1A0069BB00FFD5C8 /* personicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personicon.png; sourceTree = "<group>"; };
+		7C4E16111A006B9200FFD5C8 /* Muse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Muse.png; sourceTree = "<group>"; };
+		7C4E16131A006BA500FFD5C8 /* Music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Music.png; sourceTree = "<group>"; };
+		7C4E16151A006BB400FFD5C8 /* Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Settings.png; sourceTree = "<group>"; };
+		7C4E16171A006BDD00FFD5C8 /* Wallpaper2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wallpaper2.png; sourceTree = "<group>"; };
 		7C9D4FBC19FBB1A200D15D95 /* My Mood Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Mood Music.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C9D4FC019FBB1A200D15D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C9D4FC119FBB1A200D15D95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -143,17 +147,13 @@
 		7C9D4FD519FBB1A200D15D95 /* My Mood MusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My Mood MusicTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C9D4FDA19FBB1A200D15D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C9D4FDB19FBB1A200D15D95 /* My_Mood_MusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = My_Mood_MusicTests.m; sourceTree = "<group>"; };
-		7C9D4FE719FBB26A00D15D95 /* Muse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Muse.png; path = ../../Muse/MuseiOSApp/MuseiOSApp/Muse.png; sourceTree = "<group>"; };
 		7C9D4FE919FBC46600D15D95 /* newaccountbg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newaccountbg.h; sourceTree = "<group>"; };
 		7C9D4FEA19FBC46600D15D95 /* newaccountbg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = newaccountbg.m; sourceTree = "<group>"; };
-		7C9D4FEC19FC1E8000D15D95 /* Music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Music.png; path = ../../Muse/MuseiOSApp/MuseiOSApp/Music.png; sourceTree = "<group>"; };
-		7C9D4FEE19FC1EE700D15D95 /* Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Settings.png; path = ../../Muse/MuseiOSApp/MuseiOSApp/Settings.png; sourceTree = "<group>"; };
 		7CA7F1E019FD4014007537A6 /* MusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
 		7CA7F1E119FD4014007537A6 /* MusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
 		7CA7F1E319FD40A7007537A6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7CA7F1E819FD7D93007537A6 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 		7CA7F21F19FD95A6007537A6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		7CD40D1819FC758600735CB7 /* Wallpaper2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Wallpaper2.png; path = ../../LiveTranslate/LiveTranslate/Images.xcassets/Wallpaper2.imageset/Wallpaper2.png; sourceTree = "<group>"; };
 		7CD40D2319FC984B00735CB7 /* ChangePWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePWViewController.h; sourceTree = "<group>"; };
 		7CD40D2419FC984B00735CB7 /* ChangePWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePWViewController.m; sourceTree = "<group>"; };
 		7CD40D2619FCA37500735CB7 /* VerifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyViewController.h; sourceTree = "<group>"; };
@@ -332,10 +332,10 @@
 				7C4E160D1A0069B000FFD5C8 /* Background.jpg */,
 				7CD40D3619FCBDF800735CB7 /* star.png */,
 				7C9D4FCE19FBB1A200D15D95 /* LaunchScreen.xib */,
-				7C9D4FE719FBB26A00D15D95 /* Muse.png */,
-				7CD40D1819FC758600735CB7 /* Wallpaper2.png */,
-				7C9D4FEC19FC1E8000D15D95 /* Music.png */,
-				7C9D4FEE19FC1EE700D15D95 /* Settings.png */,
+				7C4E16111A006B9200FFD5C8 /* Muse.png */,
+				7C4E16171A006BDD00FFD5C8 /* Wallpaper2.png */,
+				7C4E16131A006BA500FFD5C8 /* Music.png */,
+				7C4E16151A006BB400FFD5C8 /* Settings.png */,
 				7C9D4FBF19FBB1A200D15D95 /* Supporting Files */,
 			);
 			path = "My Mood Music";
@@ -450,18 +450,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C4E155819FE31EB00FFD5C8 /* JFOpenWeatherMapManager-Info.plist in Resources */,
-				7C9D4FEF19FC1EE700D15D95 /* Settings.png in Resources */,
 				7C4E155519FE31EB00FFD5C8 /* InfoPlist.strings in Resources */,
 				7CA7F1E919FD7D93007537A6 /* Background.png in Resources */,
 				7C9D4FCB19FBB1A200D15D95 /* Main.storyboard in Resources */,
 				7CD40D2F19FCB2FE00735CB7 /* MyMoodMusic.jpg in Resources */,
 				7C4E155619FE31EB00FFD5C8 /* Images.xcassets in Resources */,
-				7CD40D1919FC758600735CB7 /* Wallpaper2.png in Resources */,
-				7C9D4FE819FBB26A00D15D95 /* Muse.png in Resources */,
-				7C9D4FED19FC1E8000D15D95 /* Music.png in Resources */,
+				7C4E16181A006BDD00FFD5C8 /* Wallpaper2.png in Resources */,
+				7C4E16161A006BB400FFD5C8 /* Settings.png in Resources */,
+				7C4E16141A006BA500FFD5C8 /* Music.png in Resources */,
 				7C4E155319FE31EB00FFD5C8 /* timezonesDB.json in Resources */,
 				7C4E16101A0069BB00FFD5C8 /* personicon.png in Resources */,
 				7C9D4FD019FBB1A200D15D95 /* LaunchScreen.xib in Resources */,
+				7C4E16121A006B9200FFD5C8 /* Muse.png in Resources */,
 				7C4E160E1A0069B000FFD5C8 /* Background.jpg in Resources */,
 				7CD40D3719FCBDF800735CB7 /* star.png in Resources */,
 				7C9D4FCD19FBB1A200D15D95 /* Images.xcassets in Resources */,
