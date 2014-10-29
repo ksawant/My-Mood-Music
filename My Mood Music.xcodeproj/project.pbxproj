@@ -40,6 +40,10 @@
 		7C4E16831A006DBD00FFD5C8 /* Sys.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C4E16631A006DBD00FFD5C8 /* Sys.m */; };
 		7C4E16841A006DBD00FFD5C8 /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C4E16651A006DBD00FFD5C8 /* Weather.m */; };
 		7C4E16851A006DBD00FFD5C8 /* Wind.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C4E16671A006DBD00FFD5C8 /* Wind.m */; };
+		7C4E16C71A016CF600FFD5C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C4E16C61A016CF600FFD5C8 /* Foundation.framework */; };
+		7C4E16C91A016D0500FFD5C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C4E16C81A016D0500FFD5C8 /* UIKit.framework */; };
+		7C4E16CD1A016D4700FFD5C8 /* sampledb.sql in Resources */ = {isa = PBXBuildFile; fileRef = 7C4E16CA1A016D4700FFD5C8 /* sampledb.sql */; };
+		7C4E16CE1A016D4700FFD5C8 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C4E16CC1A016D4700FFD5C8 /* DBManager.m */; };
 		7C9D4FC219FBB1A200D15D95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D4FC119FBB1A200D15D95 /* main.m */; };
 		7C9D4FC519FBB1A200D15D95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D4FC419FBB1A200D15D95 /* AppDelegate.m */; };
 		7C9D4FC819FBB1A200D15D95 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D4FC719FBB1A200D15D95 /* ViewController.m */; };
@@ -132,6 +136,11 @@
 		7C4E16651A006DBD00FFD5C8 /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
 		7C4E16661A006DBD00FFD5C8 /* Wind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wind.h; sourceTree = "<group>"; };
 		7C4E16671A006DBD00FFD5C8 /* Wind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wind.m; sourceTree = "<group>"; };
+		7C4E16C61A016CF600FFD5C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7C4E16C81A016D0500FFD5C8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7C4E16CA1A016D4700FFD5C8 /* sampledb.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = sampledb.sql; sourceTree = "<group>"; };
+		7C4E16CB1A016D4700FFD5C8 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		7C4E16CC1A016D4700FFD5C8 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		7C9D4FBC19FBB1A200D15D95 /* My Mood Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Mood Music.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C9D4FC019FBB1A200D15D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C9D4FC119FBB1A200D15D95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -170,6 +179,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C4E16C91A016D0500FFD5C8 /* UIKit.framework in Frameworks */,
+				7C4E16C71A016CF600FFD5C8 /* Foundation.framework in Frameworks */,
 				7CA7F22019FD95A6007537A6 /* MapKit.framework in Frameworks */,
 				7CA7F1E419FD40A7007537A6 /* CoreLocation.framework in Frameworks */,
 				7CE585C219FC5BEF0097952B /* libsqlite3.dylib in Frameworks */,
@@ -282,9 +293,14 @@
 		7C9D4FB319FBB1A200D15D95 = {
 			isa = PBXGroup;
 			children = (
+				7C4E16C81A016D0500FFD5C8 /* UIKit.framework */,
+				7C4E16C61A016CF600FFD5C8 /* Foundation.framework */,
 				7CA7F21F19FD95A6007537A6 /* MapKit.framework */,
 				7CA7F1E319FD40A7007537A6 /* CoreLocation.framework */,
 				7CE585C119FC5BEF0097952B /* libsqlite3.dylib */,
+				7C4E16CA1A016D4700FFD5C8 /* sampledb.sql */,
+				7C4E16CB1A016D4700FFD5C8 /* DBManager.h */,
+				7C4E16CC1A016D4700FFD5C8 /* DBManager.m */,
 				7C9D4FBE19FBB1A200D15D95 /* My Mood Music */,
 				7C9D4FD819FBB1A200D15D95 /* My Mood MusicTests */,
 				7C9D4FBD19FBB1A200D15D95 /* Products */,
@@ -447,6 +463,7 @@
 			files = (
 				7CA7F1E919FD7D93007537A6 /* Background.png in Resources */,
 				7C9D4FCB19FBB1A200D15D95 /* Main.storyboard in Resources */,
+				7C4E16CD1A016D4700FFD5C8 /* sampledb.sql in Resources */,
 				7CD40D2F19FCB2FE00735CB7 /* MyMoodMusic.jpg in Resources */,
 				7C4E16181A006BDD00FFD5C8 /* Wallpaper2.png in Resources */,
 				7C4E16761A006DBD00FFD5C8 /* InfoPlist.strings in Resources */,
@@ -498,6 +515,7 @@
 				7C4E167A1A006DBD00FFD5C8 /* JFViewController.m in Sources */,
 				7C4E16731A006DBD00FFD5C8 /* CLPlacemark+APTimeZones.m in Sources */,
 				7C4E16801A006DBD00FFD5C8 /* Main.m in Sources */,
+				7C4E16CE1A016D4700FFD5C8 /* DBManager.m in Sources */,
 				7CA7F1E219FD4014007537A6 /* MusicViewController.m in Sources */,
 				7C4E16851A006DBD00FFD5C8 /* Wind.m in Sources */,
 				7C4E16691A006DBD00FFD5C8 /* AFHTTPRequestOperationManager.m in Sources */,
