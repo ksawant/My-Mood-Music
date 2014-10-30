@@ -52,6 +52,15 @@
 }
 - (IBAction)signin:(id)sender {
     [self dismissKeyboard];
+    if(![username.text isEqualToString:@""]) {
+        if(![password.text isEqualToString:@""]) {
+            NSLog(@"NOTEMPTY");
+            [self performSegueWithIdentifier:@"tomusic" sender:sender];
+        }
+    }
+    else {
+        NSLog(@"EMPTY");
+    }
 }
 
 @end

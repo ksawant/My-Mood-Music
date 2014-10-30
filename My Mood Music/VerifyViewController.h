@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface VerifyViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *username;
 @property (weak, nonatomic) IBOutlet UITextField *year;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollview;
-
+- (IBAction)signin:(id)sender;
 @end

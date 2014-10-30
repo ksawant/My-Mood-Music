@@ -71,7 +71,6 @@
                                         </state>
                                         <connections>
                                             <action selector="signin:" destination="OSI-xf-k55" eventType="touchUpInside" id="Kle-xo-Ayv"/>
-                                            <segue destination="giD-xE-umd" kind="modal" modalPresentationStyle="fullScreen" animates="NO" id="e8E-c4-zC5"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Mood Music" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gj1-WP-buU">
@@ -112,6 +111,7 @@
                         <outlet property="password" destination="e0f-7o-MxY" id="5Ao-uh-PSQ"/>
                         <outlet property="scrollviewlogin" destination="4zu-pb-IpH" id="4Fz-mp-Q5e"/>
                         <outlet property="username" destination="uRb-Cv-8WT" id="xTu-1T-tpV"/>
+                        <segue destination="giD-xE-umd" kind="modal" identifier="tomusic" id="Wif-bl-B1f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pvf-tc-l6Q" sceneMemberID="firstResponder"/>
@@ -482,7 +482,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="cmo-pq-jHs" kind="modal" id="jtI-0W-9Lp"/>
+                                            <action selector="signin:" destination="dLf-jO-AV3" eventType="touchUpInside" id="bHt-xj-hAo"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" id="VcJ-zQ-zMK">
@@ -498,7 +498,9 @@
                     </view>
                     <connections>
                         <outlet property="scrollview" destination="zHt-S5-mw4" id="lSo-w7-5nt"/>
+                        <outlet property="username" destination="VcJ-zQ-zMK" id="50D-qF-3FB"/>
                         <outlet property="year" destination="AUj-Jn-5f9" id="rTu-Qs-esM"/>
+                        <segue destination="cmo-pq-jHs" kind="modal" identifier="nextview" id="x8n-Ya-SYd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wfz-fC-STm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -907,7 +909,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="h9x-9j-XlR"/>
-        <segue reference="e8E-c4-zC5"/>
+        <segue reference="B7h-oU-lz9"/>
+        <segue reference="Wif-bl-B1f"/>
     </inferredMetricsTieBreakers>
 </document>

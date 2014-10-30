@@ -13,7 +13,7 @@
 @end
 
 @implementation VerifyViewController
-@synthesize year;
+@synthesize username,year;
 @synthesize scrollview;
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -41,6 +41,19 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)signin:(id)sender {
+    [self dismissKeyboard];
+    if(![username.text isEqualToString:@""]) {
+        if(![year.text isEqualToString:@""]) {
+            NSLog(@"NOTEMPTY");
+            [self performSegueWithIdentifier:@"nextview" sender:sender];
+        }
+    }
+    else {
+        NSLog(@"EMPTY");
+    }
 }
 
 /*

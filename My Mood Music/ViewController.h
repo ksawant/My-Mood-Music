@@ -16,6 +16,6 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollviewlogin;
 @property (weak, nonatomic) IBOutlet UITextField *username;
 @property (weak, nonatomic) IBOutlet UITextField *password;
-
+- (IBAction)signin:(id)sender;
 @end
 
