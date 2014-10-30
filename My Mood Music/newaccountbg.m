@@ -90,6 +90,12 @@
 
 - (IBAction)signin:(id)sender {
     [self dismissKeyboard];
+    if([password.text isEqualToString:confirmpassword.text]) {
+        NSLog(@"MATCH");
+    }
+    else {
+        NSLog(@"DIFFERENT");
+    }
 }
 
 /*-(BOOL)openDBwithSQLName:(NSString *)sqlname {

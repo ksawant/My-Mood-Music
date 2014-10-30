@@ -45,6 +45,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)checkpasswords:(id)sender {
+    if([newpw.text isEqualToString:confirmpw.text]) {
+        NSLog(@"MATCH");
+    }
+    else {
+        NSLog(@"DIFFERENT");
+    }
+}
 /*
 #pragma mark - Navigation
 

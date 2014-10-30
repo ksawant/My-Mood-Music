@@ -12,5 +12,5 @@
 @property (weak, nonatomic) IBOutlet UITextField *newpw;
 @property (weak, nonatomic) IBOutlet UITextField *confirmpw;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollview;
-
+-(IBAction)checkpasswords:(id)sender;
 @end
