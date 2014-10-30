@@ -30,5 +30,5 @@
 @property (nonatomic) int recordIDToEdit;
 
 
-- (IBAction)saveInfo:(id)sender;
+- (IBAction)confirmpasswords:(id)sender;
 @end

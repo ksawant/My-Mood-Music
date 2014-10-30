@@ -88,10 +88,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)signin:(id)sender {
+- (IBAction)confirmpasswords:(id)sender {
     [self dismissKeyboard];
     if([password.text isEqualToString:confirmpassword.text]) {
         NSLog(@"MATCH");
+        [self performSegueWithIdentifier:@"nextview" sender:sender];
     }
     else {
         NSLog(@"DIFFERENT");

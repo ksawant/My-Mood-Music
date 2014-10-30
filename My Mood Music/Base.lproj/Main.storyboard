@@ -107,6 +107,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="LJL-BZ-BRp"/>
                     <connections>
                         <outlet property="password" destination="e0f-7o-MxY" id="5Ao-uh-PSQ"/>
                         <outlet property="scrollviewlogin" destination="4zu-pb-IpH" id="4Fz-mp-Q5e"/>
@@ -274,8 +275,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="signin:" destination="NMb-s5-ysu" eventType="touchUpInside" id="uaf-CS-gNt"/>
-                                            <segue destination="Dup-8r-ABG" kind="modal" id="6g8-eh-QYd"/>
+                                            <action selector="confirmpasswords:" destination="NMb-s5-ysu" eventType="touchUpInside" id="hOu-uQ-RA2"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" minimumFontSize="17" id="FUt-Lt-rTj">
@@ -362,6 +362,7 @@
                         <outlet property="scrollview" destination="KQC-nr-OSY" id="rNT-GX-RCm"/>
                         <outlet property="username" destination="wgt-kT-RbN" id="BGq-nN-PlD"/>
                         <outlet property="year" destination="PCM-dD-oNS" id="Uob-Ov-dbO"/>
+                        <segue destination="Dup-8r-ABG" kind="modal" identifier="nextview" id="tOn-TD-lou"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pcj-Sg-MGs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -554,7 +555,6 @@
                                         </state>
                                         <connections>
                                             <action selector="checkpasswords:" destination="cmo-pq-jHs" eventType="touchUpInside" id="Gb1-ss-IVL"/>
-                                            <segue destination="OSI-xf-k55" kind="modal" id="fOk-rY-8bt"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -569,6 +569,7 @@
                         <outlet property="confirmpw" destination="OWE-xk-hDP" id="Vqg-W0-rvc"/>
                         <outlet property="newpw" destination="KJ2-QN-OMG" id="fe0-Y7-A9s"/>
                         <outlet property="scrollview" destination="ulv-U1-0mg" id="23K-Jh-ILc"/>
+                        <segue destination="OSI-xf-k55" kind="modal" identifier="tologin" id="oRf-kq-87P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Is2-0x-8q8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -755,7 +756,6 @@
                                         </state>
                                         <connections>
                                             <action selector="checkpasswords:" destination="MIt-e4-LDq" eventType="touchUpInside" id="0gQ-LU-MrZ"/>
-                                            <segue destination="OSI-xf-k55" kind="modal" id="z51-A7-71H"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm New Password" minimumFontSize="17" id="llC-8x-rkk">
@@ -778,6 +778,7 @@
                         <outlet property="newpw" destination="4xD-LP-7kH" id="f34-bL-YHk"/>
                         <outlet property="oldpw" destination="JiJ-Ef-fbB" id="e9X-Xs-jRE"/>
                         <outlet property="scrollview" destination="ufu-oo-WQM" id="na7-uH-o1E"/>
+                        <segue destination="OSI-xf-k55" kind="modal" identifier="tologin" id="VDW-E3-W92"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ivV-xM-DmQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -906,7 +907,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="z51-A7-71H"/>
+        <segue reference="h9x-9j-XlR"/>
         <segue reference="e8E-c4-zC5"/>
     </inferredMetricsTieBreakers>
 </document>
