@@ -90,9 +90,15 @@
 
 - (IBAction)confirmpasswords:(id)sender {
     [self dismissKeyboard];
-    if([password.text isEqualToString:confirmpassword.text]) {
-        NSLog(@"MATCH");
-        [self performSegueWithIdentifier:@"nextview" sender:sender];
+    if(![username.text isEqualToString:@""]) {
+        if(![password.text isEqualToString:@""]) {
+            if(![year.text isEqualToString:@""]) {
+                if([password.text isEqualToString:confirmpassword.text]) {
+                    NSLog(@"MATCH AND NOT EMPTY");
+                    [self performSegueWithIdentifier:@"nextview" sender:sender];
+                }
+            }
+        }
     }
     else {
         NSLog(@"DIFFERENT");

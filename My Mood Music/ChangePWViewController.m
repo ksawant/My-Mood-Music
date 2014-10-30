@@ -46,9 +46,11 @@
 }
 
 - (IBAction)checkpasswords:(id)sender {
-    if([newpw.text isEqualToString:confirmpw.text]) {
-        NSLog(@"MATCH");
-        [self performSegueWithIdentifier:@"tologin" sender:sender];
+    if (![newpw.text isEqualToString:@""]) {
+        if([newpw.text isEqualToString:confirmpw.text]) {
+            NSLog(@"MATCH");
+            [self performSegueWithIdentifier:@"tologin" sender:sender];
+        }
     }
     else {
         NSLog(@"DIFFERENT");
