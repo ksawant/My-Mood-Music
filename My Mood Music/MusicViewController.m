@@ -47,40 +47,6 @@
     }
 }
 
-/*-(void)checkStatus{
-    CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
-    if (status==kCLAuthorizationStatusNotDetermined) {
-        
-        _status.text = @"Not Determined";
-    }
-    if (status==kCLAuthorizationStatusDenied) {
-        
-        _status.text = @"Denied";
-    }
-    if (status==kCLAuthorizationStatusRestricted) {
-        _status.text = @"Restricted";
-    }
-    if (status==kCLAuthorizationStatusAuthorizedAlways) {
-        _status.text = @"Always Allowed";
-    }
-    if (status==kCLAuthorizationStatusAuthorizedWhenInUse) {
-        _status.text = @"When In Use Allowed";
-        
-    }
-    
-    
-}
-- (IBAction)goToSettings:(id)sender {
-    NSURL *settingsURL = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
-    [[UIApplication sharedApplication]openURL:settingsURL];
-}
-- (IBAction)changAuth:(id)sender{
-    
-    NSLog(@"Trying to change to ALWAYS authorization");
-    [self requestAlwaysAuth];
-    
-}*/
-
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     self.location = locations.lastObject;
     float x;
@@ -95,14 +61,6 @@
         self.condition.text = [NSString stringWithFormat:@"Condition: %@",[returnedWeatherData currentConditionsTextualDescription]];
     }];
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

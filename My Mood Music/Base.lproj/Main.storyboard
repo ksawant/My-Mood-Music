@@ -274,7 +274,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Dup-8r-ABG" kind="modal" id="DLi-yX-Y1s"/>
+                                            <segue destination="Dup-8r-ABG" kind="modal" id="6g8-eh-QYd"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" minimumFontSize="17" id="FUt-Lt-rTj">
@@ -903,7 +903,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="B7h-oU-lz9"/>
+        <segue reference="h9x-9j-XlR"/>
         <segue reference="e8E-c4-zC5"/>
     </inferredMetricsTieBreakers>
 </document>

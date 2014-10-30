@@ -7,12 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
-@protocol newaccountbgDelegate
+#import <sqlite3.h>
 
-@end
+@interface newaccountbg : UIViewController {
+//    sqlite3 *my_dbname;
+}
+/*@property (retain,nonatomic) NSString *databaseName, *tableName;
+@property (readwrite,nonatomic) NSMutableArray *dataList;
+@property (readwrite,nonatomic) BOOL table_ok, db_open_status;
+@property (retain,nonatomic) NSArray *my_columns_names;
 
-@interface newaccountbg : UIViewController 
-
+- (IBAction)saveButton:(id)sender;
+- (BOOL)openDBwithSQLName:(NSString *)sqlname;
+- (BOOL)createTable:(NSString *)tablename WithColumns:(NSArray *)columnNames;
+- (BOOL)addItemstoTable:(NSString *)usetable WithColumnValues:(NSDictionary *) valueObject;
+- (void)closeDB;*/
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollview;
 @property (weak, nonatomic) IBOutlet UITextField *username;
 @property (weak, nonatomic) IBOutlet UITextField *password;
