@@ -84,7 +84,7 @@
                                         <rect key="frame" x="77" y="15" width="161" height="180"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 2.44" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jyo-X4-HjT">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 2.45" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jyo-X4-HjT">
                                         <rect key="frame" x="8" y="521" width="304" height="19"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="9"/>
@@ -1014,7 +1014,7 @@
                     <navigationItem key="navigationItem" title="Local Music" id="zRi-uU-2PV"/>
                     <connections>
                         <outlet property="durationOutlet" destination="hCm-Ff-ZRb" id="LrK-8o-gtL"/>
-                        <outlet property="sliderOutlet" destination="FMq-gC-7Bx" id="uRK-yA-nMW"/>
+                        <outlet property="sliderOutlet" destination="FMq-gC-7Bx" id="9xF-3i-UMB"/>
                         <outlet property="songName" destination="kcp-Cy-pEc" id="Tzm-Up-Sm0"/>
                         <outlet property="speed" destination="2xP-gt-Q32" id="XVx-0x-NQe"/>
                         <outlet property="tableView" destination="heu-oO-zDZ" id="xCN-WM-CRq"/>
