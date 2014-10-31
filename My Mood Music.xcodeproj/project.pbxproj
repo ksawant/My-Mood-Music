@@ -54,6 +54,11 @@
 		7CA7F1E419FD40A7007537A6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA7F1E319FD40A7007537A6 /* CoreLocation.framework */; };
 		7CA7F1E919FD7D93007537A6 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CA7F1E819FD7D93007537A6 /* Background.png */; };
 		7CA7F22019FD95A6007537A6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA7F21F19FD95A6007537A6 /* MapKit.framework */; };
+		7CC93CF41A03190400F88A72 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC93CEA1A03190400F88A72 /* FMDatabase.m */; };
+		7CC93CF51A03190400F88A72 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC93CEC1A03190400F88A72 /* FMDatabaseAdditions.m */; };
+		7CC93CF61A03190400F88A72 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC93CEE1A03190400F88A72 /* FMDatabasePool.m */; };
+		7CC93CF71A03190400F88A72 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC93CF01A03190400F88A72 /* FMDatabaseQueue.m */; };
+		7CC93CF81A03190400F88A72 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC93CF31A03190400F88A72 /* FMResultSet.m */; };
 		7CD40D2519FC984B00735CB7 /* ChangePWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD40D2419FC984B00735CB7 /* ChangePWViewController.m */; };
 		7CD40D2819FCA37500735CB7 /* VerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD40D2719FCA37500735CB7 /* VerifyViewController.m */; };
 		7CD40D2B19FCA5CA00735CB7 /* ResetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD40D2A19FCA5CA00735CB7 /* ResetViewController.m */; };
@@ -156,6 +161,17 @@
 		7CA7F1E319FD40A7007537A6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7CA7F1E819FD7D93007537A6 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 		7CA7F21F19FD95A6007537A6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7CC93CE91A03190400F88A72 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		7CC93CEA1A03190400F88A72 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		7CC93CEB1A03190400F88A72 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		7CC93CEC1A03190400F88A72 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		7CC93CED1A03190400F88A72 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		7CC93CEE1A03190400F88A72 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		7CC93CEF1A03190400F88A72 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		7CC93CF01A03190400F88A72 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		7CC93CF11A03190400F88A72 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		7CC93CF21A03190400F88A72 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		7CC93CF31A03190400F88A72 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		7CD40D2319FC984B00735CB7 /* ChangePWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePWViewController.h; sourceTree = "<group>"; };
 		7CD40D2419FC984B00735CB7 /* ChangePWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePWViewController.m; sourceTree = "<group>"; };
 		7CD40D2619FCA37500735CB7 /* VerifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyViewController.h; sourceTree = "<group>"; };
@@ -311,6 +327,7 @@
 		7C9D4FBE19FBB1A200D15D95 /* My Mood Music */ = {
 			isa = PBXGroup;
 			children = (
+				7CC93CE81A03190400F88A72 /* fmdb */,
 				7C4E16281A006DBD00FFD5C8 /* JFOpenWeatherMapManager */,
 				7CE5845E19FC30010097952B /* PreferenceTableViewController.h */,
 				7CE5845F19FC30010097952B /* PreferenceTableViewController.m */,
@@ -369,6 +386,24 @@
 				7C9D4FDA19FBB1A200D15D95 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7CC93CE81A03190400F88A72 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				7CC93CE91A03190400F88A72 /* FMDatabase.h */,
+				7CC93CEA1A03190400F88A72 /* FMDatabase.m */,
+				7CC93CEB1A03190400F88A72 /* FMDatabaseAdditions.h */,
+				7CC93CEC1A03190400F88A72 /* FMDatabaseAdditions.m */,
+				7CC93CED1A03190400F88A72 /* FMDatabasePool.h */,
+				7CC93CEE1A03190400F88A72 /* FMDatabasePool.m */,
+				7CC93CEF1A03190400F88A72 /* FMDatabaseQueue.h */,
+				7CC93CF01A03190400F88A72 /* FMDatabaseQueue.m */,
+				7CC93CF11A03190400F88A72 /* FMDB.h */,
+				7CC93CF21A03190400F88A72 /* FMResultSet.h */,
+				7CC93CF31A03190400F88A72 /* FMResultSet.m */,
+			);
+			path = fmdb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -497,15 +532,20 @@
 				7C4E166E1A006DBD00FFD5C8 /* AFURLRequestSerialization.m in Sources */,
 				7C4E167E1A006DBD00FFD5C8 /* Clouds.m in Sources */,
 				7C4E16721A006DBD00FFD5C8 /* CLLocation+APTimeZones.m in Sources */,
+				7CC93CF71A03190400F88A72 /* FMDatabaseQueue.m in Sources */,
 				7C4E16781A006DBD00FFD5C8 /* JFAppDelegate.m in Sources */,
+				7CC93CF61A03190400F88A72 /* FMDatabasePool.m in Sources */,
 				7CD40D2B19FCA5CA00735CB7 /* ResetViewController.m in Sources */,
 				7C4E167B1A006DBD00FFD5C8 /* JFWeatherData.m in Sources */,
 				7C4E16821A006DBD00FFD5C8 /* Snow.m in Sources */,
 				7C4E16701A006DBD00FFD5C8 /* AFURLSessionManager.m in Sources */,
 				7C4E167F1A006DBD00FFD5C8 /* Coord.m in Sources */,
 				7C4E167A1A006DBD00FFD5C8 /* JFViewController.m in Sources */,
+				7CC93CF51A03190400F88A72 /* FMDatabaseAdditions.m in Sources */,
 				7C4E16731A006DBD00FFD5C8 /* CLPlacemark+APTimeZones.m in Sources */,
 				7C4E16801A006DBD00FFD5C8 /* Main.m in Sources */,
+				7CC93CF81A03190400F88A72 /* FMResultSet.m in Sources */,
+				7CC93CF41A03190400F88A72 /* FMDatabase.m in Sources */,
 				7CA7F1E219FD4014007537A6 /* MusicViewController.m in Sources */,
 				7C4E16851A006DBD00FFD5C8 /* Wind.m in Sources */,
 				7C4E16691A006DBD00FFD5C8 /* AFHTTPRequestOperationManager.m in Sources */,
