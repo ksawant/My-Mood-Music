@@ -60,6 +60,11 @@
 		7CC93CF71A03190400F88A72 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC93CF01A03190400F88A72 /* FMDatabaseQueue.m */; };
 		7CC93CF81A03190400F88A72 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC93CF31A03190400F88A72 /* FMResultSet.m */; };
 		7CC93CFA1A034BD400F88A72 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC93CF91A034BD400F88A72 /* star.png */; };
+		7CC93D7C1A03764200F88A72 /* pause_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC93D781A03764200F88A72 /* pause_button.png */; };
+		7CC93D7D1A03764200F88A72 /* pause_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC93D791A03764200F88A72 /* pause_button@2x.png */; };
+		7CC93D7E1A03764200F88A72 /* play_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC93D7A1A03764200F88A72 /* play_button.png */; };
+		7CC93D7F1A03764200F88A72 /* play_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC93D7B1A03764200F88A72 /* play_button@2x.png */; };
+		7CC93D821A03766700F88A72 /* MVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC93D811A03766700F88A72 /* MVViewController.m */; };
 		7CD40D2519FC984B00735CB7 /* ChangePWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD40D2419FC984B00735CB7 /* ChangePWViewController.m */; };
 		7CD40D2819FCA37500735CB7 /* VerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD40D2719FCA37500735CB7 /* VerifyViewController.m */; };
 		7CD40D2B19FCA5CA00735CB7 /* ResetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD40D2A19FCA5CA00735CB7 /* ResetViewController.m */; };
@@ -173,6 +178,12 @@
 		7CC93CF21A03190400F88A72 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		7CC93CF31A03190400F88A72 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		7CC93CF91A034BD400F88A72 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		7CC93D781A03764200F88A72 /* pause_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause_button.png; sourceTree = "<group>"; };
+		7CC93D791A03764200F88A72 /* pause_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause_button@2x.png"; sourceTree = "<group>"; };
+		7CC93D7A1A03764200F88A72 /* play_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_button.png; sourceTree = "<group>"; };
+		7CC93D7B1A03764200F88A72 /* play_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play_button@2x.png"; sourceTree = "<group>"; };
+		7CC93D801A03766700F88A72 /* MVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVViewController.h; sourceTree = "<group>"; };
+		7CC93D811A03766700F88A72 /* MVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVViewController.m; sourceTree = "<group>"; };
 		7CD40D2319FC984B00735CB7 /* ChangePWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePWViewController.h; sourceTree = "<group>"; };
 		7CD40D2419FC984B00735CB7 /* ChangePWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePWViewController.m; sourceTree = "<group>"; };
 		7CD40D2619FCA37500735CB7 /* VerifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyViewController.h; sourceTree = "<group>"; };
@@ -336,6 +347,8 @@
 				7C9D4FC619FBB1A200D15D95 /* ViewController.h */,
 				7C9D4FC719FBB1A200D15D95 /* ViewController.m */,
 				7C9D4FC919FBB1A200D15D95 /* Main.storyboard */,
+				7CC93D801A03766700F88A72 /* MVViewController.h */,
+				7CC93D811A03766700F88A72 /* MVViewController.m */,
 				7CA7F1E019FD4014007537A6 /* MusicViewController.h */,
 				7CA7F1E119FD4014007537A6 /* MusicViewController.m */,
 				7CD40D2919FCA5CA00735CB7 /* ResetViewController.h */,
@@ -347,6 +360,10 @@
 				7C9D4FE919FBC46600D15D95 /* newaccountbg.h */,
 				7C9D4FEA19FBC46600D15D95 /* newaccountbg.m */,
 				7C9D4FCC19FBB1A200D15D95 /* Images.xcassets */,
+				7CC93D781A03764200F88A72 /* pause_button.png */,
+				7CC93D791A03764200F88A72 /* pause_button@2x.png */,
+				7CC93D7A1A03764200F88A72 /* play_button.png */,
+				7CC93D7B1A03764200F88A72 /* play_button@2x.png */,
 				7CD40D2E19FCB2FE00735CB7 /* MyMoodMusic.jpg */,
 				7C4E160F1A0069BB00FFD5C8 /* personicon.png */,
 				7CA7F1E819FD7D93007537A6 /* Background.png */,
@@ -499,7 +516,11 @@
 				7C9D4FD019FBB1A200D15D95 /* LaunchScreen.xib in Resources */,
 				7C4E16121A006B9200FFD5C8 /* Muse.png in Resources */,
 				7C4E16791A006DBD00FFD5C8 /* JFOpenWeatherMapManager-Info.plist in Resources */,
+				7CC93D7D1A03764200F88A72 /* pause_button@2x.png in Resources */,
 				7CC93CFA1A034BD400F88A72 /* star.png in Resources */,
+				7CC93D7F1A03764200F88A72 /* play_button@2x.png in Resources */,
+				7CC93D7E1A03764200F88A72 /* play_button.png in Resources */,
+				7CC93D7C1A03764200F88A72 /* pause_button.png in Resources */,
 				7C4E160E1A0069B000FFD5C8 /* Background.jpg in Resources */,
 				7C4E16741A006DBD00FFD5C8 /* timezonesDB.json in Resources */,
 				7C9D4FCD19FBB1A200D15D95 /* Images.xcassets in Resources */,
@@ -533,6 +554,7 @@
 				7C4E167E1A006DBD00FFD5C8 /* Clouds.m in Sources */,
 				7C4E16721A006DBD00FFD5C8 /* CLLocation+APTimeZones.m in Sources */,
 				7CC93CF71A03190400F88A72 /* FMDatabaseQueue.m in Sources */,
+				7CC93D821A03766700F88A72 /* MVViewController.m in Sources */,
 				7C4E16781A006DBD00FFD5C8 /* JFAppDelegate.m in Sources */,
 				7CC93CF61A03190400F88A72 /* FMDatabasePool.m in Sources */,
 				7CD40D2B19FCA5CA00735CB7 /* ResetViewController.m in Sources */,
