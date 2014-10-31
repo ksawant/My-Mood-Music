@@ -50,9 +50,26 @@
             NSLog(@"NOTEMPTY");
             [self performSegueWithIdentifier:@"nextview" sender:sender];
         }
+        else {
+            NSLog(@"EMPTY");
+            NSLog(@"DIFFERENT OR EMPTY");
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                            message:@"Passwords must have at least 1 character"
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+        }
     }
     else {
         NSLog(@"EMPTY");
+        NSLog(@"DIFFERENT OR EMPTY");
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                        message:@"Passwords must have at least 1 character"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
     }
 }
 

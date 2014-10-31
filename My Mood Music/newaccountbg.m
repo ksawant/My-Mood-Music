@@ -92,16 +92,60 @@
     [self dismissKeyboard];
     if(![username.text isEqualToString:@""]) {
         if(![password.text isEqualToString:@""]) {
-            if(![year.text isEqualToString:@""]) {
-                if([password.text isEqualToString:confirmpassword.text]) {
-                    NSLog(@"MATCH AND NOT EMPTY");
-                    [self performSegueWithIdentifier:@"nextview" sender:sender];
+            if(![confirmpassword.text isEqualToString:@""]) {
+                if(![year.text isEqualToString:@""]) {
+                    if([password.text isEqualToString:confirmpassword.text]) {
+                        NSLog(@"MATCH AND NOT EMPTY");
+                        [self performSegueWithIdentifier:@"nextview" sender:sender];
+                    }
+                    else {
+                        NSLog(@"DIFFERENT");
+                        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                                        message:@"Passwords do not match"
+                                                                       delegate:nil
+                                                              cancelButtonTitle:@"OK"
+                                                              otherButtonTitles:nil];
+                        [alert show];
+                    }
+                }
+                else {
+                    NSLog(@"EMPTY");
+                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                                    message:@"Year is four digits"
+                                                                   delegate:nil
+                                                          cancelButtonTitle:@"OK"
+                                                          otherButtonTitles:nil];
+                    [alert show];
                 }
             }
+            else {
+                NSLog(@"EMPTY");
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                                message:@"Passwords must have at least 1 character"
+                                                               delegate:nil
+                                                      cancelButtonTitle:@"OK"
+                                                      otherButtonTitles:nil];
+                [alert show];
+            }
+        }
+        else {
+            NSLog(@"EMPTY");
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                            message:@"Passwords must have at least 1 character"
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
         }
     }
     else {
-        NSLog(@"DIFFERENT");
+        NSLog(@"EMPTY");
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                        message:@"Username must have at least 1 character"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
     }
 }
 

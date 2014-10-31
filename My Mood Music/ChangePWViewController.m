@@ -47,13 +47,30 @@
 
 - (IBAction)checkpasswords:(id)sender {
     if (![newpw.text isEqualToString:@""]) {
-        if([newpw.text isEqualToString:confirmpw.text]) {
-            NSLog(@"MATCH");
-            [self performSegueWithIdentifier:@"tologin" sender:sender];
+        if(![confirmpw.text isEqualToString:@""]) {
+            if([newpw.text isEqualToString:confirmpw.text]) {
+                NSLog(@"MATCH");
+                [self performSegueWithIdentifier:@"tologin" sender:sender];
+            }
+        }
+        else {
+            NSLog(@"EMPTY");
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                            message:@"Passwords must have at least 1 character"
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
         }
     }
     else {
-        NSLog(@"DIFFERENT");
+        NSLog(@"EMPTY");
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                        message:@"Passwords must have at least 1 character"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
     }
 }
 
