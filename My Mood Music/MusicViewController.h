@@ -25,6 +25,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *temp;
 @property(nonatomic)NSTimer *timer;
 @property (weak, nonatomic) IBOutlet UITextField *status;
-
-
+- (void)pushAction:(id)sender;
+- (void)pushAction2:(id)sender;
 @end

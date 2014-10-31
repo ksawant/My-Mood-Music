@@ -12,6 +12,8 @@
 @end
 
 @implementation MusicViewController
+NSString *tempC;
+NSString *tempK;
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.locationManager = [[CLLocationManager alloc]init];
@@ -21,6 +23,10 @@
     self.locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation;
     self.location = [[CLLocation alloc] init];
     weatherManager = [[JFWeatherManager alloc]init];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushAction:)];
+    [self.temp addGestureRecognizer:tap];
+    self.temp.userInteractionEnabled = YES;
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -56,11 +62,24 @@
     }
     self.speed.text = [NSString stringWithFormat:@"Speed: %f MPH", x];
     [weatherManager fetchWeatherDataForLatitude:self.location.coordinate.latitude andLongitude:self.location.coordinate.longitude withAPIKeyOrNil:@"a4c33519650013f187bcdc2a48df7ead" :^(JFWeatherData *returnedWeatherData) {
-        
         self.temp.text = [NSString stringWithFormat:@"Temperature: %f F",[returnedWeatherData temperatureInUnitFormat:kTemperatureFarenheit]];
         self.condition.text = [NSString stringWithFormat:@"Condition: %@",[returnedWeatherData currentConditionsTextualDescription]];
+        tempC = [NSString stringWithFormat:@"Temperature: %f C",[returnedWeatherData temperatureInUnitFormat:kTemperatureCelcius]];
+        tempK = [NSString stringWithFormat:@"Temperature: %f K",[returnedWeatherData temperatureInUnitFormat:kTemperatureKelvin]];
     }];
 }
+
+- (void)pushAction:(id)sender {
+    self.temp.text = tempC;
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushAction2:)];
+    [self.temp addGestureRecognizer:tap];
+    self.temp.userInteractionEnabled = YES;
+}
+
+- (void)pushAction2:(id)sender {
+    self.temp.text = tempK;
+}
+
 
 
 @end
