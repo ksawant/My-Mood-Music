@@ -59,11 +59,11 @@
 		7CC93CF61A03190400F88A72 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC93CEE1A03190400F88A72 /* FMDatabasePool.m */; };
 		7CC93CF71A03190400F88A72 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC93CF01A03190400F88A72 /* FMDatabaseQueue.m */; };
 		7CC93CF81A03190400F88A72 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC93CF31A03190400F88A72 /* FMResultSet.m */; };
+		7CC93CFA1A034BD400F88A72 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC93CF91A034BD400F88A72 /* star.png */; };
 		7CD40D2519FC984B00735CB7 /* ChangePWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD40D2419FC984B00735CB7 /* ChangePWViewController.m */; };
 		7CD40D2819FCA37500735CB7 /* VerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD40D2719FCA37500735CB7 /* VerifyViewController.m */; };
 		7CD40D2B19FCA5CA00735CB7 /* ResetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD40D2A19FCA5CA00735CB7 /* ResetViewController.m */; };
 		7CD40D2F19FCB2FE00735CB7 /* MyMoodMusic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CD40D2E19FCB2FE00735CB7 /* MyMoodMusic.jpg */; };
-		7CD40D3719FCBDF800735CB7 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CD40D3619FCBDF800735CB7 /* star.png */; };
 		7CE5846019FC30010097952B /* PreferenceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE5845F19FC30010097952B /* PreferenceTableViewController.m */; };
 		7CE585C219FC5BEF0097952B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE585C119FC5BEF0097952B /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
@@ -172,6 +172,7 @@
 		7CC93CF11A03190400F88A72 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
 		7CC93CF21A03190400F88A72 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		7CC93CF31A03190400F88A72 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		7CC93CF91A034BD400F88A72 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		7CD40D2319FC984B00735CB7 /* ChangePWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePWViewController.h; sourceTree = "<group>"; };
 		7CD40D2419FC984B00735CB7 /* ChangePWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePWViewController.m; sourceTree = "<group>"; };
 		7CD40D2619FCA37500735CB7 /* VerifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyViewController.h; sourceTree = "<group>"; };
@@ -179,7 +180,6 @@
 		7CD40D2919FCA5CA00735CB7 /* ResetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetViewController.h; sourceTree = "<group>"; };
 		7CD40D2A19FCA5CA00735CB7 /* ResetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetViewController.m; sourceTree = "<group>"; };
 		7CD40D2E19FCB2FE00735CB7 /* MyMoodMusic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MyMoodMusic.jpg; sourceTree = "<group>"; };
-		7CD40D3619FCBDF800735CB7 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		7CE5845E19FC30010097952B /* PreferenceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceTableViewController.h; sourceTree = "<group>"; };
 		7CE5845F19FC30010097952B /* PreferenceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceTableViewController.m; sourceTree = "<group>"; };
 		7CE585C119FC5BEF0097952B /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -351,10 +351,10 @@
 				7C4E160F1A0069BB00FFD5C8 /* personicon.png */,
 				7CA7F1E819FD7D93007537A6 /* Background.png */,
 				7C4E160D1A0069B000FFD5C8 /* Background.jpg */,
-				7CD40D3619FCBDF800735CB7 /* star.png */,
 				7C9D4FCE19FBB1A200D15D95 /* LaunchScreen.xib */,
 				7C4E16111A006B9200FFD5C8 /* Muse.png */,
 				7C4E16171A006BDD00FFD5C8 /* Wallpaper2.png */,
+				7CC93CF91A034BD400F88A72 /* star.png */,
 				7C4E16131A006BA500FFD5C8 /* Music.png */,
 				7C4E16151A006BB400FFD5C8 /* Settings.png */,
 				7C9D4FBF19FBB1A200D15D95 /* Supporting Files */,
@@ -499,9 +499,9 @@
 				7C9D4FD019FBB1A200D15D95 /* LaunchScreen.xib in Resources */,
 				7C4E16121A006B9200FFD5C8 /* Muse.png in Resources */,
 				7C4E16791A006DBD00FFD5C8 /* JFOpenWeatherMapManager-Info.plist in Resources */,
+				7CC93CFA1A034BD400F88A72 /* star.png in Resources */,
 				7C4E160E1A0069B000FFD5C8 /* Background.jpg in Resources */,
 				7C4E16741A006DBD00FFD5C8 /* timezonesDB.json in Resources */,
-				7CD40D3719FCBDF800735CB7 /* star.png in Resources */,
 				7C9D4FCD19FBB1A200D15D95 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
