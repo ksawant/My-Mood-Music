@@ -50,6 +50,10 @@
 		7C9D4FD019FBB1A200D15D95 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C9D4FCE19FBB1A200D15D95 /* LaunchScreen.xib */; };
 		7C9D4FDC19FBB1A200D15D95 /* My_Mood_MusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D4FDB19FBB1A200D15D95 /* My_Mood_MusicTests.m */; };
 		7C9D4FEB19FBC46600D15D95 /* newaccountbg.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D4FEA19FBC46600D15D95 /* newaccountbg.m */; };
+		7C9E67571A057F45002E0FAE /* Pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E67551A057F45002E0FAE /* Pause@2x.png */; };
+		7C9E67581A057F45002E0FAE /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E67561A057F45002E0FAE /* Play.png */; };
+		7C9E675B1A057F67002E0FAE /* VolDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E67591A057F67002E0FAE /* VolDown@2x.png */; };
+		7C9E675C1A057F67002E0FAE /* VolUp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E675A1A057F67002E0FAE /* VolUp@2x.png */; };
 		7CA7F1E219FD4014007537A6 /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA7F1E119FD4014007537A6 /* MusicViewController.m */; };
 		7CA7F1E419FD40A7007537A6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA7F1E319FD40A7007537A6 /* CoreLocation.framework */; };
 		7CA7F1E919FD7D93007537A6 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CA7F1E819FD7D93007537A6 /* Background.png */; };
@@ -161,6 +165,10 @@
 		7C9D4FDB19FBB1A200D15D95 /* My_Mood_MusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = My_Mood_MusicTests.m; sourceTree = "<group>"; };
 		7C9D4FE919FBC46600D15D95 /* newaccountbg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newaccountbg.h; sourceTree = "<group>"; };
 		7C9D4FEA19FBC46600D15D95 /* newaccountbg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = newaccountbg.m; sourceTree = "<group>"; };
+		7C9E67551A057F45002E0FAE /* Pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pause@2x.png"; sourceTree = "<group>"; };
+		7C9E67561A057F45002E0FAE /* Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Play.png; sourceTree = "<group>"; };
+		7C9E67591A057F67002E0FAE /* VolDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "VolDown@2x.png"; sourceTree = "<group>"; };
+		7C9E675A1A057F67002E0FAE /* VolUp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "VolUp@2x.png"; sourceTree = "<group>"; };
 		7CA7F1E019FD4014007537A6 /* MusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
 		7CA7F1E119FD4014007537A6 /* MusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
 		7CA7F1E319FD40A7007537A6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -315,12 +323,9 @@
 		7C9D4FB319FBB1A200D15D95 = {
 			isa = PBXGroup;
 			children = (
-				7C4E16C81A016D0500FFD5C8 /* UIKit.framework */,
-				7C4E16C61A016CF600FFD5C8 /* Foundation.framework */,
-				7CA7F21F19FD95A6007537A6 /* MapKit.framework */,
-				7CA7F1E319FD40A7007537A6 /* CoreLocation.framework */,
 				7CE585C119FC5BEF0097952B /* libsqlite3.dylib */,
 				7C9D4FBE19FBB1A200D15D95 /* My Mood Music */,
+				7C9E675E1A057FBE002E0FAE /* Frameworks */,
 				7C9D4FD819FBB1A200D15D95 /* My Mood MusicTests */,
 				7C9D4FBD19FBB1A200D15D95 /* Products */,
 			);
@@ -360,20 +365,8 @@
 				7C9D4FE919FBC46600D15D95 /* newaccountbg.h */,
 				7C9D4FEA19FBC46600D15D95 /* newaccountbg.m */,
 				7C9D4FCC19FBB1A200D15D95 /* Images.xcassets */,
-				7CC93D781A03764200F88A72 /* pause_button.png */,
-				7CC93D791A03764200F88A72 /* pause_button@2x.png */,
-				7CC93D7A1A03764200F88A72 /* play_button.png */,
-				7CC93D7B1A03764200F88A72 /* play_button@2x.png */,
-				7CD40D2E19FCB2FE00735CB7 /* MyMoodMusic.jpg */,
-				7C4E160F1A0069BB00FFD5C8 /* personicon.png */,
-				7CA7F1E819FD7D93007537A6 /* Background.png */,
-				7C4E160D1A0069B000FFD5C8 /* Background.jpg */,
 				7C9D4FCE19FBB1A200D15D95 /* LaunchScreen.xib */,
-				7C4E16111A006B9200FFD5C8 /* Muse.png */,
-				7C4E16171A006BDD00FFD5C8 /* Wallpaper2.png */,
-				7CC93CF91A034BD400F88A72 /* star.png */,
-				7C4E16131A006BA500FFD5C8 /* Music.png */,
-				7C4E16151A006BB400FFD5C8 /* Settings.png */,
+				7C9E675D1A057F87002E0FAE /* Images */,
 				7C9D4FBF19FBB1A200D15D95 /* Supporting Files */,
 			);
 			path = "My Mood Music";
@@ -403,6 +396,41 @@
 				7C9D4FDA19FBB1A200D15D95 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7C9E675D1A057F87002E0FAE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7CC93D781A03764200F88A72 /* pause_button.png */,
+				7CC93D791A03764200F88A72 /* pause_button@2x.png */,
+				7CC93D7A1A03764200F88A72 /* play_button.png */,
+				7CC93D7B1A03764200F88A72 /* play_button@2x.png */,
+				7CD40D2E19FCB2FE00735CB7 /* MyMoodMusic.jpg */,
+				7C9E67551A057F45002E0FAE /* Pause@2x.png */,
+				7C9E67561A057F45002E0FAE /* Play.png */,
+				7C9E67591A057F67002E0FAE /* VolDown@2x.png */,
+				7C9E675A1A057F67002E0FAE /* VolUp@2x.png */,
+				7C4E160F1A0069BB00FFD5C8 /* personicon.png */,
+				7CA7F1E819FD7D93007537A6 /* Background.png */,
+				7C4E160D1A0069B000FFD5C8 /* Background.jpg */,
+				7C4E16111A006B9200FFD5C8 /* Muse.png */,
+				7C4E16171A006BDD00FFD5C8 /* Wallpaper2.png */,
+				7CC93CF91A034BD400F88A72 /* star.png */,
+				7C4E16131A006BA500FFD5C8 /* Music.png */,
+				7C4E16151A006BB400FFD5C8 /* Settings.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		7C9E675E1A057FBE002E0FAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C4E16C81A016D0500FFD5C8 /* UIKit.framework */,
+				7C4E16C61A016CF600FFD5C8 /* Foundation.framework */,
+				7CA7F21F19FD95A6007537A6 /* MapKit.framework */,
+				7CA7F1E319FD40A7007537A6 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7CC93CE81A03190400F88A72 /* fmdb */ = {
@@ -509,6 +537,7 @@
 				7C9D4FCB19FBB1A200D15D95 /* Main.storyboard in Resources */,
 				7CD40D2F19FCB2FE00735CB7 /* MyMoodMusic.jpg in Resources */,
 				7C4E16181A006BDD00FFD5C8 /* Wallpaper2.png in Resources */,
+				7C9E675C1A057F67002E0FAE /* VolUp@2x.png in Resources */,
 				7C4E16761A006DBD00FFD5C8 /* InfoPlist.strings in Resources */,
 				7C4E16161A006BB400FFD5C8 /* Settings.png in Resources */,
 				7C4E16141A006BA500FFD5C8 /* Music.png in Resources */,
@@ -516,13 +545,16 @@
 				7C9D4FD019FBB1A200D15D95 /* LaunchScreen.xib in Resources */,
 				7C4E16121A006B9200FFD5C8 /* Muse.png in Resources */,
 				7C4E16791A006DBD00FFD5C8 /* JFOpenWeatherMapManager-Info.plist in Resources */,
+				7C9E67571A057F45002E0FAE /* Pause@2x.png in Resources */,
 				7CC93D7D1A03764200F88A72 /* pause_button@2x.png in Resources */,
 				7CC93CFA1A034BD400F88A72 /* star.png in Resources */,
 				7CC93D7F1A03764200F88A72 /* play_button@2x.png in Resources */,
 				7CC93D7E1A03764200F88A72 /* play_button.png in Resources */,
 				7CC93D7C1A03764200F88A72 /* pause_button.png in Resources */,
 				7C4E160E1A0069B000FFD5C8 /* Background.jpg in Resources */,
+				7C9E67581A057F45002E0FAE /* Play.png in Resources */,
 				7C4E16741A006DBD00FFD5C8 /* timezonesDB.json in Resources */,
+				7C9E675B1A057F67002E0FAE /* VolDown@2x.png in Resources */,
 				7C9D4FCD19FBB1A200D15D95 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
