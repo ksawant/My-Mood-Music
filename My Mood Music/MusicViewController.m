@@ -78,6 +78,9 @@ NSString *tempK;
 
 - (void)pushAction2:(id)sender {
     self.temp.text = tempK;
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushAction:)];
+    [self.temp addGestureRecognizer:tap];
+    self.temp.userInteractionEnabled = YES;
 }
 
 
