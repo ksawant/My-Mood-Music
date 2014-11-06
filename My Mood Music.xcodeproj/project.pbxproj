@@ -44,7 +44,6 @@
 		7C4E16C91A016D0500FFD5C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C4E16C81A016D0500FFD5C8 /* UIKit.framework */; };
 		7C5E47C41A0C1AFA005FF105 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5E47C31A0C1AFA005FF105 /* AVFoundation.framework */; };
 		7C5E47C61A0C1B05005FF105 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5E47C51A0C1B05005FF105 /* MediaPlayer.framework */; };
-		7C5E47C91A0C2641005FF105 /* SoundCloudViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E47C81A0C2641005FF105 /* SoundCloudViewController.m */; };
 		7C9D4FC219FBB1A200D15D95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D4FC119FBB1A200D15D95 /* main.m */; };
 		7C9D4FC519FBB1A200D15D95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D4FC419FBB1A200D15D95 /* AppDelegate.m */; };
 		7C9D4FC819FBB1A200D15D95 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D4FC719FBB1A200D15D95 /* ViewController.m */; };
@@ -155,8 +154,6 @@
 		7C4E16C81A016D0500FFD5C8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7C5E47C31A0C1AFA005FF105 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		7C5E47C51A0C1B05005FF105 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		7C5E47C71A0C2641005FF105 /* SoundCloudViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundCloudViewController.h; sourceTree = "<group>"; };
-		7C5E47C81A0C2641005FF105 /* SoundCloudViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundCloudViewController.m; sourceTree = "<group>"; };
 		7C9D4FBC19FBB1A200D15D95 /* My Mood Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Mood Music.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C9D4FC019FBB1A200D15D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C9D4FC119FBB1A200D15D95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -361,8 +358,6 @@
 				7C9D4FC619FBB1A200D15D95 /* ViewController.h */,
 				7C9D4FC719FBB1A200D15D95 /* ViewController.m */,
 				7C9D4FC919FBB1A200D15D95 /* Main.storyboard */,
-				7C5E47C71A0C2641005FF105 /* SoundCloudViewController.h */,
-				7C5E47C81A0C2641005FF105 /* SoundCloudViewController.m */,
 				7CC93D801A03766700F88A72 /* MVViewController.h */,
 				7CC93D811A03766700F88A72 /* MVViewController.m */,
 				7CA7F1E019FD4014007537A6 /* MusicViewController.h */,
@@ -606,7 +601,6 @@
 				7C4E167B1A006DBD00FFD5C8 /* JFWeatherData.m in Sources */,
 				7C4E16821A006DBD00FFD5C8 /* Snow.m in Sources */,
 				7C4E16701A006DBD00FFD5C8 /* AFURLSessionManager.m in Sources */,
-				7C5E47C91A0C2641005FF105 /* SoundCloudViewController.m in Sources */,
 				7C4E167F1A006DBD00FFD5C8 /* Coord.m in Sources */,
 				7C4E167A1A006DBD00FFD5C8 /* JFViewController.m in Sources */,
 				7CC93CF51A03190400F88A72 /* FMDatabaseAdditions.m in Sources */,
