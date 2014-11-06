@@ -39,7 +39,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 11;
+    return 12;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -78,7 +78,7 @@
     if (indexPath.row == 10) {
         cell.textLabel.text = @"Rock";
     }
-    if (indexPath.row == 10) {
+    if (indexPath.row == 11) {
         cell.textLabel.text = @"Soul";
     }
     return cell;
