@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://soundcloud.com/connect?state=SoundCloud_Dialog_8d64e&client_id=1ca7a448b3e22d42b5b650ba1c009e7d&redirect_uri=mymoodmusic://soundcloud&response_type=code_and_token&scope=non-expiring"]];
     self.tableView.editing = YES;
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

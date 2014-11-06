@@ -263,7 +263,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3eF-77-eEP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1247" y="1832"/>
+            <point key="canvasLocation" x="-1247" y="944"/>
         </scene>
         <!--Registration-->
         <scene sceneID="1oj-wH-Eck">
@@ -288,6 +288,7 @@
                                         </state>
                                         <connections>
                                             <action selector="confirmpasswords:" destination="NMb-s5-ysu" eventType="touchUpInside" id="hOu-uQ-RA2"/>
+                                            <segue destination="uNU-JE-sAH" kind="modal" identifier="nextview" id="po6-7q-Z5x"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" minimumFontSize="17" id="FUt-Lt-rTj">
@@ -374,17 +375,16 @@
                         <outlet property="scrollview" destination="KQC-nr-OSY" id="rNT-GX-RCm"/>
                         <outlet property="username" destination="wgt-kT-RbN" id="BGq-nN-PlD"/>
                         <outlet property="year" destination="PCM-dD-oNS" id="Uob-Ov-dbO"/>
-                        <segue destination="Dup-8r-ABG" kind="modal" identifier="nextview" id="tOn-TD-lou"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pcj-Sg-MGs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1247" y="206"/>
         </scene>
-        <!--View Controller-->
+        <!--Sound Cloud View Controller-->
         <scene sceneID="cUB-dD-nw6">
             <objects>
-                <viewController id="Dup-8r-ABG" sceneMemberID="viewController">
+                <viewController id="Dup-8r-ABG" customClass="SoundCloudViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P6j-IC-12a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -408,7 +408,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dbq-SR-YRs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1247" y="1024"/>
+            <point key="canvasLocation" x="-1635" y="1016"/>
         </scene>
         <!--Preferences-->
         <scene sceneID="Mpz-IA-ajb">
@@ -1043,7 +1043,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="yFi-Wo-Om0"/>
+        <segue reference="po6-7q-Z5x"/>
         <segue reference="h9x-9j-XlR"/>
-        <segue reference="Wif-bl-B1f"/>
     </inferredMetricsTieBreakers>
 </document>
