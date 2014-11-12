@@ -19,6 +19,11 @@
     JFWeatherManager *weatherManager;
     
 }
+
+@property (weak, nonatomic) IBOutlet UISlider *currentTimeSlider;
+@property (weak, nonatomic) IBOutlet UIButton *playButton;
+@property (weak, nonatomic) IBOutlet UILabel *duration;
+@property (weak, nonatomic) IBOutlet UILabel *timeElapsed;
 @property (strong, nonatomic) AVPlayerItem *playerItem;
 @property (strong, nonatomic) AVPlayer *player;
 @property (strong, nonatomic) CLLocationManager *locationManager;
@@ -30,4 +35,5 @@
 @property (weak, nonatomic) IBOutlet UITextField *status;
 - (void)pushAction:(id)sender;
 - (void)pushAction2:(id)sender;
+
 @end

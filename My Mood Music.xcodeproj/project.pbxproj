@@ -514,6 +514,9 @@
 						CreatedOnToolsVersion = 6.1;
 						DevelopmentTeam = 8CGU65GCR4;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.InterAppAudio = {
 								enabled = 0;
 							};
