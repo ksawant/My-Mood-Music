@@ -26,8 +26,15 @@ NSString *tempK;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushAction:)];
     [self.temp addGestureRecognizer:tap];
     self.temp.userInteractionEnabled = YES;
+    //if temp, speed, weather
+    NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176208183/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                  
+                  
+    self.playerItem = [AVPlayerItem playerItemWithURL:url];
+    self.player = [AVPlayer playerWithPlayerItem:self.playerItem];
+    [self.player play];
 
-}
+   }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
