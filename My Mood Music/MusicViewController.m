@@ -27,14 +27,11 @@ NSString *tempK;
     [self.temp addGestureRecognizer:tap];
     self.temp.userInteractionEnabled = YES;
     //if temp, speed, weather
-    NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176208183/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
-                  
-                  
+    NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
     self.playerItem = [AVPlayerItem playerItemWithURL:url];
     self.player = [AVPlayer playerWithPlayerItem:self.playerItem];
     [self.player play];
-
-   }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -67,12 +64,12 @@ NSString *tempK;
     if(x<0) {
         x=0.000000;
     }
-    self.speed.text = [NSString stringWithFormat:@"Speed: %f MPH", x];
+    self.speed.text = [NSString stringWithFormat:@"Speed: %.2f MPH", x];
     [weatherManager fetchWeatherDataForLatitude:self.location.coordinate.latitude andLongitude:self.location.coordinate.longitude withAPIKeyOrNil:@"a4c33519650013f187bcdc2a48df7ead" :^(JFWeatherData *returnedWeatherData) {
-        self.temp.text = [NSString stringWithFormat:@"Temperature: %f F",[returnedWeatherData temperatureInUnitFormat:kTemperatureFarenheit]];
+        self.temp.text = [NSString stringWithFormat:@"Temperature: %.2f F",[returnedWeatherData temperatureInUnitFormat:kTemperatureFarenheit]];
         self.condition.text = [NSString stringWithFormat:@"Condition: %@",[returnedWeatherData currentConditionsTextualDescription]];
-        tempC = [NSString stringWithFormat:@"Temperature: %f C",[returnedWeatherData temperatureInUnitFormat:kTemperatureCelcius]];
-        tempK = [NSString stringWithFormat:@"Temperature: %f K",[returnedWeatherData temperatureInUnitFormat:kTemperatureKelvin]];
+        tempC = [NSString stringWithFormat:@"Temperature: %.2f C",[returnedWeatherData temperatureInUnitFormat:kTemperatureCelcius]];
+        tempK = [NSString stringWithFormat:@"Temperature: %.2f K",[returnedWeatherData temperatureInUnitFormat:kTemperatureKelvin]];
     }];
 }
 
