@@ -13,15 +13,17 @@
 #import "JFWeatherManager.h"
 #import "DataModels.h"
 #import <AVFoundation/AVFoundation.h>
+#import <MediaPlayer/MPMoviePlayerController.h>
 
 @interface MusicViewController : UIViewController <CLLocationManagerDelegate,MKMapViewDelegate, UITableViewDelegate>{
     
     JFWeatherManager *weatherManager;
-    
+    MPMoviePlayerController *audioPlayer;
 }
-
+@property (nonatomic, retain) MPMoviePlayerController *audioPlayer;
 @property (weak, nonatomic) IBOutlet UISlider *currentTimeSlider;
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
+@property (weak, nonatomic) IBOutlet UIButton *skipButton;
 @property (weak, nonatomic) IBOutlet UILabel *duration;
 @property (weak, nonatomic) IBOutlet UILabel *timeElapsed;
 @property (strong, nonatomic) AVPlayerItem *playerItem;
@@ -35,5 +37,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *status;
 - (void)pushAction:(id)sender;
 - (void)pushAction2:(id)sender;
-
+- (IBAction)playButtonPress:(id)sender;
+- (IBAction)skipButtonPress:(id)sender;
 @end

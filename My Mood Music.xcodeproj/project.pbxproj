@@ -60,6 +60,7 @@
 		7CA7F1E419FD40A7007537A6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA7F1E319FD40A7007537A6 /* CoreLocation.framework */; };
 		7CA7F1E919FD7D93007537A6 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CA7F1E819FD7D93007537A6 /* Background.png */; };
 		7CA7F22019FD95A6007537A6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA7F21F19FD95A6007537A6 /* MapKit.framework */; };
+		7CC168FE1A15AA2200D6BAC3 /* Forward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC168FD1A15AA2200D6BAC3 /* Forward@2x.png */; };
 		7CC93CF41A03190400F88A72 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC93CEA1A03190400F88A72 /* FMDatabase.m */; };
 		7CC93CF51A03190400F88A72 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC93CEC1A03190400F88A72 /* FMDatabaseAdditions.m */; };
 		7CC93CF61A03190400F88A72 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC93CEE1A03190400F88A72 /* FMDatabasePool.m */; };
@@ -179,6 +180,7 @@
 		7CA7F1E319FD40A7007537A6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7CA7F1E819FD7D93007537A6 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 		7CA7F21F19FD95A6007537A6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7CC168FD1A15AA2200D6BAC3 /* Forward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Forward@2x.png"; sourceTree = "<group>"; };
 		7CC93CE91A03190400F88A72 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		7CC93CEA1A03190400F88A72 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		7CC93CEB1A03190400F88A72 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -414,6 +416,7 @@
 				7CC93D791A03764200F88A72 /* pause_button@2x.png */,
 				7CC93D7A1A03764200F88A72 /* play_button.png */,
 				7CC93D7B1A03764200F88A72 /* play_button@2x.png */,
+				7CC168FD1A15AA2200D6BAC3 /* Forward@2x.png */,
 				7CD40D2E19FCB2FE00735CB7 /* MyMoodMusic.jpg */,
 				7C9E67551A057F45002E0FAE /* Pause@2x.png */,
 				7C9E67561A057F45002E0FAE /* Play.png */,
@@ -569,6 +572,7 @@
 				7CC93D7D1A03764200F88A72 /* pause_button@2x.png in Resources */,
 				7CC93CFA1A034BD400F88A72 /* star.png in Resources */,
 				7CC93D7F1A03764200F88A72 /* play_button@2x.png in Resources */,
+				7CC168FE1A15AA2200D6BAC3 /* Forward@2x.png in Resources */,
 				7CC93D7E1A03764200F88A72 /* play_button.png in Resources */,
 				7CC93D7C1A03764200F88A72 /* pause_button.png in Resources */,
 				7C4E160E1A0069B000FFD5C8 /* Background.jpg in Resources */,
