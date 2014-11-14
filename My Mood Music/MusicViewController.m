@@ -3868,6 +3868,7 @@ int num = 1;
     if(x<0) {
         x=0.000000;
     }
+    speed=x;
     self.speed.text = [NSString stringWithFormat:@"Speed: %.2f MPH", x];
     [weatherManager fetchWeatherDataForLatitude:self.location.coordinate.latitude andLongitude:self.location.coordinate.longitude withAPIKeyOrNil:@"a4c33519650013f187bcdc2a48df7ead" :^(JFWeatherData *returnedWeatherData) {
         self.temp.text = [NSString stringWithFormat:@"Temperature: %.2f F",[returnedWeatherData temperatureInUnitFormat:kTemperatureFarenheit]];
