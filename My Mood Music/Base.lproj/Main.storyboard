@@ -220,6 +220,9 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="6rT-kT-0co">
                                 <rect key="frame" x="53" y="359" width="214" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliding:" destination="egh-Ek-deU" eventType="valueChanged" id="LwP-jp-WWj"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wpg-Wa-rfT">
                                 <rect key="frame" x="55" y="390" width="249" height="21"/>
@@ -259,11 +262,16 @@
                                     <action selector="pauseButtonPress:" destination="egh-Ek-deU" eventType="touchUpInside" id="idl-bR-ZAU"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="YUX-W1-ZbA">
+                                <rect key="frame" x="40" y="37" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Music" image="Music.png" id="p6o-XA-bcC"/>
                     <connections>
+                        <outlet property="albumart" destination="YUX-W1-ZbA" id="9rk-ty-9NX"/>
                         <outlet property="condition" destination="1D3-sM-BBP" id="Z23-je-bDj"/>
                         <outlet property="currentTimeSlider" destination="6rT-kT-0co" id="p7D-Nd-vaQ"/>
                         <outlet property="duration" destination="hLs-Qo-Mvl" id="a4H-10-kqo"/>

@@ -35,6 +35,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *temp;
 @property(nonatomic)NSTimer *timer;
 @property (weak, nonatomic) IBOutlet UITextField *status;
+@property (weak, nonatomic) IBOutlet UIImageView *albumart;
 - (void)pushAction:(id)sender;
 - (void)pushAction2:(id)sender;
 - (IBAction)playButtonPress:(id)sender;
