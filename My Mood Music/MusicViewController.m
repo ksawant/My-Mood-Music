@@ -3535,6 +3535,10 @@ int num = 1;
     }
 }
 
+- (IBAction)pauseButtonPress:(id)sender {
+    [self.player pause];
+}
+
 - (IBAction)skipButtonPress:(id)sender {
     [self musicManager:self.locationManager];
     [self.player play];
