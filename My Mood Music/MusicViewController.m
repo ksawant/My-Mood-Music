@@ -73,6 +73,12 @@ int num = 1;
     [NSTimer scheduledTimerWithTimeInterval:.1 target:self selector:@selector(timeupdater) userInfo:nil repeats:YES];
 }
 
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self.player pause];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

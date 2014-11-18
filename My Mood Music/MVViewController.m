@@ -49,7 +49,7 @@
   MPMediaItem *song = [self.songsList objectAtIndex:0];
   AVPlayerItem * currentItem = [AVPlayerItem playerItemWithURL:[song valueForProperty:MPMediaItemPropertyAssetURL]];
   [self.audioPlayer replaceCurrentItemWithPlayerItem:currentItem];
-  [self.audioPlayer play];
+  //[self.audioPlayer play];
   //5
   NSString *songTitle = [song valueForProperty: MPMediaItemPropertyTitle];
   self.songName.text = songTitle;
@@ -65,6 +65,12 @@
     weatherManager = [[JFWeatherManager alloc]init];
 
 
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self.audioPlayer pause];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
