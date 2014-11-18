@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="OSI-xf-k55">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="OSI-xf-k55">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
@@ -982,13 +982,6 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2xP-gt-Q32">
-                                        <rect key="frame" x="15" y="8" width="284" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -1044,7 +1037,6 @@
                         <outlet property="durationOutlet" destination="hCm-Ff-ZRb" id="LrK-8o-gtL"/>
                         <outlet property="sliderOutlet" destination="FMq-gC-7Bx" id="9xF-3i-UMB"/>
                         <outlet property="songName" destination="kcp-Cy-pEc" id="Tzm-Up-Sm0"/>
-                        <outlet property="speed" destination="2xP-gt-Q32" id="XVx-0x-NQe"/>
                         <outlet property="tableView" destination="heu-oO-zDZ" id="xCN-WM-CRq"/>
                         <outlet property="togglePlayPause" destination="TBF-w2-6km" id="ftj-Mb-S9b"/>
                     </connections>
@@ -1074,7 +1066,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Wif-bl-B1f"/>
         <segue reference="FhL-9E-Tcr"/>
+        <segue reference="Wif-bl-B1f"/>
     </inferredMetricsTieBreakers>
 </document>

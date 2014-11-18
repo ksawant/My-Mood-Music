@@ -56,15 +56,6 @@
   [self.sliderOutlet setMaximumValue:self.audioPlayer.currentItem.duration.value/self.audioPlayer.currentItem.duration.timescale];
   //6
   [self configurePlayer];
-    self.locationManager = [[CLLocationManager alloc]init];
-    [self.locationManager requestAlwaysAuthorization];
-    self.locationManager.delegate = self;
-    [self.locationManager startUpdatingLocation];
-    self.locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation;
-    self.location = [[CLLocation alloc] init];
-    weatherManager = [[JFWeatherManager alloc]init];
-
-
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -73,15 +64,7 @@
     [self.audioPlayer pause];
 }
 
-- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
-    self.location = locations.lastObject;
-    float x;
-    x = self.location.speed*2.23693629;
-    if(x<0) {
-        x=0.000000;
-    }
-    self.speed.text = [NSString stringWithFormat:@"Speed: %f MPH", x];
-}
+
 
 - (void)didReceiveMemoryWarning
 {
