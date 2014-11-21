@@ -38,7 +38,6 @@ int num = 1;
     [self.temp addGestureRecognizer:tap];
     self.temp.userInteractionEnabled = YES;
     //[[AVAudioSession sharedInstance] setDelegate: self];
-    
     NSError *myErr;
     
     // Initialize the AVAudioSession here.
