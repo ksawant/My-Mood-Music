@@ -10,6 +10,7 @@
 #import <sqlite3.h>
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import "AppDelegate.h"
 
 @interface ViewController : UIViewController
 

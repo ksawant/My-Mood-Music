@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
 @import CoreLocation;
 
 @interface ViewController ()
@@ -23,6 +24,7 @@
     UITapGestureRecognizer * tap= [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
     
     [self.view addGestureRecognizer:tap];
+    [((AppDelegate *)([UIApplication sharedApplication].delegate)).player pause];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

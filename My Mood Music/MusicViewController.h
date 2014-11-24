@@ -19,6 +19,7 @@
     
     JFWeatherManager *weatherManager;
     MPMoviePlayerController *audioPlayer;
+    AVPlayerItem *playerItem;
 }
 @property (nonatomic, retain) MPMoviePlayerController *audioPlayer;
 @property (weak, nonatomic) IBOutlet UISlider *currentTimeSlider;
@@ -27,7 +28,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *duration;
 @property (weak, nonatomic) IBOutlet UILabel *timeElapsed;
 @property (strong, nonatomic) AVPlayerItem *playerItem;
-@property (strong, nonatomic) AVPlayer *player;
+//@property (strong, nonatomic) AVPlayer *player;
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) CLLocation *location;
 @property (weak, nonatomic) IBOutlet UILabel *speed;
@@ -41,4 +42,5 @@
 - (IBAction)playButtonPress:(id)sender;
 - (IBAction)pauseButtonPress:(id)sender;
 - (IBAction)skipButtonPress:(id)sender;
+- (void)remoteControlReceivedWithEvent:(UIEvent *)theEvent;
 @end

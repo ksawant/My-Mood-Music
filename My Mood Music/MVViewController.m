@@ -7,7 +7,9 @@
 //
 
 #import "MVViewController.h"
+#import "MusicViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "AppDelegate.h"
 
 @interface MVViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *togglePlayPause;
@@ -16,7 +18,6 @@
 @property (weak, nonatomic) IBOutlet UISlider *sliderOutlet;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray *songsList;
-
 @property (strong, nonatomic) AVPlayer *audioPlayer;
 @end
 
@@ -53,6 +54,7 @@
   //5
   NSString *songTitle = [song valueForProperty: MPMediaItemPropertyTitle];
   self.songName.text = songTitle;
+    [MPNowPlayingInfoCenter defaultCenter].nowPlayingInfo = [NSDictionary dictionaryWithObjectsAndKeys:songTitle, MPMediaItemPropertyTitle, 1.0f, MPNowPlayingInfoPropertyPlaybackRate, nil];
   [self.sliderOutlet setMaximumValue:self.audioPlayer.currentItem.duration.value/self.audioPlayer.currentItem.duration.timescale];
   //6
   [self configurePlayer];
@@ -62,6 +64,42 @@
 {
     [super viewWillDisappear:animated];
     [self.audioPlayer pause];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+ {
+ [super viewWillDisappear:animated];
+ [((AppDelegate *)([UIApplication sharedApplication].delegate)).player pause];
+ }
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+    [self becomeFirstResponder];
+}
+
+- (BOOL)canBecomeFirstResponder {
+    return YES;
+}
+
+- (void)remoteControlReceivedWithEvent:(UIEvent *)theEvent
+{
+    if (theEvent.type == UIEventTypeRemoteControl)
+    {
+        switch(theEvent.subtype) {
+                //case UIEventSubtypeRemoteControlTogglePlayPause:
+                //Insert code
+                
+            case UIEventSubtypeRemoteControlPlay:
+                [self.audioPlayer play];
+                break;
+            case UIEventSubtypeRemoteControlPause:
+                [self.audioPlayer pause];
+                break;
+            default:
+                return;
+        }
+    }
 }
 
 
@@ -97,7 +135,6 @@
    NSString *durationLabel = [song valueForProperty: MPMediaItemPropertyGenre];
   cell.textLabel.text = songTitle;
   cell.detailTextLabel.text = durationLabel;
-  
   return cell;
 }
 
@@ -115,7 +152,7 @@
   NSString *songTitle = [currentSong valueForProperty: MPMediaItemPropertyTitle];
   self.songName.text = songTitle;
   [self.sliderOutlet setMaximumValue:self.audioPlayer.currentItem.duration.value/self.audioPlayer.currentItem.duration.timescale];
-
+  [MPNowPlayingInfoCenter defaultCenter].nowPlayingInfo = [NSDictionary dictionaryWithObjectsAndKeys:songTitle, MPMediaItemPropertyTitle, 1.0f, MPNowPlayingInfoPropertyPlaybackRate, nil];
 }
 
 -(void) configurePlayer {

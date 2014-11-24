@@ -13,14 +13,12 @@
 #import "JFWeatherData.h"
 #import "JFWeatherManager.h"
 #import "DataModels.h"
+#import "MusicViewController.h"
+#import "AppDelegate.h"
 
 @interface MVViewController : UIViewController <UITableViewDataSource,CLLocationManagerDelegate,MKMapViewDelegate, UITableViewDelegate>{
     
-    JFWeatherManager *weatherManager;
-    
 }
 
-@property (strong, nonatomic) CLLocationManager *locationManager;
-@property (strong, nonatomic) CLLocation *location;
-@property (weak, nonatomic) IBOutlet UILabel *speed;
+
 @end

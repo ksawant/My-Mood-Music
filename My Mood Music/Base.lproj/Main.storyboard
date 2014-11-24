@@ -628,7 +628,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="6NG-AI-jFM" kind="relationship" relationship="rootViewController" id="B8y-ac-6K8"/>
+                        <segue destination="6NG-AI-jFM" kind="relationship" relationship="rootViewController" id="5GK-7c-ZP3"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VRw-Qj-u5A" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -644,7 +644,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
-                            <tableViewSection headerTitle="General" id="jKr-St-jRR">
+                            <tableViewSection id="jKr-St-jRR">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="7td-01-kLQ" style="IBUITableViewCellStyleDefault" id="bq3-L8-cEr">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -724,6 +724,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Settings" id="GjN-9Z-emU"/>
+                    <connections>
+                        <outlet property="logout" destination="Ccx-Mb-hVh" id="Wfj-7Q-VAx"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gk6-f8-dt0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -968,15 +971,15 @@
                                             <action selector="sliderDragged:" destination="QE6-we-8ZJ" eventType="valueChanged" id="qFa-jy-OJ1"/>
                                         </connections>
                                     </slider>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kcp-Cy-pEc">
-                                        <rect key="frame" x="91" y="29" width="158" height="21"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hCm-Ff-ZRb">
+                                        <rect key="frame" x="181" y="88" width="119" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hCm-Ff-ZRb">
-                                        <rect key="frame" x="181" y="88" width="119" height="21"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kcp-Cy-pEc">
+                                        <rect key="frame" x="91" y="29" width="158" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -1045,6 +1048,20 @@
             </objects>
             <point key="canvasLocation" x="1537" y="-21"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="8oV-UH-FEu">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="UcL-sz-bQz" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="6bC-si-u1K">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qe0-bd-Jlh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
         <image name="Back" width="14" height="28"/>
@@ -1066,7 +1083,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Wif-bl-B1f"/>
         <segue reference="YiW-Vl-1tm"/>
+        <segue reference="HxT-4c-yNx"/>
     </inferredMetricsTieBreakers>
 </document>
