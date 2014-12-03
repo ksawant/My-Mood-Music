@@ -120,7 +120,7 @@ int num = 1;
         num++;
         if(temp < 40) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //punk
+                self.genre.text = [NSString stringWithFormat:@"Punk"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000088433498-ux68fq-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/163695063/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -132,7 +132,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //soul
+                self.genre.text = [NSString stringWithFormat:@"Soul"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096692120-um55tq-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176208183/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -144,7 +144,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //soul
+                self.genre.text = [NSString stringWithFormat:@"Soul"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096692120-um55tq-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176208183/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -156,7 +156,7 @@ int num = 1;
                 ////[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //reggae
+                self.genre.text = [NSString stringWithFormat:@"Reggae"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087346942-vf37ts-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162022719/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -168,7 +168,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //country
+                self.genre.text = [NSString stringWithFormat:@"Country"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086741073-ibz2rp-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/161089729/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -180,7 +180,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //classical
+                self.genre.text = [NSString stringWithFormat:@"Classical"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094782773-h99isx-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173344470/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -192,7 +192,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096690078-bauuot-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176205207/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -204,7 +204,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //classical
+                self.genre.text = [NSString stringWithFormat:@"Classical"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094782773-h99isx-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173344470/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -221,7 +221,7 @@ int num = 1;
         }
         else if(temp >= 40 && temp <= 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"thunderstorm");
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164579150/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
@@ -232,7 +232,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //soul
+                self.genre.text = [NSString stringWithFormat:@"Soul"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096692120-um55tq-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176208183/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -244,7 +244,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //rock
+                self.genre.text = [NSString stringWithFormat:@"Rock"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096312845-9kwh84-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175642077/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -256,7 +256,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089289879-ue4d7j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/165018741/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -268,7 +268,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //classical
+                self.genre.text = [NSString stringWithFormat:@"Classical"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094782773-h99isx-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173344470/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -280,7 +280,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //country
+                self.genre.text = [NSString stringWithFormat:@"Country"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086741073-ibz2rp-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/161089729/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -292,7 +292,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //reggae
+                self.genre.text = [NSString stringWithFormat:@"Reggae"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087346942-vf37ts-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162022719/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -304,7 +304,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //rock
+                self.genre.text = [NSString stringWithFormat:@"Rock"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096312845-9kwh84-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175642077/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -321,7 +321,7 @@ int num = 1;
         }
         else if(temp > 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //dubstep
+                self.genre.text = [NSString stringWithFormat:@"Dubstep"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094591628-mx16l1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173058369/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -333,7 +333,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"drizzle");
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164579150/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
@@ -344,7 +344,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095053782-whizz1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173752179/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -356,7 +356,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089289879-ue4d7j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/165018741/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -368,7 +368,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //country
+                self.genre.text = [NSString stringWithFormat:@"Country"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086741073-ibz2rp-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/161089729/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -380,7 +380,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -392,7 +392,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //punk
+                self.genre.text = [NSString stringWithFormat:@"Punk"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000088433498-ux68fq-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/163695063/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -404,7 +404,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -428,7 +428,7 @@ int num = 1;
         num++;
         if(temp < 40) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"thunderstorm");
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164579150/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
@@ -439,7 +439,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //dubstep
+                self.genre.text = [NSString stringWithFormat:@"Dubstep"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094591628-mx16l1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173058369/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -451,7 +451,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //rock
+                self.genre.text = [NSString stringWithFormat:@"Rock"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096312845-9kwh84-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175642077/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -463,7 +463,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //soul
+                self.genre.text = [NSString stringWithFormat:@"Soul"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096692120-um55tq-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176208183/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -475,7 +475,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //classical
+                self.genre.text = [NSString stringWithFormat:@"Classical"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094782773-h99isx-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173344470/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -487,7 +487,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //punk
+                self.genre.text = [NSString stringWithFormat:@"Punk"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000088433498-ux68fq-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/163695063/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -499,7 +499,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //reggae
+                self.genre.text = [NSString stringWithFormat:@"Reggae"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087346942-vf37ts-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162022719/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -511,7 +511,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -528,7 +528,7 @@ int num = 1;
         }
         else if(temp >= 40 && temp <= 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //punk
+                self.genre.text = [NSString stringWithFormat:@"Punk"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000088433498-ux68fq-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/163695063/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -540,7 +540,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //r&b
+                self.genre.text = [NSString stringWithFormat:@"R&B"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086464000-qf3oc1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/160666084/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -552,7 +552,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089289879-ue4d7j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/165018741/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -564,7 +564,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //classical
+                self.genre.text = [NSString stringWithFormat:@"Classical"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094782773-h99isx-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173344470/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -576,7 +576,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //country
+                self.genre.text = [NSString stringWithFormat:@"Country"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086741073-ibz2rp-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/161089729/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -588,7 +588,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //country
+                self.genre.text = [NSString stringWithFormat:@"Country"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086741073-ibz2rp-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/161089729/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -600,7 +600,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //punk
+                self.genre.text = [NSString stringWithFormat:@"Punk"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000088433498-ux68fq-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/163695063/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -612,7 +612,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //dubstep
+                self.genre.text = [NSString stringWithFormat:@"Dubstep"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094591628-mx16l1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173058369/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -629,7 +629,7 @@ int num = 1;
         }
         else if(temp > 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -641,7 +641,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095053782-whizz1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173752179/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -653,7 +653,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //rock
+                self.genre.text = [NSString stringWithFormat:@"Rock"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096312845-9kwh84-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175642077/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -665,7 +665,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -677,7 +677,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089289879-ue4d7j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/165018741/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -689,7 +689,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //country
+                self.genre.text = [NSString stringWithFormat:@"Country"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086741073-ibz2rp-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/161089729/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -701,7 +701,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"extreme");
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164579150/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
@@ -712,7 +712,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //r&b
+                self.genre.text = [NSString stringWithFormat:@"R&B"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086464000-qf3oc1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/160666084/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -735,7 +735,7 @@ int num = 1;
         num++;
         if(temp < 40) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //reggae
+                self.genre.text = [NSString stringWithFormat:@"Reggae"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087346942-vf37ts-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162022719/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -747,7 +747,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"drizzle");
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164579150/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
@@ -758,7 +758,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095053782-whizz1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173752179/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -770,7 +770,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //rock
+                self.genre.text = [NSString stringWithFormat:@"Rock"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096312845-9kwh84-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175642077/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -782,7 +782,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //soul
+                self.genre.text = [NSString stringWithFormat:@"Soul"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096692120-um55tq-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176208183/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -794,7 +794,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //country
+                self.genre.text = [NSString stringWithFormat:@"Country"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086741073-ibz2rp-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/161089729/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -806,7 +806,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -818,7 +818,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -835,7 +835,7 @@ int num = 1;
         }
         else if(temp >= 40 && temp <= 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095053782-whizz1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173752179/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -847,7 +847,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //dupstep
+                self.genre.text = [NSString stringWithFormat:@"Dubstep"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094591628-mx16l1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173058369/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -859,7 +859,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //country
+                self.genre.text = [NSString stringWithFormat:@"Country"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086741073-ibz2rp-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/161089729/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -871,7 +871,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089289879-ue4d7j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/165018741/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -883,7 +883,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -895,7 +895,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"clouds");
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/15996669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
@@ -906,7 +906,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"extreme");
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164579150/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
@@ -917,7 +917,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //punk
+                self.genre.text = [NSString stringWithFormat:@"Punk"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000088433498-ux68fq-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/163695063/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -934,7 +934,7 @@ int num = 1;
         }
         else if(temp > 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095053782-whizz1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173752179/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -946,7 +946,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089289879-ue4d7j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/165018741/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -958,7 +958,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"rain");
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164579150/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
@@ -969,7 +969,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //punk
+                self.genre.text = [NSString stringWithFormat:@"Punk"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000088433498-ux68fq-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/163695063/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -981,7 +981,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"atmosphere");
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/15996669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
@@ -992,7 +992,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //r&b
+                self.genre.text = [NSString stringWithFormat:@"R&B"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086464000-qf3oc1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/160666084/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1004,7 +1004,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //reggae
+                self.genre.text = [NSString stringWithFormat:@"Reggae"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087346942-vf37ts-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162022719/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1016,7 +1016,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //soul
+                self.genre.text = [NSString stringWithFormat:@"Soul"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096692120-um55tq-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176208183/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1039,7 +1039,7 @@ int num = 1;
         num++;
         if(temp < 40) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //rock
+                self.genre.text = [NSString stringWithFormat:@"Rock"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096312845-9kwh84-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175642077/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1051,7 +1051,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1063,7 +1063,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089289879-ue4d7j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/165018741/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1075,7 +1075,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089289879-ue4d7j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/165018741/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1087,7 +1087,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //r&b
+                self.genre.text = [NSString stringWithFormat:@"R&B"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086464000-qf3oc1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/160666084/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1099,7 +1099,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095053782-whizz1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173752179/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1111,7 +1111,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //reggae
+                self.genre.text = [NSString stringWithFormat:@"Reggae"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087346942-vf37ts-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162022719/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1123,7 +1123,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"additional");
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164579150/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
@@ -1139,7 +1139,7 @@ int num = 1;
         }
         else if(temp >= 40 && temp <= 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089289879-ue4d7j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/165018741/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1151,7 +1151,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1163,7 +1163,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //r&b
+                self.genre.text = [NSString stringWithFormat:@"R&B"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086464000-qf3oc1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/160666084/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1175,7 +1175,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1187,7 +1187,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1199,7 +1199,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095053782-whizz1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173752179/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1211,7 +1211,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //rock
+                self.genre.text = [NSString stringWithFormat:@"Rock"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096312845-9kwh84-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175642077/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1223,7 +1223,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //r&b
+                self.genre.text = [NSString stringWithFormat:@"R&B"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086464000-qf3oc1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/160666084/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1240,7 +1240,7 @@ int num = 1;
         }
         else if(temp > 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //r&b
+                self.genre.text = [NSString stringWithFormat:@"R&B"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086464000-qf3oc1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/160666084/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1252,7 +1252,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095053782-whizz1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173752179/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1264,7 +1264,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095053782-whizz1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173752179/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1276,7 +1276,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1288,7 +1288,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1300,7 +1300,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1312,7 +1312,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089289879-ue4d7j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/165018741/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1324,7 +1324,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"additional");
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164579150/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
@@ -1346,7 +1346,7 @@ int num = 1;
         num++;
         if(temp < 40) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //punk
+                self.genre.text = [NSString stringWithFormat:@"Punk"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096360456-hank0i-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175713002/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1358,7 +1358,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //soul
+                self.genre.text = [NSString stringWithFormat:@"Soul"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094363361-dnziu9-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172712345/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1370,7 +1370,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //soul
+                self.genre.text = [NSString stringWithFormat:@"Soul"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094363361-dnziu9-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172712345/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1382,7 +1382,7 @@ int num = 1;
                 ////[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //reggae
+                self.genre.text = [NSString stringWithFormat:@"Reggae"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000081310850-05efx8-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/152589690/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1394,7 +1394,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //country
+                self.genre.text = [NSString stringWithFormat:@"Country"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093004666-oa7t0g-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/170727676/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1406,7 +1406,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //classical
+                self.genre.text = [NSString stringWithFormat:@"Classical"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086556965-8qo24q-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/160808486/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1418,7 +1418,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096119265-40g65d-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172138947/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1430,7 +1430,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //classical
+                self.genre.text = [NSString stringWithFormat:@"Classical"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086556965-8qo24q-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/160808486/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1447,7 +1447,7 @@ int num = 1;
         }
         else if(temp >= 40 && temp <= 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096119265-40g65d-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172138947/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1459,7 +1459,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //soul
+                self.genre.text = [NSString stringWithFormat:@"Soul"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094363361-dnziu9-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172712345/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1471,7 +1471,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //rock
+                self.genre.text = [NSString stringWithFormat:@"Rock"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095917144-sv5h0n-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175036938/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1483,7 +1483,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089711243-lyy02l-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162777996/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1495,7 +1495,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //classical
+                self.genre.text = [NSString stringWithFormat:@"Classical"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086556965-8qo24q-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/160808486/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1507,7 +1507,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //country
+                self.genre.text = [NSString stringWithFormat:@"Country"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093004666-oa7t0g-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/170727676/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1519,7 +1519,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //reggae
+                self.genre.text = [NSString stringWithFormat:@"Reggae"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000081310850-05efx8-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/152589690/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1531,7 +1531,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //rock
+                self.genre.text = [NSString stringWithFormat:@"Rock"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095917144-sv5h0n-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175036938/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1548,7 +1548,7 @@ int num = 1;
         }
         else if(temp > 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //dubstep
+                self.genre.text = [NSString stringWithFormat:@"Dubstep"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000082913710-i1vx6h-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/155226929/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1560,7 +1560,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"drizzle");
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164579150/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
@@ -1571,7 +1571,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094516150-98bsm1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172942151/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1583,7 +1583,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089711243-lyy02l-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162777996/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1595,7 +1595,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //country
+                self.genre.text = [NSString stringWithFormat:@"Country"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093004666-oa7t0g-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/170727676/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1607,7 +1607,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096367948-b97kyh-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175724225/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1619,7 +1619,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //punk
+                self.genre.text = [NSString stringWithFormat:@"Punk"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096360456-hank0i-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175713002/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1631,7 +1631,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096367948-b97kyh-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175724225/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1655,7 +1655,7 @@ int num = 1;
         num++;
         if(temp < 40) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096119265-40g65d-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172138947/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1667,7 +1667,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //dubstep
+                self.genre.text = [NSString stringWithFormat:@"Dubstep"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000082913710-i1vx6h-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/155226929/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1679,7 +1679,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //rock
+                self.genre.text = [NSString stringWithFormat:@"Rock"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095917144-sv5h0n-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175036938/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1691,7 +1691,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //soul
+                self.genre.text = [NSString stringWithFormat:@"Soul"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094363361-dnziu9-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172712345/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1703,7 +1703,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //classical
+                self.genre.text = [NSString stringWithFormat:@"Classical"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086556965-8qo24q-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/160808486/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1715,7 +1715,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //punk
+                self.genre.text = [NSString stringWithFormat:@"Punk"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096360456-hank0i-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175713002/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1727,7 +1727,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //reggae
+                self.genre.text = [NSString stringWithFormat:@"Reggae"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000081310850-05efx8-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/152589690/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1739,7 +1739,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096367948-b97kyh-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175724225/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1756,7 +1756,7 @@ int num = 1;
         }
         else if(temp >= 40 && temp <= 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //punk
+                self.genre.text = [NSString stringWithFormat:@"Punk"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096360456-hank0i-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175713002/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1768,7 +1768,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //r&b
+                self.genre.text = [NSString stringWithFormat:@"R&B"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089316619-l710c5-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/157848233/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1780,7 +1780,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089711243-lyy02l-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162777996/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1792,7 +1792,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //classical
+                self.genre.text = [NSString stringWithFormat:@"Classical"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086556965-8qo24q-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/160808486/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1804,7 +1804,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //country
+                self.genre.text = [NSString stringWithFormat:@"Country"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093004666-oa7t0g-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/170727676/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1816,7 +1816,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //country
+                self.genre.text = [NSString stringWithFormat:@"Country"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093004666-oa7t0g-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/170727676/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1828,7 +1828,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //punk
+                self.genre.text = [NSString stringWithFormat:@"Punk"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096360456-hank0i-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175713002/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1840,7 +1840,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //dubstep
+                self.genre.text = [NSString stringWithFormat:@"Dubstep"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000082913710-i1vx6h-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/155226929/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1857,7 +1857,7 @@ int num = 1;
         }
         else if(temp > 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096367948-b97kyh-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175724225/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1869,7 +1869,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094516150-98bsm1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172942151/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1881,7 +1881,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //rock
+                self.genre.text = [NSString stringWithFormat:@"Rock"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095917144-sv5h0n-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175036938/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1893,7 +1893,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096367948-b97kyh-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175724225/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1905,7 +1905,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089711243-lyy02l-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162777996/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1917,7 +1917,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //country
+                self.genre.text = [NSString stringWithFormat:@"Country"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093004666-oa7t0g-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/170727676/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1929,7 +1929,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096119265-40g65d-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172138947/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1941,7 +1941,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //r&b
+                self.genre.text = [NSString stringWithFormat:@"R&B"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089316619-l710c5-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/157848233/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1964,7 +1964,7 @@ int num = 1;
         num++;
         if(temp < 40) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //reggae
+                self.genre.text = [NSString stringWithFormat:@"Reggae"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000081310850-05efx8-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/152589690/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1976,7 +1976,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096119265-40g65d-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172138947/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -1988,7 +1988,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094516150-98bsm1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172942151/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2000,7 +2000,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //rock
+                self.genre.text = [NSString stringWithFormat:@"Rock"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095917144-sv5h0n-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175036938/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2012,7 +2012,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //soul
+                self.genre.text = [NSString stringWithFormat:@"Soul"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094363361-dnziu9-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172712345/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2024,7 +2024,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //country
+                self.genre.text = [NSString stringWithFormat:@"Country"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093004666-oa7t0g-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/170727676/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2036,7 +2036,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096367948-b97kyh-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175724225/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2048,7 +2048,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096367948-b97kyh-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175724225/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2065,7 +2065,7 @@ int num = 1;
         }
         else if(temp >= 40 && temp <= 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094516150-98bsm1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172942151/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2077,7 +2077,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //dupstep
+                self.genre.text = [NSString stringWithFormat:@"Dubstep"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000082913710-i1vx6h-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/155226929/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2089,7 +2089,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //country
+                self.genre.text = [NSString stringWithFormat:@"Country"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093004666-oa7t0g-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/170727676/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2101,7 +2101,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089711243-lyy02l-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162777996/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2113,7 +2113,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096367948-b97kyh-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175724225/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2125,7 +2125,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096367948-b97kyh-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175724225/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2137,7 +2137,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096119265-40g65d-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172138947/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2149,7 +2149,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //punk
+                self.genre.text = [NSString stringWithFormat:@"Punk"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096360456-hank0i-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175713002/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2166,7 +2166,7 @@ int num = 1;
         }
         else if(temp > 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094516150-98bsm1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172942151/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2178,7 +2178,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089711243-lyy02l-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162777996/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2190,7 +2190,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096119265-40g65d-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172138947/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2202,7 +2202,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //punk
+                self.genre.text = [NSString stringWithFormat:@"Punk"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096360456-hank0i-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175713002/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2214,7 +2214,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096367948-b97kyh-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175724225/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2226,7 +2226,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //r&b
+                self.genre.text = [NSString stringWithFormat:@"R&B"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089316619-l710c5-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/157848233/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2238,7 +2238,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //reggae
+                self.genre.text = [NSString stringWithFormat:@"Reggae"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000081310850-05efx8-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/152589690/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2250,7 +2250,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //soul
+                self.genre.text = [NSString stringWithFormat:@"Soul"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094363361-dnziu9-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172712345/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2273,7 +2273,7 @@ int num = 1;
         num++;
         if(temp < 40) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //rock
+                self.genre.text = [NSString stringWithFormat:@"Rock"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095917144-sv5h0n-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175036938/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2285,7 +2285,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096367948-b97kyh-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175724225/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2297,7 +2297,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089711243-lyy02l-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162777996/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2309,7 +2309,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089711243-lyy02l-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162777996/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2321,7 +2321,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //r&b
+                self.genre.text = [NSString stringWithFormat:@"R&B"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089316619-l710c5-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/157848233/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2333,7 +2333,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094516150-98bsm1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172942151/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2345,7 +2345,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //reggae
+                self.genre.text = [NSString stringWithFormat:@"Reggae"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000081310850-05efx8-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/152589690/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2357,7 +2357,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096119265-40g65d-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172138947/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2374,7 +2374,7 @@ int num = 1;
         }
         else if(temp >= 40 && temp <= 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089711243-lyy02l-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162777996/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2386,7 +2386,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096367948-b97kyh-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175724225/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2398,7 +2398,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //r&b
+                self.genre.text = [NSString stringWithFormat:@"R&B"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089316619-l710c5-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/157848233/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2410,7 +2410,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096367948-b97kyh-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175724225/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2422,7 +2422,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096367948-b97kyh-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175724225/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2434,7 +2434,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094516150-98bsm1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172942151/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2446,7 +2446,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //rock
+                self.genre.text = [NSString stringWithFormat:@"Rock"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095917144-sv5h0n-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175036938/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2458,7 +2458,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //r&b
+                self.genre.text = [NSString stringWithFormat:@"R&B"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089316619-l710c5-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/157848233/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2475,7 +2475,7 @@ int num = 1;
         }
         else if(temp > 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //r&b
+                self.genre.text = [NSString stringWithFormat:@"R&B"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089316619-l710c5-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/157848233/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2487,7 +2487,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094516150-98bsm1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172942151/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2499,7 +2499,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094516150-98bsm1-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172942151/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2511,7 +2511,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096367948-b97kyh-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175724225/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2523,7 +2523,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096367948-b97kyh-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175724225/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2535,7 +2535,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096367948-b97kyh-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175724225/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2547,7 +2547,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089711243-lyy02l-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162777996/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2559,7 +2559,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096119265-40g65d-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172138947/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2582,7 +2582,7 @@ int num = 1;
         num = 1;
         if(temp < 40) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //punk
+                self.genre.text = [NSString stringWithFormat:@"Punk"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089257298-6brcul-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164968734/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2594,7 +2594,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //soul
+                self.genre.text = [NSString stringWithFormat:@"Soul"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000090999691-55yj4g-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/167701797/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2606,7 +2606,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //soul
+                self.genre.text = [NSString stringWithFormat:@"Soul"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000090999691-55yj4g-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/167701797/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2618,7 +2618,7 @@ int num = 1;
                 ////[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //reggae
+                self.genre.text = [NSString stringWithFormat:@"Reggae"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/avatars-000082149579-lje63v-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/150525686/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2630,7 +2630,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //country
+                self.genre.text = [NSString stringWithFormat:@"Country"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093245133-ph21ss-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/171086314/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2642,7 +2642,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //classical
+                self.genre.text = [NSString stringWithFormat:@"Classical"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096259545-6n7h4n-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175561037/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2654,7 +2654,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096119265-40g65d-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172138947/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2666,7 +2666,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //classical
+                self.genre.text = [NSString stringWithFormat:@"Classical"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096259545-6n7h4n-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175561037/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2683,7 +2683,7 @@ int num = 1;
         }
         else if(temp >= 40 && temp <= 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096119265-40g65d-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172138947/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2695,7 +2695,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //soul
+                self.genre.text = [NSString stringWithFormat:@"Soul"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000090999691-55yj4g-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/167701797/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2707,7 +2707,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //rock
+                self.genre.text = [NSString stringWithFormat:@"Rock"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"hhttps://i1.sndcdn.com/artworks-000090063383-byubi3-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/166228488/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2719,7 +2719,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089711243-lyy02l-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162777996/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2731,7 +2731,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //classical
+                self.genre.text = [NSString stringWithFormat:@"Classical"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096259545-6n7h4n-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175561037/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2743,7 +2743,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //country
+                self.genre.text = [NSString stringWithFormat:@"Country"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093245133-ph21ss-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/171086314/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2755,7 +2755,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //reggae
+                self.genre.text = [NSString stringWithFormat:@"Reggae"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/avatars-000082149579-lje63v-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/150525686/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2767,7 +2767,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //rock
+                self.genre.text = [NSString stringWithFormat:@"Rock"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"hhttps://i1.sndcdn.com/artworks-000090063383-byubi3-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/166228488/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2784,7 +2784,7 @@ int num = 1;
         }
         else if(temp > 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //dubstep
+                self.genre.text = [NSString stringWithFormat:@"Dubstep"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000085673471-db136n-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159440665/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2796,7 +2796,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096119265-40g65d-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172138947/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2808,7 +2808,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087113859-89vwnm-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/161668677/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2820,7 +2820,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089711243-lyy02l-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162777996/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2832,7 +2832,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //country
+                self.genre.text = [NSString stringWithFormat:@"Country"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093245133-ph21ss-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/171086314/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2844,7 +2844,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093907678-79gb6j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172055891/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2856,7 +2856,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //punk
+                self.genre.text = [NSString stringWithFormat:@"Punk"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089257298-6brcul-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164968734/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2868,7 +2868,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093907678-79gb6j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172055891/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2892,7 +2892,7 @@ int num = 1;
         num = 1;
         if(temp < 40) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096690078-bauuot-large.jpg"]]];
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096690078-bauuot-large.jpg"]]];
@@ -2905,7 +2905,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //dubstep
+                self.genre.text = [NSString stringWithFormat:@"Dubstep"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000085673471-db136n-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159440665/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2917,7 +2917,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //rock
+                self.genre.text = [NSString stringWithFormat:@"Rock"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"hhttps://i1.sndcdn.com/artworks-000090063383-byubi3-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/166228488/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2929,7 +2929,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //soul
+                self.genre.text = [NSString stringWithFormat:@"Soul"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000090999691-55yj4g-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/167701797/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2941,7 +2941,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //classical
+                self.genre.text = [NSString stringWithFormat:@"Classical"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096259545-6n7h4n-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175561037/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2953,7 +2953,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //punk
+                self.genre.text = [NSString stringWithFormat:@"Punk"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089257298-6brcul-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164968734/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2965,7 +2965,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //reggae
+                self.genre.text = [NSString stringWithFormat:@"Reggae"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/avatars-000082149579-lje63v-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/150525686/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2977,7 +2977,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093907678-79gb6j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172055891/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -2994,7 +2994,7 @@ int num = 1;
         }
         else if(temp >= 40 && temp <= 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //punk
+                self.genre.text = [NSString stringWithFormat:@"Punk"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089257298-6brcul-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164968734/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3006,7 +3006,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //r&b
+                self.genre.text = [NSString stringWithFormat:@"R&B"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096604919-7gzl3v-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176078878/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3018,7 +3018,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087418675-ii50p3-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162141701/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3030,7 +3030,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //classical
+                self.genre.text = [NSString stringWithFormat:@"Classical"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096259545-6n7h4n-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175561037/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3042,7 +3042,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //country
+                self.genre.text = [NSString stringWithFormat:@"Country"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093245133-ph21ss-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/171086314/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3054,7 +3054,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //country
+                self.genre.text = [NSString stringWithFormat:@"Country"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093245133-ph21ss-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/171086314/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3066,7 +3066,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //punk
+                self.genre.text = [NSString stringWithFormat:@"Punk"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089257298-6brcul-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164968734/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3078,7 +3078,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //dubstep
+                self.genre.text = [NSString stringWithFormat:@"Dubstep"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000085673471-db136n-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159440665/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3095,7 +3095,7 @@ int num = 1;
         }
         else if(temp > 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093907678-79gb6j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172055891/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3107,7 +3107,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087113859-89vwnm-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/161668677/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3119,7 +3119,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //rock
+                self.genre.text = [NSString stringWithFormat:@"Rock"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"hhttps://i1.sndcdn.com/artworks-000090063383-byubi3-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/166228488/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3131,7 +3131,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093907678-79gb6j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172055891/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3143,7 +3143,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087418675-ii50p3-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162141701/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3155,7 +3155,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //country
+                self.genre.text = [NSString stringWithFormat:@"Country"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093245133-ph21ss-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/171086314/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3167,7 +3167,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096690078-bauuot-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176205207/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3179,7 +3179,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //r&b
+                self.genre.text = [NSString stringWithFormat:@"R&B"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096604919-7gzl3v-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176078878/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3202,7 +3202,7 @@ int num = 1;
         num = 1;
         if(temp < 40) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //reggae
+                self.genre.text = [NSString stringWithFormat:@"Reggae"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/avatars-000082149579-lje63v-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/150525686/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3214,7 +3214,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096690078-bauuot-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176205207/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3226,7 +3226,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087113859-89vwnm-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/161668677/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3238,7 +3238,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //rock
+                self.genre.text = [NSString stringWithFormat:@"Rock"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"hhttps://i1.sndcdn.com/artworks-000090063383-byubi3-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/166228488/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3250,7 +3250,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //soul
+                self.genre.text = [NSString stringWithFormat:@"Soul"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000090999691-55yj4g-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/167701797/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3262,7 +3262,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //country
+                self.genre.text = [NSString stringWithFormat:@"Country"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093245133-ph21ss-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/171086314/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3274,7 +3274,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093907678-79gb6j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172055891/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3286,7 +3286,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093907678-79gb6j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172055891/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3303,7 +3303,7 @@ int num = 1;
         }
         else if(temp >= 40 && temp <= 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087113859-89vwnm-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/161668677/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3315,7 +3315,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //dupstep
+                self.genre.text = [NSString stringWithFormat:@"Dubstep"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000085673471-db136n-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159440665/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3327,7 +3327,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //country
+                self.genre.text = [NSString stringWithFormat:@"Country"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093245133-ph21ss-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/171086314/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3339,7 +3339,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087418675-ii50p3-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162141701/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3351,7 +3351,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093907678-79gb6j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172055891/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3363,7 +3363,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093907678-79gb6j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172055891/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3375,7 +3375,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096690078-bauuot-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176205207/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3387,7 +3387,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //punk
+                self.genre.text = [NSString stringWithFormat:@"Punk"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089257298-6brcul-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164968734/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3404,7 +3404,7 @@ int num = 1;
         }
         else if(temp > 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087113859-89vwnm-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/161668677/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3416,7 +3416,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087418675-ii50p3-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162141701/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3428,7 +3428,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096690078-bauuot-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176205207/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3440,7 +3440,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //punk
+                self.genre.text = [NSString stringWithFormat:@"Punk"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089257298-6brcul-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164968734/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3452,7 +3452,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093907678-79gb6j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172055891/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3464,7 +3464,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //r&b
+                self.genre.text = [NSString stringWithFormat:@"R&B"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096604919-7gzl3v-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176078878/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3476,7 +3476,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //reggae
+                self.genre.text = [NSString stringWithFormat:@"Reggae"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/avatars-000082149579-lje63v-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/150525686/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3488,7 +3488,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //soul
+                self.genre.text = [NSString stringWithFormat:@"Soul"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000090999691-55yj4g-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/167701797/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3511,7 +3511,7 @@ int num = 1;
         num = 1;
         if(temp < 40) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //rock
+                self.genre.text = [NSString stringWithFormat:@"Rock"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"hhttps://i1.sndcdn.com/artworks-000090063383-byubi3-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/166228488/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3523,7 +3523,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093907678-79gb6j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172055891/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3535,7 +3535,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087418675-ii50p3-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162141701/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3547,7 +3547,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087418675-ii50p3-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162141701/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3559,7 +3559,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //r&b
+                self.genre.text = [NSString stringWithFormat:@"R&B"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096604919-7gzl3v-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176078878/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3571,7 +3571,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087113859-89vwnm-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/161668677/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3583,7 +3583,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //reggae
+                self.genre.text = [NSString stringWithFormat:@"Reggae"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087346942-vf37ts-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162022719/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3595,7 +3595,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096690078-bauuot-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176205207/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3612,7 +3612,7 @@ int num = 1;
         }
         else if(temp >= 40 && temp <= 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087418675-ii50p3-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162141701/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3624,7 +3624,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093907678-79gb6j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172055891/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3636,7 +3636,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //r&b
+                self.genre.text = [NSString stringWithFormat:@"R&B"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096604919-7gzl3v-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176078878/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3648,7 +3648,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093907678-79gb6j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172055891/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3660,7 +3660,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093907678-79gb6j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172055891/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3672,7 +3672,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087113859-89vwnm-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/161668677/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3684,7 +3684,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //rock
+                self.genre.text = [NSString stringWithFormat:@"Rock"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"hhttps://i1.sndcdn.com/artworks-000090063383-byubi3-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/166228488/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3696,7 +3696,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //r&b
+                self.genre.text = [NSString stringWithFormat:@"R&B"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096604919-7gzl3v-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176078878/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3713,7 +3713,7 @@ int num = 1;
         }
         else if(temp > 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
-                //r&b
+                self.genre.text = [NSString stringWithFormat:@"R&B"];
                 NSLog(@"thunderstorm");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096604919-7gzl3v-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176078878/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3725,7 +3725,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"drizzle");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087113859-89vwnm-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/161668677/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3737,7 +3737,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
-                //rap
+                self.genre.text = [NSString stringWithFormat:@"Rap"];
                 NSLog(@"rain");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087113859-89vwnm-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/161668677/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3749,7 +3749,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"snow");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093907678-79gb6j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172055891/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3761,7 +3761,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"atmosphere");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093907678-79gb6j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172055891/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3773,7 +3773,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
-                //pop
+                self.genre.text = [NSString stringWithFormat:@"Pop"];
                 NSLog(@"clouds");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093907678-79gb6j-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172055891/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3785,7 +3785,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
-                //hip-hop
+                self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087418675-ii50p3-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162141701/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3797,7 +3797,7 @@ int num = 1;
                 //[player play];
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
-                //metal
+                self.genre.text = [NSString stringWithFormat:@"Metal"];
                 NSLog(@"additional");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096690078-bauuot-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176205207/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -3834,7 +3834,7 @@ int num = 1;
     }
     MPMediaItemArtwork *artwork = [[MPMediaItemArtwork alloc] initWithImage: self.albumart.image];
     [MPNowPlayingInfoCenter defaultCenter].nowPlayingInfo = [NSDictionary dictionaryWithObjectsAndKeys:@"hi", MPMediaItemPropertyTitle,
-                                                             @"hello", MPMediaItemPropertyArtist, artwork, MPMediaItemPropertyArtwork,  1.0f, MPNowPlayingInfoPropertyPlaybackRate, nil];
+                                                             self.genre.text, MPMediaItemPropertyArtist, artwork, MPMediaItemPropertyArtwork,  1.0f, MPNowPlayingInfoPropertyPlaybackRate, nil];
 }
 - (void) timeupdater {
     CMTime duration = playerItem.duration;

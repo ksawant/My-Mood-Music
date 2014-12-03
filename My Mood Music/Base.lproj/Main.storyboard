@@ -263,9 +263,16 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="YUX-W1-ZbA">
-                                <rect key="frame" x="40" y="37" width="240" height="240"/>
+                                <rect key="frame" x="40" y="75" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mPH-y1-pMz">
+                                <rect key="frame" x="16" y="20" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -275,6 +282,7 @@
                         <outlet property="condition" destination="1D3-sM-BBP" id="Z23-je-bDj"/>
                         <outlet property="currentTimeSlider" destination="6rT-kT-0co" id="p7D-Nd-vaQ"/>
                         <outlet property="duration" destination="hLs-Qo-Mvl" id="a4H-10-kqo"/>
+                        <outlet property="genre" destination="mPH-y1-pMz" id="ylb-sN-Nqa"/>
                         <outlet property="playButton" destination="d4b-IE-LkJ" id="mXz-BA-zHg"/>
                         <outlet property="skipButton" destination="hPk-On-1c9" id="8gg-kb-Opc"/>
                         <outlet property="speed" destination="vsS-Jp-k9y" id="JVo-9D-111"/>
@@ -621,7 +629,6 @@
         <!--Settings-->
         <scene sceneID="6Gg-HD-8zX">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VRw-Qj-u5A" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="rHL-I3-Aho" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="Settings.png" id="Ieg-Ox-xo8"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RFw-t4-4a6">
@@ -632,6 +639,7 @@
                         <segue destination="CEO-cQ-7ss" kind="relationship" relationship="rootViewController" id="jJ6-0Q-2Vi"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VRw-Qj-u5A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="386" y="1423"/>
         </scene>
