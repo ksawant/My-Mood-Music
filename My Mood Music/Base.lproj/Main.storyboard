@@ -94,7 +94,7 @@
                                             <outlet property="delegate" destination="OSI-xf-k55" id="E9q-gz-SlN"/>
                                         </connections>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 2.81" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jyo-X4-HjT">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 2.82" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jyo-X4-HjT">
                                         <rect key="frame" x="8" y="521" width="304" height="19"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="9"/>
@@ -273,6 +273,13 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WHv-yH-j8E">
+                                <rect key="frame" x="16" y="41" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -283,6 +290,7 @@
                         <outlet property="currentTimeSlider" destination="6rT-kT-0co" id="p7D-Nd-vaQ"/>
                         <outlet property="duration" destination="hLs-Qo-Mvl" id="a4H-10-kqo"/>
                         <outlet property="genre" destination="mPH-y1-pMz" id="ylb-sN-Nqa"/>
+                        <outlet property="gtitle" destination="WHv-yH-j8E" id="fU8-Ad-p0I"/>
                         <outlet property="playButton" destination="d4b-IE-LkJ" id="mXz-BA-zHg"/>
                         <outlet property="skipButton" destination="hPk-On-1c9" id="8gg-kb-Opc"/>
                         <outlet property="speed" destination="vsS-Jp-k9y" id="JVo-9D-111"/>

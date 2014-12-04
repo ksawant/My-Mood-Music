@@ -35,6 +35,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *condition;
 @property (weak, nonatomic) IBOutlet UILabel *temp;
 @property (weak, nonatomic) IBOutlet UILabel *genre;
+@property (weak, nonatomic) IBOutlet UILabel *gtitle;
 @property(nonatomic)NSTimer *timer;
 @property (weak, nonatomic) IBOutlet UITextField *status;
 @property (weak, nonatomic) IBOutlet UIImageView *albumart;
