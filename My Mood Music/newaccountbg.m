@@ -149,6 +149,36 @@
     }
 }
 
+//Made this to input the user into the database!!!
+//This needs to happen on submit but not sure right now how to do that.
+-(void)callInsertService{
+	NSURL *url = [NSURL URLWithString:@"http://web.ics.purdue.edu/~bunge/mymood.php?todo=setU&username=" + username.text + "&password=" +password.text + "&year=" + year.text];
+	ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    
+    [request setDidFinishSelector:@selector(requestCompleted:)];
+    [request setDidFailSelector:@selector(requestError:)];
+    
+    [request setDelegate:self];
+    [request startAsynchronous];
+}
+
+//This is to see if the user already exists in the database if it does then we need to have them make a new user.
+- (void)requestCompleted:(ASIHTTPRequest *)request
+{
+    NSString *responseString = [request responseString];
+    NSLog(@"API Response: %@", responseString);
+    
+    NSArray *valueArray = [responseString componentsSeparatedByString:@"|"];
+    NSString *works = [valueArray objectAtIndex:0];
+    
+    if(![works isEqualToString:@"User exists"]){
+	
+	}else{
+		//they need to pick a new user name
+	}
+    
+}
+
 /*-(BOOL)openDBwithSQLName:(NSString *)sqlname {
     BOOL is_Opened = NO;
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask, YES);

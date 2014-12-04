@@ -63,6 +63,32 @@
     else {
         NSLog(@"EMPTY");
     }
+    
+    NSURL *url = [NSURL URLWithString:@"http://web.ics.purdue.edu/~bunge/mymood.php?todo=checkU&username=" + username.text + "&password=" +password.text];
+	ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    
+    [request setDidFinishSelector:@selector(requestCompleted:)];
+    [request setDidFailSelector:@selector(requestError:)];
+    
+    [request setDelegate:self];
+    [request startAsynchronous];
+	
+	//I am not sure if I should make this a seperate function
+	NSString *responseString = [request responseString];
+    NSLog(@"API Response: %@", responseString);
+    
+    NSArray *valueArray = [responseString componentsSeparatedByString:@"|"];
+    NSString *works = [valueArray objectAtIndex:0];
+    
+    if(![works isEqualToString:@"True"]){
+		// Store the data
+		NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+     
+		[defaults setObject:username forKey:@"username"];
+		[defaults synchronize];
+	}else{
+		//Incorrect user, password combo
+	}
 }
 
 @end
