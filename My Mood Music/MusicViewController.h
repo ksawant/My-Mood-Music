@@ -42,7 +42,7 @@
 - (void)pushAction:(id)sender;
 - (void)pushAction2:(id)sender;
 - (IBAction)playButtonPress:(id)sender;
-- (IBAction)pauseButtonPress:(id)sender;
+//- (IBAction)pauseButtonPress:(id)sender;
 - (IBAction)skipButtonPress:(id)sender;
 - (void)remoteControlReceivedWithEvent:(UIEvent *)theEvent;
 @end

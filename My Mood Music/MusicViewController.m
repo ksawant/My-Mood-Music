@@ -18,6 +18,7 @@
 
 @implementation MusicViewController
 @synthesize playButton;
+@synthesize skipButton;
 @synthesize audioPlayer;
 NSString *tempC;
 NSString *tempK;
@@ -28,6 +29,8 @@ int num = 1;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [playButton setImage:[UIImage imageNamed:@"glyphicons-174-play.png"] forState:UIControlStateNormal];
+    [skipButton setImage:[UIImage imageNamed:@"Forward.png"] forState:UIControlStateNormal];
     self.locationManager = [[CLLocationManager alloc]init];
     [self.locationManager requestAlwaysAuthorization];
     self.locationManager.delegate = self;
@@ -67,6 +70,10 @@ int num = 1;
     [weatherManager fetchWeatherDataForLatitude:40.431965 andLongitude:-86.918631 withAPIKeyOrNil:@"a4c33519650013f187bcdc2a48df7ead" :^(JFWeatherData *returnedWeatherData) {
         temp = [returnedWeatherData temperatureInUnitFormat:kTemperatureFarenheit];
         c = [returnedWeatherData currentConditionsTextualDescription];
+        /*num =1;
+        c = @"Strong Breeze";
+        speed = 6.6;
+        temp= 20.4;*/
         NSLog(@"%@",c);
         [self musicManager:self.locationManager];
             }];
@@ -116,6 +123,10 @@ int num = 1;
 }
 
 - (void)musicManager:(CLLocationManager *)manager {
+    /*num =1;
+    c = @"Strong Breeze";
+    speed = 6.6;
+    temp= 20.4;*/
     if(speed == 0 && num == 1) {
         num++;
         if(temp < 40) {
@@ -5433,7 +5444,14 @@ int num = 1;
 }
 
 - (IBAction)playButtonPress:(id)sender {
-    [((AppDelegate *)([UIApplication sharedApplication].delegate)).player play];
+    if (((AppDelegate *)([UIApplication sharedApplication].delegate)).player.rate > 0 && !((AppDelegate *)([UIApplication sharedApplication].delegate)).player.error) {
+        [playButton setImage:[UIImage imageNamed:@"glyphicons-174-play.png"] forState:UIControlStateNormal];
+        [((AppDelegate *)([UIApplication sharedApplication].delegate)).player pause];
+    }
+    else {
+        [playButton setImage:[UIImage imageNamed:@"Pause@2x.png"] forState:UIControlStateNormal];
+        [((AppDelegate *)([UIApplication sharedApplication].delegate)).player play];
+    }
     //[player play];
     Class playingInfoCenter = NSClassFromString(@"MPNowPlayingInfoCenter");
     if (playingInfoCenter) {
@@ -5510,14 +5528,19 @@ int num = 1;
         x=0.000000;
     }
     speed = x;
+    //x = 6.6;
     self.speed.text = [NSString stringWithFormat:@"Speed: %.2f MPH", x];
     [weatherManager fetchWeatherDataForLatitude:self.location.coordinate.latitude andLongitude:self.location.coordinate.longitude withAPIKeyOrNil:@"a4c33519650013f187bcdc2a48df7ead" :^(JFWeatherData *returnedWeatherData) {
-        self.temp.text = [NSString stringWithFormat:@"Temperature: %.2f F",[returnedWeatherData temperatureInUnitFormat:kTemperatureFarenheit]];
-        self.condition.text = [NSString stringWithFormat:@"Condition: %@",[returnedWeatherData currentConditionsTextualDescription]];
+        /*num =1;
+        c = @"Strong Breeze";
+        speed = 6.6;
+        temp= 20.4;*/
+        self.temp.text = [NSString stringWithFormat:@"Temperature: %.2f F",/*temp*/[returnedWeatherData temperatureInUnitFormat:kTemperatureFarenheit]];
+        self.condition.text = [NSString stringWithFormat:@"Condition: %@",/*@"Strong Breeze"*/[returnedWeatherData currentConditionsTextualDescription]];
         tempC = [NSString stringWithFormat:@"Temperature: %.2f C",[returnedWeatherData temperatureInUnitFormat:kTemperatureCelcius]];
         tempK = [NSString stringWithFormat:@"Temperature: %.2f K",[returnedWeatherData temperatureInUnitFormat:kTemperatureKelvin]];
-        temp = [returnedWeatherData temperatureInUnitFormat:kTemperatureFarenheit];
-        c = [returnedWeatherData currentConditionsTextualDescription];
+        //temp = [returnedWeatherData temperatureInUnitFormat:kTemperatureFarenheit];
+        //c = [returnedWeatherData currentConditionsTextualDescription];
     }];
 }
 
