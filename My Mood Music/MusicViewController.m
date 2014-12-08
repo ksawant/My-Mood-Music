@@ -2923,7 +2923,7 @@ int num = 1;
                 self.genre.text = [NSString stringWithFormat:@"Rock"];
                 self.gtitle.text = [NSString stringWithFormat:@"Aerials"];
                 NSLog(@"rain");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"hhttps://i1.sndcdn.com/artworks-000090063383-byubi3-large.jpg"]]];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000090063383-byubi3-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/166228488/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
@@ -2934,10 +2934,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
                 self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Low"];
+                self.gtitle.text = [NSString stringWithFormat:@"Body Language"];
                 NSLog(@"snow");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089711243-lyy02l-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162777996/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000091531037-9gnhf2-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/166806576/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -2988,7 +2988,7 @@ int num = 1;
                 self.genre.text = [NSString stringWithFormat:@"Rock"];
                 self.gtitle.text = [NSString stringWithFormat:@"Aerials"];
                 NSLog(@"additional");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"hhttps://i1.sndcdn.com/artworks-000090063383-byubi3-large.jpg"]]];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000090063383-byubi3-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/166228488/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
@@ -3043,10 +3043,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
                 self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Low"];
+                self.gtitle.text = [NSString stringWithFormat:@"Body Language"];
                 NSLog(@"snow");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089711243-lyy02l-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162777996/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000091531037-9gnhf2-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/166806576/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -3149,7 +3149,7 @@ int num = 1;
                 self.genre.text = [NSString stringWithFormat:@"Rock"];
                 self.gtitle.text = [NSString stringWithFormat:@"Aerials"];
                 NSLog(@"rain");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"hhttps://i1.sndcdn.com/artworks-000090063383-byubi3-large.jpg"]]];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000090063383-byubi3-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/166228488/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
@@ -3367,7 +3367,7 @@ int num = 1;
                 self.genre.text = [NSString stringWithFormat:@"Rock"];
                 self.gtitle.text = [NSString stringWithFormat:@"Aerials"];
                 NSLog(@"rain");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"hhttps://i1.sndcdn.com/artworks-000090063383-byubi3-large.jpg"]]];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000090063383-byubi3-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/166228488/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
@@ -3495,7 +3495,7 @@ int num = 1;
                 self.genre.text = [NSString stringWithFormat:@"Rock"];
                 self.gtitle.text = [NSString stringWithFormat:@"Aerials"];
                 NSLog(@"snow");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"hhttps://i1.sndcdn.com/artworks-000090063383-byubi3-large.jpg"]]];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000090063383-byubi3-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/166228488/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
@@ -3789,7 +3789,7 @@ int num = 1;
                 self.genre.text = [NSString stringWithFormat:@"Rock"];
                 self.gtitle.text = [NSString stringWithFormat:@"Aerials"];
                 NSLog(@"thunderstorm");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"hhttps://i1.sndcdn.com/artworks-000090063383-byubi3-large.jpg"]]];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000090063383-byubi3-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/166228488/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
@@ -3976,7 +3976,7 @@ int num = 1;
                 self.genre.text = [NSString stringWithFormat:@"Rock"];
                 self.gtitle.text = [NSString stringWithFormat:@"Aerials"];
                 NSLog(@"extreme");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"hhttps://i1.sndcdn.com/artworks-000090063383-byubi3-large.jpg"]]];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000090063383-byubi3-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/166228488/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
@@ -4117,15 +4117,15 @@ int num = 1;
     }
 
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    if(speed == 0 && num == 4) {
+    else if(speed == 0 && num == 4) {
         num=1;
         if(temp < 40) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
                 self.genre.text = [NSString stringWithFormat:@"Punk"];
-                self.gtitle.text = [NSString stringWithFormat:@"Instant Crush"];
+                self.gtitle.text = [NSString stringWithFormat:@"Prove It"];
                 NSLog(@"thunderstorm");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000088433498-ux68fq-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/163695063/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087855607-2izjsk-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/154754678/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4135,10 +4135,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
                 self.genre.text = [NSString stringWithFormat:@"Soul"];
-                self.gtitle.text = [NSString stringWithFormat:@"Sober"];
+                self.gtitle.text = [NSString stringWithFormat:@"Take Care Of You"];
                 NSLog(@"drizzle");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096692120-um55tq-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176208183/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093460457-h3xuzd-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/171405786/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4148,10 +4148,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
                 self.genre.text = [NSString stringWithFormat:@"Soul"];
-                self.gtitle.text = [NSString stringWithFormat:@"Sober"];
+                self.gtitle.text = [NSString stringWithFormat:@"Take Care Of You"];
                 NSLog(@"rain");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096692120-um55tq-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176208183/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093460457-h3xuzd-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/171405786/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4161,10 +4161,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
                 self.genre.text = [NSString stringWithFormat:@"Reggae"];
-                self.gtitle.text = [NSString stringWithFormat:@"In Your Arms"];
+                self.gtitle.text = [NSString stringWithFormat:@"Stylin'"];
                 NSLog(@"snow");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087346942-vf37ts-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162022719/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094712253-f8lh3m-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173238968/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4174,10 +4174,10 @@ int num = 1;
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
                 self.genre.text = [NSString stringWithFormat:@"Country"];
-                self.gtitle.text = [NSString stringWithFormat:@"Sippin' On Fire"];
+                self.gtitle.text = [NSString stringWithFormat:@"If It's Just Me"];
                 NSLog(@"atmosphere");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086741073-ibz2rp-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/161089729/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000097395375-iru8g8-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172500170/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4187,10 +4187,10 @@ int num = 1;
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
                 self.genre.text = [NSString stringWithFormat:@"Classical"];
-                self.gtitle.text = [NSString stringWithFormat:@"The Silverwastes"];
+                self.gtitle.text = [NSString stringWithFormat:@"Interstellar Main Theme"];
                 NSLog(@"clouds");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094782773-h99isx-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173344470/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096552676-u050d5-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175999197/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4200,10 +4200,10 @@ int num = 1;
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
                 self.genre.text = [NSString stringWithFormat:@"Metal"];
-                self.gtitle.text = [NSString stringWithFormat:@"Shatter"];
+                self.gtitle.text = [NSString stringWithFormat:@"Killing Me Inside"];
                 NSLog(@"extreme");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096690078-bauuot-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176205207/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095468450-rbncus-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/174364181/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4213,10 +4213,10 @@ int num = 1;
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
                 self.genre.text = [NSString stringWithFormat:@"Classical"];
-                self.gtitle.text = [NSString stringWithFormat:@"The Silverwastes"];
+                self.gtitle.text = [NSString stringWithFormat:@"Interstellar Main Theme"];
                 NSLog(@"additional");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094782773-h99isx-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173344470/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096552676-u050d5-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175999197/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4231,9 +4231,10 @@ int num = 1;
         else if(temp >= 40 && temp <= 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
                 self.genre.text = [NSString stringWithFormat:@"Metal"];
-                self.gtitle.text = [NSString stringWithFormat:@"Shatter"];
+                self.gtitle.text = [NSString stringWithFormat:@"Killing Me Inside"];
                 NSLog(@"thunderstorm");
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164579150/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095468450-rbncus-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/174364181/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4243,10 +4244,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
                 self.genre.text = [NSString stringWithFormat:@"Soul"];
-                self.gtitle.text = [NSString stringWithFormat:@"Sober"];
+                self.gtitle.text = [NSString stringWithFormat:@"Take Care Of You"];
                 NSLog(@"drizzle");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096692120-um55tq-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176208183/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093460457-h3xuzd-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/171405786/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4256,10 +4257,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
                 self.genre.text = [NSString stringWithFormat:@"Rock"];
-                self.gtitle.text = [NSString stringWithFormat:@"Aerials"];
+                self.gtitle.text = [NSString stringWithFormat:@"I Bet My Life"];
                 NSLog(@"rain");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096312845-9kwh84-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175642077/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095310515-g5e5xw-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/174130369/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4269,10 +4270,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
                 self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Low"];
+                self.gtitle.text = [NSString stringWithFormat:@"Body Language"];
                 NSLog(@"snow");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089289879-ue4d7j-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/165018741/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000091531037-9gnhf2-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/166806576/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4282,10 +4283,10 @@ int num = 1;
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
                 self.genre.text = [NSString stringWithFormat:@"Classical"];
-                self.gtitle.text = [NSString stringWithFormat:@"The Silverwastes"];
+                self.gtitle.text = [NSString stringWithFormat:@"Interstellar Main Theme"];
                 NSLog(@"atmosphere");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094782773-h99isx-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173344470/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096552676-u050d5-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175999197/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4295,10 +4296,10 @@ int num = 1;
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
                 self.genre.text = [NSString stringWithFormat:@"Country"];
-                self.gtitle.text = [NSString stringWithFormat:@"Sippin' On Fire"];
+                self.gtitle.text = [NSString stringWithFormat:@"If It's Just Me"];
                 NSLog(@"clouds");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086741073-ibz2rp-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/161089729/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000097395375-iru8g8-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172500170/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4308,10 +4309,10 @@ int num = 1;
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
                 self.genre.text = [NSString stringWithFormat:@"Reggae"];
-                self.gtitle.text = [NSString stringWithFormat:@"In Your Arms"];
+                self.gtitle.text = [NSString stringWithFormat:@"Stylin'"];
                 NSLog(@"extreme");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087346942-vf37ts-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162022719/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094712253-f8lh3m-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173238968/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4321,10 +4322,10 @@ int num = 1;
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
                 self.genre.text = [NSString stringWithFormat:@"Rock"];
-                self.gtitle.text = [NSString stringWithFormat:@"Aerials"];
+                self.gtitle.text = [NSString stringWithFormat:@"I Bet My Life"];
                 NSLog(@"additional");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096312845-9kwh84-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175642077/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095310515-g5e5xw-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/174130369/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4339,10 +4340,10 @@ int num = 1;
         else if(temp > 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
                 self.genre.text = [NSString stringWithFormat:@"Dubstep"];
-                self.gtitle.text = [NSString stringWithFormat:@"Summer"];
+                self.gtitle.text = [NSString stringWithFormat:@"Five Nights at Freddy's Song"];
                 NSLog(@"thunderstorm");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094591628-mx16l1-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173058369/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089662968-itnm6r-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/165603854/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4352,9 +4353,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
                 self.genre.text = [NSString stringWithFormat:@"Metal"];
-                self.gtitle.text = [NSString stringWithFormat:@"Shatter"];
+                self.gtitle.text = [NSString stringWithFormat:@"Killing Me Inside"];
                 NSLog(@"drizzle");
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164579150/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095468450-rbncus-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/174364181/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4364,10 +4366,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
                 self.genre.text = [NSString stringWithFormat:@"Rap"];
-                self.gtitle.text = [NSString stringWithFormat:@"Anaconda"];
+                self.gtitle.text = [NSString stringWithFormat:@"Beg For It"];
                 NSLog(@"rain");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095053782-whizz1-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173752179/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094967047-fkm7ed-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173307495/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4377,10 +4379,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
                 self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Low"];
+                self.gtitle.text = [NSString stringWithFormat:@"Body Language"];
                 NSLog(@"snow");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089289879-ue4d7j-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/165018741/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000091531037-9gnhf2-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/166806576/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4390,10 +4392,10 @@ int num = 1;
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
                 self.genre.text = [NSString stringWithFormat:@"Country"];
-                self.gtitle.text = [NSString stringWithFormat:@"Sippin' On Fire"];
+                self.gtitle.text = [NSString stringWithFormat:@"If It's Just Me"];
                 NSLog(@"atmosphere");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086741073-ibz2rp-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/161089729/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000097395375-iru8g8-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172500170/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4403,10 +4405,10 @@ int num = 1;
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
                 self.genre.text = [NSString stringWithFormat:@"Pop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Immortals"];
+                self.gtitle.text = [NSString stringWithFormat:@"Animals"];
                 NSLog(@"clouds");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089056769-mmalvb-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164661027/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4416,10 +4418,10 @@ int num = 1;
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
                 self.genre.text = [NSString stringWithFormat:@"Punk"];
-                self.gtitle.text = [NSString stringWithFormat:@"Instant Crush"];
+                self.gtitle.text = [NSString stringWithFormat:@"Prove It"];
                 NSLog(@"extreme");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000088433498-ux68fq-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/163695063/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087855607-2izjsk-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/154754678/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4429,10 +4431,10 @@ int num = 1;
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
                 self.genre.text = [NSString stringWithFormat:@"Pop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Immortals"];
+                self.gtitle.text = [NSString stringWithFormat:@"Animals"];
                 NSLog(@"additional");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089056769-mmalvb-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164661027/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4454,9 +4456,10 @@ int num = 1;
         if(temp < 40) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
                 self.genre.text = [NSString stringWithFormat:@"Metal"];
-                self.gtitle.text = [NSString stringWithFormat:@"Shatter"];
+                self.gtitle.text = [NSString stringWithFormat:@"Killing Me Inside"];
                 NSLog(@"thunderstorm");
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164579150/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095468450-rbncus-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/174364181/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4466,10 +4469,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
                 self.genre.text = [NSString stringWithFormat:@"Dubstep"];
-                self.gtitle.text = [NSString stringWithFormat:@"Summer"];
+                self.gtitle.text = [NSString stringWithFormat:@"Five Nights at Freddy's Song"];
                 NSLog(@"drizzle");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094591628-mx16l1-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173058369/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089662968-itnm6r-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/165603854/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4479,10 +4482,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
                 self.genre.text = [NSString stringWithFormat:@"Rock"];
-                self.gtitle.text = [NSString stringWithFormat:@"Aerials"];
+                self.gtitle.text = [NSString stringWithFormat:@"I Bet My Life"];
                 NSLog(@"rain");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096312845-9kwh84-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175642077/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095310515-g5e5xw-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/174130369/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4492,10 +4495,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
                 self.genre.text = [NSString stringWithFormat:@"Soul"];
-                self.gtitle.text = [NSString stringWithFormat:@"Sober"];
+                self.gtitle.text = [NSString stringWithFormat:@"Take Care Of You"];
                 NSLog(@"snow");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096692120-um55tq-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176208183/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093460457-h3xuzd-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/171405786/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4505,10 +4508,10 @@ int num = 1;
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
                 self.genre.text = [NSString stringWithFormat:@"Classical"];
-                self.gtitle.text = [NSString stringWithFormat:@"The Silverwastes"];
+                self.gtitle.text = [NSString stringWithFormat:@"Interstellar Main Theme"];
                 NSLog(@"atmosphere");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094782773-h99isx-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173344470/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096552676-u050d5-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175999197/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4518,10 +4521,10 @@ int num = 1;
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
                 self.genre.text = [NSString stringWithFormat:@"Punk"];
-                self.gtitle.text = [NSString stringWithFormat:@"Instant Crush"];
+                self.gtitle.text = [NSString stringWithFormat:@"Prove It"];
                 NSLog(@"clouds");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000088433498-ux68fq-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/163695063/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087855607-2izjsk-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/154754678/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4531,10 +4534,10 @@ int num = 1;
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
                 self.genre.text = [NSString stringWithFormat:@"Reggae"];
-                self.gtitle.text = [NSString stringWithFormat:@"In Your Arms"];
+                self.gtitle.text = [NSString stringWithFormat:@"Stylin'"];
                 NSLog(@"extreme");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087346942-vf37ts-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162022719/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094712253-f8lh3m-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173238968/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4544,10 +4547,10 @@ int num = 1;
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
                 self.genre.text = [NSString stringWithFormat:@"Pop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Immortals"];
+                self.gtitle.text = [NSString stringWithFormat:@"Animals"];
                 NSLog(@"additional");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089056769-mmalvb-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164661027/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4562,10 +4565,10 @@ int num = 1;
         else if(temp >= 40 && temp <= 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
                 self.genre.text = [NSString stringWithFormat:@"Punk"];
-                self.gtitle.text = [NSString stringWithFormat:@"Instant Crush"];
+                self.gtitle.text = [NSString stringWithFormat:@"Prove It"];
                 NSLog(@"thunderstorm");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000088433498-ux68fq-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/163695063/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087855607-2izjsk-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/154754678/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4575,10 +4578,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
                 self.genre.text = [NSString stringWithFormat:@"R&B"];
-                self.gtitle.text = [NSString stringWithFormat:@"Unappreciated"];
+                self.gtitle.text = [NSString stringWithFormat:@"Thinking Out Loud"];
                 NSLog(@"drizzle");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086464000-qf3oc1-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/160666084/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000098252592-0a39ax-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/178553851/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4588,10 +4591,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
                 self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Low"];
+                self.gtitle.text = [NSString stringWithFormat:@"Body Language"];
                 NSLog(@"rain");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089289879-ue4d7j-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/165018741/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087418675-ii50p3-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162141701/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4601,10 +4604,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
                 self.genre.text = [NSString stringWithFormat:@"Classical"];
-                self.gtitle.text = [NSString stringWithFormat:@"The Silverwastes"];
+                self.gtitle.text = [NSString stringWithFormat:@"Interstellar Main Theme"];
                 NSLog(@"snow");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094782773-h99isx-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173344470/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096552676-u050d5-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175999197/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4614,10 +4617,10 @@ int num = 1;
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
                 self.genre.text = [NSString stringWithFormat:@"Country"];
-                self.gtitle.text = [NSString stringWithFormat:@"Sippin' On Fire"];
+                self.gtitle.text = [NSString stringWithFormat:@"If It's Just Me"];
                 NSLog(@"atmosphere");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086741073-ibz2rp-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/161089729/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000097395375-iru8g8-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172500170/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4627,10 +4630,10 @@ int num = 1;
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
                 self.genre.text = [NSString stringWithFormat:@"Country"];
-                self.gtitle.text = [NSString stringWithFormat:@"Sippin' On Fire"];
+                self.gtitle.text = [NSString stringWithFormat:@"If It's Just Me"];
                 NSLog(@"clouds");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086741073-ibz2rp-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/161089729/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000097395375-iru8g8-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172500170/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4640,10 +4643,10 @@ int num = 1;
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
                 self.genre.text = [NSString stringWithFormat:@"Punk"];
-                self.gtitle.text = [NSString stringWithFormat:@"Instant Crush"];
+                self.gtitle.text = [NSString stringWithFormat:@"Prove It"];
                 NSLog(@"extreme");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000088433498-ux68fq-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/163695063/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087855607-2izjsk-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/154754678/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4653,10 +4656,10 @@ int num = 1;
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
                 self.genre.text = [NSString stringWithFormat:@"Dubstep"];
-                self.gtitle.text = [NSString stringWithFormat:@"Summer"];
+                self.gtitle.text = [NSString stringWithFormat:@"Five Nights at Freddy's Song"];
                 NSLog(@"additional");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094591628-mx16l1-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173058369/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089662968-itnm6r-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/165603854/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4671,10 +4674,10 @@ int num = 1;
         else if(temp > 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
                 self.genre.text = [NSString stringWithFormat:@"Pop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Immortals"];
+                self.gtitle.text = [NSString stringWithFormat:@"Animals"];
                 NSLog(@"thunderstorm");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089056769-mmalvb-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164661027/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4684,10 +4687,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
                 self.genre.text = [NSString stringWithFormat:@"Rap"];
-                self.gtitle.text = [NSString stringWithFormat:@"Anaconda"];
+                self.gtitle.text = [NSString stringWithFormat:@"Beg For It"];
                 NSLog(@"drizzle");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095053782-whizz1-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173752179/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094967047-fkm7ed-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173307495/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4697,10 +4700,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
                 self.genre.text = [NSString stringWithFormat:@"Rock"];
-                self.gtitle.text = [NSString stringWithFormat:@"Aerials"];
+                self.gtitle.text = [NSString stringWithFormat:@"I Bet My Life"];
                 NSLog(@"rain");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096312845-9kwh84-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175642077/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095310515-g5e5xw-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/174130369/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4710,10 +4713,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
                 self.genre.text = [NSString stringWithFormat:@"Pop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Immortals"];
+                self.gtitle.text = [NSString stringWithFormat:@"Animals"];
                 NSLog(@"snow");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089056769-mmalvb-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164661027/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4723,10 +4726,10 @@ int num = 1;
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
                 self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Low"];
+                self.gtitle.text = [NSString stringWithFormat:@"Body Language"];
                 NSLog(@"atmosphere");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089289879-ue4d7j-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/165018741/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087418675-ii50p3-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162141701/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4736,10 +4739,10 @@ int num = 1;
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
                 self.genre.text = [NSString stringWithFormat:@"Country"];
-                self.gtitle.text = [NSString stringWithFormat:@"Sippin' On Fire"];
+                self.gtitle.text = [NSString stringWithFormat:@"If It's Just Me"];
                 NSLog(@"clouds");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086741073-ibz2rp-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/161089729/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000097395375-iru8g8-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172500170/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4749,9 +4752,10 @@ int num = 1;
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
                 self.genre.text = [NSString stringWithFormat:@"Metal"];
-                self.gtitle.text = [NSString stringWithFormat:@"Shatter"];
+                self.gtitle.text = [NSString stringWithFormat:@"Killing Me Inside"];
                 NSLog(@"extreme");
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164579150/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095468450-rbncus-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/174364181/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4761,10 +4765,10 @@ int num = 1;
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
                 self.genre.text = [NSString stringWithFormat:@"R&B"];
-                self.gtitle.text = [NSString stringWithFormat:@"Unappreciated"];
+                self.gtitle.text = [NSString stringWithFormat:@"Thinking Out Loud"];
                 NSLog(@"additional");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086464000-qf3oc1-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/160666084/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000098252592-0a39ax-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/178553851/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4785,10 +4789,10 @@ int num = 1;
         if(temp < 40) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
                 self.genre.text = [NSString stringWithFormat:@"Reggae"];
-                self.gtitle.text = [NSString stringWithFormat:@"In Your Arms"];
+                self.gtitle.text = [NSString stringWithFormat:@"Stylin'"];
                 NSLog(@"thunderstorm");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087346942-vf37ts-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162022719/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094712253-f8lh3m-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173238968/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4798,9 +4802,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
                 self.genre.text = [NSString stringWithFormat:@"Metal"];
-                self.gtitle.text = [NSString stringWithFormat:@"Shatter"];
+                self.gtitle.text = [NSString stringWithFormat:@"Killing Me Inside"];
                 NSLog(@"drizzle");
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164579150/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095468450-rbncus-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/174364181/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4810,10 +4815,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
                 self.genre.text = [NSString stringWithFormat:@"Rap"];
-                self.gtitle.text = [NSString stringWithFormat:@"Anaconda"];
+                self.gtitle.text = [NSString stringWithFormat:@"Beg For It"];
                 NSLog(@"rain");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095053782-whizz1-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173752179/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094967047-fkm7ed-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173307495/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4823,10 +4828,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
                 self.genre.text = [NSString stringWithFormat:@"Rock"];
-                self.gtitle.text = [NSString stringWithFormat:@"Aerials"];
+                self.gtitle.text = [NSString stringWithFormat:@"I Bet My Life"];
                 NSLog(@"snow");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096312845-9kwh84-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175642077/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095310515-g5e5xw-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/174130369/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4836,10 +4841,10 @@ int num = 1;
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
                 self.genre.text = [NSString stringWithFormat:@"Soul"];
-                self.gtitle.text = [NSString stringWithFormat:@"Sober"];
+                self.gtitle.text = [NSString stringWithFormat:@"Take Care Of You"];
                 NSLog(@"atmosphere");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096692120-um55tq-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176208183/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093460457-h3xuzd-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/171405786/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4849,10 +4854,10 @@ int num = 1;
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
                 self.genre.text = [NSString stringWithFormat:@"Country"];
-                self.gtitle.text = [NSString stringWithFormat:@"Sippin' On Fire"];
+                self.gtitle.text = [NSString stringWithFormat:@"If It's Just Me"];
                 NSLog(@"clouds");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086741073-ibz2rp-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/161089729/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000097395375-iru8g8-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172500170/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4862,10 +4867,10 @@ int num = 1;
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
                 self.genre.text = [NSString stringWithFormat:@"Pop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Immortals"];
+                self.gtitle.text = [NSString stringWithFormat:@"Animals"];
                 NSLog(@"extreme");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089056769-mmalvb-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164661027/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4875,10 +4880,10 @@ int num = 1;
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
                 self.genre.text = [NSString stringWithFormat:@"Pop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Immortals"];
+                self.gtitle.text = [NSString stringWithFormat:@"Animals"];
                 NSLog(@"additional");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089056769-mmalvb-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164661027/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4893,10 +4898,10 @@ int num = 1;
         else if(temp >= 40 && temp <= 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
                 self.genre.text = [NSString stringWithFormat:@"Rap"];
-                self.gtitle.text = [NSString stringWithFormat:@"Anaconda"];
+                self.gtitle.text = [NSString stringWithFormat:@"Beg For It"];
                 NSLog(@"thunderstorm");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095053782-whizz1-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173752179/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094967047-fkm7ed-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173307495/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4906,10 +4911,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
                 self.genre.text = [NSString stringWithFormat:@"Dubstep"];
-                self.gtitle.text = [NSString stringWithFormat:@"Summer"];
+                self.gtitle.text = [NSString stringWithFormat:@"Five Nights at Freddy's Song"];
                 NSLog(@"drizzle");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094591628-mx16l1-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173058369/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089662968-itnm6r-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/165603854/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4919,10 +4924,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
                 self.genre.text = [NSString stringWithFormat:@"Country"];
-                self.gtitle.text = [NSString stringWithFormat:@"Sippin' On Fire"];
+                self.gtitle.text = [NSString stringWithFormat:@"If It's Just Me"];
                 NSLog(@"rain");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086741073-ibz2rp-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/161089729/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000097395375-iru8g8-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/172500170/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4932,10 +4937,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
                 self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Low"];
+                self.gtitle.text = [NSString stringWithFormat:@"Body Language"];
                 NSLog(@"snow");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089289879-ue4d7j-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/165018741/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087418675-ii50p3-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162141701/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4945,10 +4950,10 @@ int num = 1;
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
                 self.genre.text = [NSString stringWithFormat:@"Pop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Immortals"];
+                self.gtitle.text = [NSString stringWithFormat:@"Animals"];
                 NSLog(@"atmosphere");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089056769-mmalvb-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164661027/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4958,9 +4963,10 @@ int num = 1;
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
                 self.genre.text = [NSString stringWithFormat:@"Pop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Immortals"];
+                self.gtitle.text = [NSString stringWithFormat:@"Animals"];
                 NSLog(@"clouds");
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/15996669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089056769-mmalvb-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164661027/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4970,9 +4976,10 @@ int num = 1;
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
                 self.genre.text = [NSString stringWithFormat:@"Metal"];
-                self.gtitle.text = [NSString stringWithFormat:@"Shatter"];
+                self.gtitle.text = [NSString stringWithFormat:@"Killing Me Inside"];
                 NSLog(@"extreme");
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164579150/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095468450-rbncus-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/174364181/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -4982,10 +4989,10 @@ int num = 1;
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
                 self.genre.text = [NSString stringWithFormat:@"Punk"];
-                self.gtitle.text = [NSString stringWithFormat:@"Instant Crush"];
+                self.gtitle.text = [NSString stringWithFormat:@"Prove It"];
                 NSLog(@"additional");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000088433498-ux68fq-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/163695063/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087855607-2izjsk-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/154754678/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5000,10 +5007,10 @@ int num = 1;
         else if(temp > 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
                 self.genre.text = [NSString stringWithFormat:@"Rap"];
-                self.gtitle.text = [NSString stringWithFormat:@"Anaconda"];
+                self.gtitle.text = [NSString stringWithFormat:@"Beg For It"];
                 NSLog(@"thunderstorm");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095053782-whizz1-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173752179/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094967047-fkm7ed-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173307495/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5013,10 +5020,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
                 self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Low"];
+                self.gtitle.text = [NSString stringWithFormat:@"Body Language"];
                 NSLog(@"drizzle");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089289879-ue4d7j-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/165018741/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087418675-ii50p3-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162141701/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5026,9 +5033,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
                 self.genre.text = [NSString stringWithFormat:@"Metal"];
-                self.gtitle.text = [NSString stringWithFormat:@"Shatter"];
+                self.gtitle.text = [NSString stringWithFormat:@"Killing Me Inside"];
                 NSLog(@"rain");
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164579150/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095468450-rbncus-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/174364181/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5038,10 +5046,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
                 self.genre.text = [NSString stringWithFormat:@"Punk"];
-                self.gtitle.text = [NSString stringWithFormat:@"Instant Crush"];
+                self.gtitle.text = [NSString stringWithFormat:@"Prove It"];
                 NSLog(@"snow");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000088433498-ux68fq-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/163695063/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087855607-2izjsk-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/154754678/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5051,9 +5059,10 @@ int num = 1;
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
                 self.genre.text = [NSString stringWithFormat:@"Pop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Immortals"];
+                self.gtitle.text = [NSString stringWithFormat:@"Animals"];
                 NSLog(@"atmosphere");
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/15996669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089056769-mmalvb-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164661027/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5063,10 +5072,10 @@ int num = 1;
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
                 self.genre.text = [NSString stringWithFormat:@"R&B"];
-                self.gtitle.text = [NSString stringWithFormat:@"Unappreciated"];
+                self.gtitle.text = [NSString stringWithFormat:@"Thinking Out Loud"];
                 NSLog(@"clouds");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086464000-qf3oc1-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/160666084/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000098252592-0a39ax-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/178553851/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5076,10 +5085,10 @@ int num = 1;
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
                 self.genre.text = [NSString stringWithFormat:@"Reggae"];
-                self.gtitle.text = [NSString stringWithFormat:@"In Your Arms"];
+                self.gtitle.text = [NSString stringWithFormat:@"Stylin'"];
                 NSLog(@"extreme");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087346942-vf37ts-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162022719/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094712253-f8lh3m-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173238968/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5089,10 +5098,10 @@ int num = 1;
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
                 self.genre.text = [NSString stringWithFormat:@"Soul"];
-                self.gtitle.text = [NSString stringWithFormat:@"Sober"];
+                self.gtitle.text = [NSString stringWithFormat:@"Take Care Of You"];
                 NSLog(@"additional");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096692120-um55tq-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/176208183/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000093460457-h3xuzd-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/171405786/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5113,10 +5122,10 @@ int num = 1;
         if(temp < 40) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
                 self.genre.text = [NSString stringWithFormat:@"Rock"];
-                self.gtitle.text = [NSString stringWithFormat:@"Aerials"];
+                self.gtitle.text = [NSString stringWithFormat:@"I Bet My Life"];
                 NSLog(@"thunderstorm");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096312845-9kwh84-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175642077/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095310515-g5e5xw-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/174130369/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5126,10 +5135,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
                 self.genre.text = [NSString stringWithFormat:@"Pop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Immortals"];
+                self.gtitle.text = [NSString stringWithFormat:@"Animals"];
                 NSLog(@"drizzle");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089056769-mmalvb-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164661027/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5139,10 +5148,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
                 self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Low"];
+                self.gtitle.text = [NSString stringWithFormat:@"Body Language"];
                 NSLog(@"rain");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089289879-ue4d7j-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/165018741/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087418675-ii50p3-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162141701/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5152,10 +5161,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
                 self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Low"];
+                self.gtitle.text = [NSString stringWithFormat:@"Body Language"];
                 NSLog(@"snow");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089289879-ue4d7j-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/165018741/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087418675-ii50p3-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162141701/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5165,10 +5174,10 @@ int num = 1;
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
                 self.genre.text = [NSString stringWithFormat:@"R&B"];
-                self.gtitle.text = [NSString stringWithFormat:@"Unappreciated"];
+                self.gtitle.text = [NSString stringWithFormat:@"Thinking Out Loud"];
                 NSLog(@"atmosphere");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086464000-qf3oc1-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/160666084/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000098252592-0a39ax-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/178553851/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5178,10 +5187,10 @@ int num = 1;
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
                 self.genre.text = [NSString stringWithFormat:@"Rap"];
-                self.gtitle.text = [NSString stringWithFormat:@"Anaconda"];
+                self.gtitle.text = [NSString stringWithFormat:@"Beg For It"];
                 NSLog(@"clouds");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095053782-whizz1-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173752179/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094967047-fkm7ed-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173307495/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5191,7 +5200,7 @@ int num = 1;
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
                 self.genre.text = [NSString stringWithFormat:@"Reggae"];
-                self.gtitle.text = [NSString stringWithFormat:@"In Your Arms"];
+                self.gtitle.text = [NSString stringWithFormat:@"Stylin'"];
                 NSLog(@"extreme");
                 self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087346942-vf37ts-large.jpg"]]];
                 NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162022719/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
@@ -5204,9 +5213,10 @@ int num = 1;
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
                 self.genre.text = [NSString stringWithFormat:@"Metal"];
-                self.gtitle.text = [NSString stringWithFormat:@"Shatter"];
+                self.gtitle.text = [NSString stringWithFormat:@"Killing Me Inside"];
                 NSLog(@"additional");
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164579150/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095468450-rbncus-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/174364181/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5221,10 +5231,10 @@ int num = 1;
         else if(temp >= 40 && temp <= 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
                 self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Low"];
+                self.gtitle.text = [NSString stringWithFormat:@"Body Language"];
                 NSLog(@"thunderstorm");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089289879-ue4d7j-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/165018741/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087418675-ii50p3-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162141701/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5234,10 +5244,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
                 self.genre.text = [NSString stringWithFormat:@"Pop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Immortals"];
+                self.gtitle.text = [NSString stringWithFormat:@"Animals"];
                 NSLog(@"drizzle");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089056769-mmalvb-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164661027/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5247,10 +5257,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
                 self.genre.text = [NSString stringWithFormat:@"R&B"];
-                self.gtitle.text = [NSString stringWithFormat:@"Unappreciated"];
+                self.gtitle.text = [NSString stringWithFormat:@"Thinking Out Loud"];
                 NSLog(@"rain");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086464000-qf3oc1-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/160666084/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000098252592-0a39ax-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/178553851/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5260,10 +5270,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
                 self.genre.text = [NSString stringWithFormat:@"Pop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Immortals"];
+                self.gtitle.text = [NSString stringWithFormat:@"Animals"];
                 NSLog(@"snow");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089056769-mmalvb-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164661027/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5273,10 +5283,10 @@ int num = 1;
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
                 self.genre.text = [NSString stringWithFormat:@"Pop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Immortals"];
+                self.gtitle.text = [NSString stringWithFormat:@"Animals"];
                 NSLog(@"atmosphere");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089056769-mmalvb-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164661027/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5286,10 +5296,10 @@ int num = 1;
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
                 self.genre.text = [NSString stringWithFormat:@"Rap"];
-                self.gtitle.text = [NSString stringWithFormat:@"Anaconda"];
+                self.gtitle.text = [NSString stringWithFormat:@"Beg For It"];
                 NSLog(@"clouds");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095053782-whizz1-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173752179/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094967047-fkm7ed-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173307495/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5299,10 +5309,10 @@ int num = 1;
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
                 self.genre.text = [NSString stringWithFormat:@"Rock"];
-                self.gtitle.text = [NSString stringWithFormat:@"Aerials"];
+                self.gtitle.text = [NSString stringWithFormat:@"I Bet My Life"];
                 NSLog(@"extreme");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000096312845-9kwh84-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/175642077/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095310515-g5e5xw-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/174130369/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5312,10 +5322,10 @@ int num = 1;
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
                 self.genre.text = [NSString stringWithFormat:@"R&B"];
-                self.gtitle.text = [NSString stringWithFormat:@"Unappreciated"];
+                self.gtitle.text = [NSString stringWithFormat:@"Thinking Out Loud"];
                 NSLog(@"additional");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086464000-qf3oc1-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/160666084/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000098252592-0a39ax-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/178553851/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5330,10 +5340,10 @@ int num = 1;
         else if(temp > 80) {
             if((![c compare:@"Thunderstorm with Light Rain"]) || (![c compare:@"Thunderstorm with Rain"]) || (![c compare:@"Thunderstorm with Heavy Rain"]) || (![c compare:@"Light Thunderstorm"]) || (![c compare:@"Thunderstorm"]) || (![c compare:@"Heavy Thunderstorm"]) || (![c compare:@"Ragged Thunderstorm"]) || (![c compare:@"Thunderstorm with Light Drizzle"]) || (![c compare:@"Thunderstorm with Drizzle"]) || (![c compare:@"Thunderstorm with Heavy Drizzle"])) {
                 self.genre.text = [NSString stringWithFormat:@"R&B"];
-                self.gtitle.text = [NSString stringWithFormat:@"Unappreciated"];
+                self.gtitle.text = [NSString stringWithFormat:@"Thinking Out Loud"];
                 NSLog(@"thunderstorm");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086464000-qf3oc1-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/160666084/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000098252592-0a39ax-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/178553851/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5343,10 +5353,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Intensity Drizzle"]) || (![c compare:@"Drizzle"]) || (![c compare:@"Heavy Intensity Drizzle"]) || (![c compare:@"Light Intensity Drizzle Rain"]) || (![c compare:@"Shower Rain and Drizzle"]) || (![c compare:@"Heavy Shower Rain and Drizzle"]) || (![c compare:@"Shower Drizzle"]) || (![c compare:@"Drizzle Rain"]) || (![c compare:@"Heavy Intensity Drizzle Rain"])) {
                 self.genre.text = [NSString stringWithFormat:@"Rap"];
-                self.gtitle.text = [NSString stringWithFormat:@"Anaconda"];
+                self.gtitle.text = [NSString stringWithFormat:@"Beg For It"];
                 NSLog(@"drizzle");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095053782-whizz1-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173752179/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094967047-fkm7ed-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173307495/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5356,10 +5366,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Rain"]) || (![c compare:@"Moderate Rain"]) || (![c compare:@"Heavy Intensity Rain"]) || (![c compare:@"Very Heavy Rain"]) || (![c compare:@"Extreme Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Freezing Rain"]) || (![c compare:@"Shower Rain"]) || (![c compare:@"Light Intensity Shower Rain"]) || (![c compare:@"Heavy Intensity Shower Rain"]) || (![c compare:@"Ragged Shower Rain"])) {
                 self.genre.text = [NSString stringWithFormat:@"Rap"];
-                self.gtitle.text = [NSString stringWithFormat:@"Anaconda"];
+                self.gtitle.text = [NSString stringWithFormat:@"Beg For It"];
                 NSLog(@"rain");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095053782-whizz1-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173752179/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000094967047-fkm7ed-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/173307495/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5369,10 +5379,10 @@ int num = 1;
             }
             else if((![c compare:@"Light Snow"]) || (![c compare:@"Snow"]) || (![c compare:@"Heavy Snow"]) || (![c compare:@"Sleet"]) || (![c compare:@"Shower Sleet"]) || (![c compare:@"Light Rain and Snow"]) || (![c compare:@"Rain and Snow"]) || (![c compare:@"Light Shower Snow"]) || (![c compare:@"Shower Snow"]) || (![c compare:@"Heavy Shower Snow"])) {
                 self.genre.text = [NSString stringWithFormat:@"Pop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Immortals"];
+                self.gtitle.text = [NSString stringWithFormat:@"Animals"];
                 NSLog(@"snow");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089056769-mmalvb-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164661027/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5382,10 +5392,10 @@ int num = 1;
             }
             else if((![c compare:@"Mist"]) || (![c compare:@"Smoke"]) || (![c compare:@"Haze"]) || (![c compare:@"Sand, Dust Whirls"]) || (![c compare:@"Fog"]) || (![c compare:@"Sand"]) || (![c compare:@"Dust"]) || (![c compare:@"Volcanic Ash"]) || (![c compare:@"Squalls"]) || (![c compare:@"Tornado"])) {
                 self.genre.text = [NSString stringWithFormat:@"Pop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Immortals"];
+                self.gtitle.text = [NSString stringWithFormat:@"Animals"];
                 NSLog(@"atmosphere");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089056769-mmalvb-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164661027/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5395,10 +5405,10 @@ int num = 1;
             }
             else if((![c compare:@"Clear Sky"]) || (![c compare:@"Few Clouds"]) || (![c compare:@"Scattered Clouds"]) || (![c compare:@"Broken Clouds"]) || (![c compare:@"Overcast Clouds"]) || (![c compare:@"Sky Is Clear"])) {
                 self.genre.text = [NSString stringWithFormat:@"Pop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Immortals"];
+                self.gtitle.text = [NSString stringWithFormat:@"Animals"];
                 NSLog(@"clouds");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000086015340-83c3p4-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/159966669/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089056769-mmalvb-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164661027/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5408,10 +5418,10 @@ int num = 1;
             }
             else if((![c compare:@"Tornado"]) || (![c compare:@"Tropical Storm"]) || (![c compare:@"Hurricane"]) || (![c compare:@"Cold"]) || (![c compare:@"Hot"]) || (![c compare:@"Windy"]) || (![c compare:@"Hail"])) {
                 self.genre.text = [NSString stringWithFormat:@"Hip-Hop"];
-                self.gtitle.text = [NSString stringWithFormat:@"Low"];
+                self.gtitle.text = [NSString stringWithFormat:@"Body Language"];
                 NSLog(@"extreme");
-                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000089289879-ue4d7j-large.jpg"]]];
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/165018741/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000087418675-ii50p3-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/162141701/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5421,9 +5431,10 @@ int num = 1;
             }
             else if((![c compare:@"Calm"]) || (![c compare:@"Light Breeze"]) || (![c compare:@"Gentle Breeze"]) || (![c compare:@"Moderate Breeze"]) || (![c compare:@"Fresh Breeze"]) || (![c compare:@"Strong Breeze"]) || (![c compare:@"High Wind, Near Gale"]) || (![c compare:@"Gale"]) || (![c compare:@"Severe Gale"]) || (![c compare:@"Storm"]) || (![c compare:@"Violent Storm"]) || (![c compare:@"Hurricane"])) {
                 self.genre.text = [NSString stringWithFormat:@"Metal"];
-                self.gtitle.text = [NSString stringWithFormat:@"Shatter"];
+                self.gtitle.text = [NSString stringWithFormat:@"Killing Me Inside"];
                 NSLog(@"additional");
-                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/164579150/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
+                self.albumart.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://i1.sndcdn.com/artworks-000095468450-rbncus-large.jpg"]]];
+                NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/tracks/174364181/stream?oauth_token=1-101815-119835817-98b12a635adfb"];
                 playerItem = [AVPlayerItem playerItemWithURL:url];
                 ((AppDelegate *)([UIApplication sharedApplication].delegate)).player = [AVPlayer playerWithPlayerItem:playerItem];
                 [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -5439,7 +5450,7 @@ int num = 1;
             NSLog(@"ERROR");
         }
     }
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     [self setSlider];
 }
 
